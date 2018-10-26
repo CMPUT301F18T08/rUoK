@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import com.example.ruok.R;
 
-public class CareProvider extends AppCompatActivity {
+public class ProblemListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_care_provider);
+        setContentView(R.layout.activity_problem_page);
     }
 }

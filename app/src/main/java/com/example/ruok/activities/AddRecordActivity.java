@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import com.example.ruok.R;
 
-public class Geolocation extends AppCompatActivity {
+public class AddRecordActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_geolocation);
+        setContentView(R.layout.activity_add_record);
     }
 }

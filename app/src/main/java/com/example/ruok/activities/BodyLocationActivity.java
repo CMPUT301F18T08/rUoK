@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import com.example.ruok.R;
 
-public class CareProviderViewListOfProblems extends AppCompatActivity {
+public class BodyLocationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_care_provider_view_list_of_problems);
+        setContentView(R.layout.activity_body_location);
     }
 }

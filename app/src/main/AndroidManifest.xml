@@ -21,20 +21,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.SignUp" />
-        <activity android:name=".activities.SignIn" />
-        <activity android:name=".activities.ResetPassword" />
-        <activity android:name=".activities.ProblemPage" />
-        <activity android:name=".activities.RecordPage" />
-        <activity android:name=".activities.CareProvider" />
-        <activity android:name=".activities.PatientProfile" />
-        <activity android:name=".activities.AddRecord" />
-        <activity android:name=".activities.CareProviderViewListOfProblems" />
-        <activity android:name=".activities.CareProviderViewListOfRecords" />
-        <activity android:name=".activities.CareProviderViewRecordDetails" />
-        <activity android:name=".activities.SearchRequest" />
-        <activity android:name=".activities.Geolocation" />
-        <activity android:name=".activities.BodyLocation"></activity>
+        <activity android:name=".activities.SignUpActivity" />
+        <activity android:name=".activities.SignInActivity" />
+        <activity android:name=".activities.ResetPasswordActivity" />
+        <activity android:name=".activities.ProblemListActivity" />
+        <activity android:name=".activities.RecordPageActivity" />
+        <activity android:name=".activities.CareProviderActivity" />
+        <activity android:name=".activities.PatientProfileActivity" />
+        <activity android:name=".activities.CareProviderViewListOfProblemsActivity" />
+        <activity android:name=".activities.CareProviderViewListOfRecordsActivity" />
+        <activity android:name=".activities.CareProviderViewRecordDetailsActivity" />
+        <activity android:name=".activities.SearchActivity" />
+        <activity android:name=".activities.GeolocationActivity" />
+        <activity android:name=".activities.AddRecordActivity" />
+        <activity android:name=".activities.BodyLocationActivity"></activity>
     </application>
 
 </manifest>

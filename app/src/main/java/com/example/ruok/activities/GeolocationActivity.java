@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import com.example.ruok.R;
 
-public class SignIn extends AppCompatActivity {
+public class GeolocationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_in);
+        setContentView(R.layout.activity_geolocation);
     }
 }
