@@ -5,12 +5,11 @@ import android.os.Bundle;
 
 import com.example.ruok.R;
 
-public class CareProviderViewRecordDetails extends AppCompatActivity {
+public class Geolocation extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_care_provider_view_record_details);
+        setContentView(R.layout.activity_geolocation);
     }
-    
 }

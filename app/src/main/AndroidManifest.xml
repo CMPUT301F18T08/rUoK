@@ -31,7 +31,10 @@
         <activity android:name=".activities.AddRecord" />
         <activity android:name=".activities.CareProviderViewListOfProblems" />
         <activity android:name=".activities.CareProviderViewListOfRecords" />
-        <activity android:name=".activities.CareProviderViewRecordDetails"></activity>
+        <activity android:name=".activities.CareProviderViewRecordDetails" />
+        <activity android:name=".activities.SearchRequest" />
+        <activity android:name=".activities.Geolocation" />
+        <activity android:name=".activities.BodyLocation"></activity>
     </application>
 
 </manifest>
