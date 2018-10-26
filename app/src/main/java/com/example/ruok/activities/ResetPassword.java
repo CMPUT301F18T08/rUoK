@@ -1,15 +1,15 @@
-package activities;
+package com.example.ruok.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.ruok.R;
 
-public class MainActivity extends AppCompatActivity {
+public class ResetPassword extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_reset_password);
     }
 }

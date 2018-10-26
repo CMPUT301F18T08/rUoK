@@ -14,15 +14,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="activities.MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="activities.SignUp" />
-        <activity android:name="activities.SignIn"></activity>
+        <activity android:name=".activities.SignUp" />
+        <activity android:name=".activities.SignIn" />
+        <activity android:name=".activities.ResetPassword" />
+        <activity android:name=".activities.ProblemPage" />
+        <activity android:name=".activities.RecordPage" />
+        <activity android:name=".activities.CareProvider" />
+        <activity android:name=".activities.PatientProfile" />
+        <activity android:name=".activities.AddRecord" />
+        <activity android:name=".activities.CareProviderViewListOfProblems" />
+        <activity android:name=".activities.CareProviderViewListOfRecords" />
+        <activity android:name=".activities.CareProviderViewRecordDetails"></activity>
     </application>
 
 </manifest>
