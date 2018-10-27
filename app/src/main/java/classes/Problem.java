@@ -7,7 +7,7 @@ public class Problem {
     private Date date;
     private int title;
     private String description;
-    private ArrayList<Record> records;
+    private ArrayList<Record> records = new ArrayList<>();
 
     // Date func
     public void setDate(Date date) {

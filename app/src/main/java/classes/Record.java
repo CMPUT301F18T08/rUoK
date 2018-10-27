@@ -8,6 +8,12 @@ public class Record {
     private Date date;
     private String comment;
 
+    public Record(String patientName, String doctorName, Date date, String comment){
+        this.patientName = patientName;
+        this.doctorName = doctorName;
+        this.date = date;
+        this.comment = comment;
+    }
     public String getComment() {
         return comment;
     }
