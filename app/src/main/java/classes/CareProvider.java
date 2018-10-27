@@ -7,4 +7,6 @@ public class CareProvider extends User {
     public void addPatient(Patient patient){
         patients.add(patient);
     }
+
+
 }

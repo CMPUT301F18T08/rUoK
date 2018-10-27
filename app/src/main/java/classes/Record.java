@@ -7,6 +7,7 @@ public class Record {
     private String doctorName;
     private Date date;
     private String comment;
+    // missing body location,location and photo
 
     public Record(String patientName, String doctorName, Date date, String comment){
         this.patientName = patientName;
