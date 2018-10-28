@@ -1,9 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
     tools:context=".activities.SignUpActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="0dp"
+        android:background="@android:color/black"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        tools:text="@string/new_sign_up" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="117dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="115dp"
+        android:ems="10"
+        android:hint="@string/character"
+        android:inputType="textPersonName"
+        android:text="@string/user_name"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="172dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/gender"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="226dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/email"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="173dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/password"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="108dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/confirm_password"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="158dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/frame2"
+        android:text="@string/save"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="234dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Phone number:"
+        android:typeface="serif" />
+
+    <EditText
+        android:id="@+id/editText18"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/editText3"
+        android:layout_marginEnd="1dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="at least 8 charcters"
+        android:textColor="@android:color/darker_gray" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="62dp"
+        android:layout_marginStart="20dp"
+        android:text="PATIENT" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/radioButton"
+        android:layout_marginEnd="21dp"
+        android:text="CARE PROVIDER" />
+</RelativeLayout>
