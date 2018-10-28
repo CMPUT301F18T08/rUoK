@@ -1,9 +1,0 @@
-assignemnt1 test mingyue2
-test yuhan1
-aloha Testing jiayue
-testtest sinyee1
-<<<<<<< HEAD
-test boxiao1
-=======
-test ydi1
->>>>>>> da504f7f3c213553a79de845ab1f9efb3c0080f7
