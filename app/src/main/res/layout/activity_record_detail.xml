@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RecordDetailActivity"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:background="@drawable/case1">
+
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="130dp"
+        android:layout_height="32dp"
+        android:layout_alignEnd="@+id/editText10"
+        android:layout_alignTop="@+id/imageView"
+        android:background="@drawable/frame2"
+        android:text="edit"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="130dp"
+        android:layout_height="32dp"
+        android:layout_alignEnd="@+id/editText10"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="118dp"
+        android:background="@drawable/frame2"
+        android:text="Delete"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Record"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="124dp"
+        android:layout_height="123dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginStart="42dp"
+        app:srcCompat="@drawable/arm" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Doctor:" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText10"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="date:" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="297dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="168dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="More detail:" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="130dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignEnd="@+id/editText10"
+        android:background="@drawable/frame2"
+        android:text="Back"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editText27"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText10"
+        android:layout_below="@+id/editText12"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Body location:" />
+
+    <EditText
+        android:id="@+id/editText28"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Location:" />
+
+    <EditText
+        android:id="@+id/editText26"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/editText28"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Comment:" />
+
+
+
+</RelativeLayout>
