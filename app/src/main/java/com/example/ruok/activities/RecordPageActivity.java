@@ -19,4 +19,9 @@ public class RecordPageActivity extends AppCompatActivity {
         Intent intent_addRecord = new Intent(this, AddRecordActivity.class);
         startActivity(intent_addRecord);
     }
+
+    public void myProfile(View view){
+        Intent intent_myProfile = new Intent(this, AddRecordActivity.class);
+        startActivity(intent_myProfile);
+    }
 }
