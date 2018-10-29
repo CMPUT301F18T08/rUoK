@@ -22,7 +22,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.SignUpActivity" />
-        <activity android:name=".activities.SignInActivity" />
         <activity android:name=".activities.ResetPasswordActivity" />
         <activity android:name=".activities.ProblemListActivity" />
         <activity android:name=".activities.RecordPageActivity" />

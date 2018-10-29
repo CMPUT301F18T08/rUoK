@@ -8,6 +8,8 @@ import android.widget.EditText;
 
 import com.example.ruok.R;
 
+import classes.CareProvider;
+
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,12 +27,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void SignIn(View view){
-        Intent intent_SignIn = new Intent(this, SignUpActivity.class);
         EditText userName_input = (EditText) findViewById(R.id.editText);
         EditText password_input = (EditText) findViewById(R.id.editText);
         String userName = userName_input.getText().toString();
         String password = password_input.getText().toString();
-        intent_SignIn.putExtra(SignInInfo, userName+password);
-        startActivity(intent_SignIn);
+        // TODO: 2018/10/29 validate username and password  and databaseissue
+
+        // if user is a care provider
+        Intent intent_careprovider = new Intent(this, CareProviderActivity.class);
+        intent_careprovider.putExtra(SignInInfo, userName+password);
+        startActivity(intent_careprovider);
     }
 }
