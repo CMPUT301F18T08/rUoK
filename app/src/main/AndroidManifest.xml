@@ -33,7 +33,8 @@
         <activity android:name=".activities.SearchActivity" />
         <activity android:name=".activities.GeolocationActivity" />
         <activity android:name=".activities.AddRecordActivity" />
-        <activity android:name=".activities.BodyLocationActivity"></activity>
+        <activity android:name=".activities.BodyLocationActivity" />
+        <activity android:name=".activities.FrontAndBackPhotoActivity"></activity>
     </application>
 
 </manifest>
