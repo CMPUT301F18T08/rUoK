@@ -15,7 +15,7 @@
         android:layout_marginTop="113dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Patient name 1"
+        android:text="@string/patient_name_1"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="67dp" />
 
@@ -28,7 +28,7 @@
         android:layout_marginTop="185dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Patient name 2"
+        android:text="@string/patient_name_2"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="139dp" />
 
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/button2"
         android:layout_alignTop="@+id/editText2"
-        android:text="VIEW"
+        android:text="@string/view"
         tools:layout_editor_absoluteX="263dp"
         tools:layout_editor_absoluteY="137dp" />
 
@@ -49,7 +49,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignTop="@+id/editText"
         android:layout_marginEnd="15dp"
-        android:text="VIEW"
+        android:text="@string/view"
         tools:layout_editor_absoluteX="263dp"
         tools:layout_editor_absoluteY="67dp" />
 
@@ -60,7 +60,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="123dp"
-        android:text="ADD A PATIENT"
+        android:text="@string/add_a_patient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +76,7 @@
         android:layout_marginTop="17dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:text="Care provider: Dr Smith"
+        android:text="@string/care_provider_dr_smith"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="7dp" />
 
@@ -87,7 +87,7 @@
         android:layout_below="@+id/button4"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-123dp"
-        android:text="Search"
+        android:text="@string/search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="466dp" />
@@ -99,7 +99,7 @@
         android:layout_below="@+id/button11"
         android:layout_centerHorizontal="true"
         android:onClick="resetPassword"
-        android:text="reset password"
+        android:text="@string/reset_password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

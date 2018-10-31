@@ -1,3 +1,4 @@
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -32,7 +33,7 @@
         android:background="@drawable/frame2"
         android:lineSpacingExtra="12sp"
         android:onClick="SignIn"
-        android:text="Button"
+        android:text="@string/button"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         android:textStyle="bold|italic"
@@ -49,7 +50,7 @@
         android:background="@drawable/frame2"
         android:lineSpacingExtra="12sp"
         android:onClick="SignUp"
-        android:text="Button"
+        android:text="@string/button"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         android:textStyle="bold|italic"

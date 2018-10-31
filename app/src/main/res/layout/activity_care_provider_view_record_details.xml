@@ -6,8 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.CareProviderViewRecordDetailsActivity">
-    >
-
     <EditText
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
@@ -16,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Record1"
+        android:text="@string/record1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +28,7 @@
         android:layout_marginTop="119dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name: patient1"
+        android:text="@string/name_patient1"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="75dp" />
 
@@ -43,7 +41,7 @@
         android:layout_marginBottom="-229dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Doctor: Dr Smith"
+        android:text="@string/doctor_dr_smith"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="151dp" />
 
@@ -68,7 +66,7 @@
         android:layout_alignParentStart="true"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Comment: "
+        android:text="@string/comment"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="401dp" />
 
@@ -93,7 +91,7 @@
         android:layout_marginTop="229dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Body location: arm"
+        android:text="@string/body_location_arm"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="296dp" />
 
@@ -104,7 +102,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="68dp"
-        android:text="ADD A COMMENT"
+        android:text="@string/add_a_comment"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="210dp" />
 
@@ -115,7 +113,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="135dp"
-        android:text="BACK"
+        android:text="@string/back"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="68dp" />
 </RelativeLayout>

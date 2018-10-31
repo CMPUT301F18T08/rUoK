@@ -31,5 +31,36 @@
     <string name="title_activity_map">Map</string>
     <string name="add_record">Add record</string>
     <string name="location">Location</string>
+    <string name="enter_text">enter text</string>
+    <string name="add_image">add image</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="add_Rrecord">Add Record</string>
+    <string name="what_s_wrong_title">What\'s wrong (title):</string>
+    <string name="body_location">Body location:</string>
+    <string name="date">Date:</string>
+    <string name="more_detail">More detail:</string>
+    <string name="save">save</string>
+    <string name="max_300characters">max 300characters</string>
+    <string name="max_30characters">max 30characters</string>
+    <string name="Llocation">Location:</string>
+    <string name="patient_name_1">Patient name 1</string>
+    <string name="patient_name_2">Patient name 2</string>
+    <string name="view">VIEW</string>
+    <string name="view">VIEW</string>
+    <string name="add_a_patient">ADD A PATIENT</string>
+    <string name="care_provider_dr_smith">Care provider: Dr Smith</string>
+    <string name="search">Search</string>
+    <string name="reset_password">reset password</string>
+    <string name="patient_mary">Patient: Mary</string>
+    <string name="problem">Problem</string>
+    <string name="record1">Record1</string>
+    <string name="name_patient1">Name: patient1</string>
+    <string name="doctor_dr_smith">Doctor: Dr Smith</string>
+    <string name="comment">Comment:</string>
+    <string name="body_location_arm">Body location: arm</string>
+    <string name="back">BACK</string>
+    <string name="add_a_comment">ADD A COMMENT</string>
+    <string name="button">Button</string>
+    <string name="button">Button</string>
 
 </resources>
