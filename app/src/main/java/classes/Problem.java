@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Problem {
     private Date date;
-    private int title;
+    private String title;
     private String description;
     private ArrayList<Record> records = new ArrayList<>();
 
@@ -18,10 +18,10 @@ public class Problem {
     }
 
     // title func
-    public int getTitle() {
+    public String getTitle() {
         return title;
     }
-    public void setTitle(int title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
