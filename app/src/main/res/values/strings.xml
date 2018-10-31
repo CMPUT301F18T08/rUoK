@@ -30,5 +30,6 @@
     <string name="my_profile">\n My profile</string>
     <string name="title_activity_map">Map</string>
     <string name="add_record">Add record</string>
+    <string name="location">Location</string>
 
 </resources>
