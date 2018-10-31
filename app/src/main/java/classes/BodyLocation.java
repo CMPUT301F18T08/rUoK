@@ -1,5 +1,5 @@
 package classes;
 
-public class BodyLocation {
+public abstract class BodyLocation {
 
 }
