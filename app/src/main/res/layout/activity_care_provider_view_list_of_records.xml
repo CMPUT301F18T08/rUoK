@@ -33,75 +33,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editText9"
-        android:layout_width="99dp"
-        android:layout_height="45dp"
+    <ListView
+        android:id="@+id/listview2"
+        android:layout_width="match_parent"
+        android:layout_height="452dp"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/editText10"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="record2"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="165dp" />
+        android:layout_below="@+id/editText8" />
 
-    <EditText
-        android:id="@+id/editText12"
-        android:layout_width="99dp"
-        android:layout_height="45dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/editText13"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="record1"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="94dp" />
-
-    <EditText
-        android:id="@+id/editText10"
-        android:layout_width="99dp"
-        android:layout_height="45dp"
-        android:layout_alignTop="@+id/button5"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="2018-03-02"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="165dp" />
-
-    <EditText
-        android:id="@+id/editText13"
-        android:layout_width="99dp"
-        android:layout_height="45dp"
-        android:layout_alignTop="@+id/button6"
-        android:layout_centerHorizontal="true"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="2018-01-02"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="94dp" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/button6"
-        android:layout_marginTop="186dp"
-        android:text="VIEW"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="162dp" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="19dp"
-        android:layout_marginTop="112dp"
-        android:text="VIEW"
-        tools:layout_editor_absoluteX="292dp"
-        tools:layout_editor_absoluteY="94dp" />
 
 </RelativeLayout>
