@@ -6,53 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".activities.CareProviderActivity">
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="113dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Patient name 1"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="67dp" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="185dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Patient name 2"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="139dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button2"
-        android:layout_alignTop="@+id/editText2"
-        android:text="VIEW"
-        tools:layout_editor_absoluteX="263dp"
-        tools:layout_editor_absoluteY="137dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/editText"
-        android:layout_marginEnd="15dp"
-        android:text="VIEW"
-        tools:layout_editor_absoluteX="263dp"
-        tools:layout_editor_absoluteY="67dp" />
-
     <Button
         android:id="@+id/button4"
         android:layout_width="141dp"
@@ -60,7 +13,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="123dp"
-        android:text="ADD A PATIENT"
+        android:text="@string/add_a_patient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +29,7 @@
         android:layout_marginTop="17dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:text="Care provider: Dr Smith"
+        android:text="@string/care_provider_dr_smith"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="7dp" />
 
@@ -87,7 +40,7 @@
         android:layout_below="@+id/button4"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-123dp"
-        android:text="Search"
+        android:text="@string/search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="466dp" />
@@ -98,9 +51,18 @@
         android:layout_height="48dp"
         android:layout_below="@+id/button11"
         android:layout_centerHorizontal="true"
-        android:text="reset password"
+        android:onClick="resetPassword"
+        android:text="@string/reset_password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/listview1"
+        android:layout_width="match_parent"
+        android:layout_height="322dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="176dp" />
 
 </RelativeLayout>

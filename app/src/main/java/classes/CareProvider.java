@@ -7,4 +7,7 @@ public class CareProvider extends User {
     public void addPatient(Patient patient){
         patients.add(patient);
     }
+    public void addComment(String comment, Record record){
+        record.setComment(comment);
+    }
 }

@@ -20,7 +20,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="Add Record"
+        android:text="@string/add_Rrecord"
         android:textColor="@android:color/background_dark"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -35,7 +35,7 @@
         android:layout_marginTop="108dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="What's wrong (title):" />
+        android:text="@string/what_s_wrong_title" />
 
     <EditText
         android:id="@+id/editText14"
@@ -45,7 +45,7 @@
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Body location:" />
+        android:text="@string/body_location" />
 
     <EditText
         android:id="@+id/editText15"
@@ -56,7 +56,7 @@
         android:layout_marginTop="167dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Date:" />
+        android:text="@string/date" />
 
     <EditText
         android:id="@+id/editText16"
@@ -66,7 +66,7 @@
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="More detail:" />
+        android:text="@string/more_detail" />
 
     <Button
         android:id="@+id/button8"
@@ -76,7 +76,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="64dp"
         android:background="@drawable/frame2"
-        android:text="save"
+        android:text="@string/save"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -88,7 +88,7 @@
         android:layout_alignTop="@+id/editText16"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="max 300characters"
+        android:text="@string/max_300characters"
         android:textColor="@android:color/darker_gray" />
 
     <EditText
@@ -100,7 +100,7 @@
         android:layout_marginTop="0dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="max 30characters"
+        android:text="@string/max_30characters"
         android:textColor="@android:color/darker_gray" />
 
     <EditText
@@ -111,7 +111,7 @@
         android:layout_centerVertical="true"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Location:" />
+        android:text="@string/Llocation" />
 
     <ImageButton
         android:id="@+id/imageButton"

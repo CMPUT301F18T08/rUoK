@@ -11,9 +11,8 @@
         android:id="@+id/button11"
         android:layout_width="134dp"
         android:layout_height="40dp"
-        android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/button10"
-        android:layout_marginTop="248dp"
+        android:layout_alignTop="@+id/editText22"
         android:background="@drawable/frame2"
         android:text="EDIT"
         android:textSize="18sp"
@@ -63,23 +62,12 @@
         tools:layout_editor_absoluteY="114dp" />
 
     <EditText
-        android:id="@+id/editText20"
-        android:layout_width="382dp"
-        android:layout_height="47dp"
-        android:layout_above="@+id/editText22"
-        android:layout_alignParentStart="true"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Gender:"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="183dp" />
-
-    <EditText
         android:id="@+id/editText21"
         android:layout_width="379dp"
         android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText22"
+        android:layout_marginBottom="154dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Email:"
@@ -90,8 +78,9 @@
         android:id="@+id/editText22"
         android:layout_width="380dp"
         android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
+        android:layout_marginBottom="232dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Phone number:"
@@ -113,4 +102,23 @@
         app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="519dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="207dp"
+        android:text="Male" />
+
+    <RadioButton
+        android:id="@+id/radioButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/radioButton5"
+        android:layout_marginEnd="77dp"
+        android:text="Female" />
 </RelativeLayout>

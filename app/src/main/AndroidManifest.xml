@@ -22,7 +22,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.SignUpActivity" />
-        <activity android:name=".activities.SignInActivity" />
         <activity android:name=".activities.ResetPasswordActivity" />
         <activity android:name=".activities.ProblemListActivity" />
         <activity android:name=".activities.RecordPageActivity" />
@@ -35,10 +34,9 @@
         <activity android:name=".activities.GeolocationActivity" />
         <activity android:name=".activities.AddRecordActivity" />
         <activity android:name=".activities.BodyLocationActivity" />
-        <activity android:name=".activities.RecordDetail" />
-        <activity android:name=".activities.RecordDetailActivity" />
-        <activity android:name=".activities.AddPhoto" />
-        <activity android:name=".activities.FrontAndBackPhotoActivity"></activity>
+        <activity android:name=".activities.FrontAndBackPhotoActivity" />
+        <activity android:name=".activities.AddPhotoActivity" />
+        <activity android:name=".activities.RecordDetailActicity"></activity>
     </application>
 
 </manifest>
