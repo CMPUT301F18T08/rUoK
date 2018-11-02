@@ -29,7 +29,7 @@ public class RecordTest {
         Record record = new Record("d","a","b",new Date(),"hi","foot","my_image.jpg","location");
         Photo photo = new Photo();
         record.addPhoto(photo);
-        assertEquals(photo,record.getPhotos().get(-1));
+        assertEquals(photo,record.getPhotos().get(0));
     }
 
     @Test
@@ -38,7 +38,7 @@ public class RecordTest {
         ArrayList photoList = record.getPhotos();
         Photo photo = new Photo();
         record.addPhoto(photo);
-        assertEquals(photo,photoList.get(-1));
+        assertEquals(photo,photoList.get(0));
         record.deletePhoto(photo);
         assertEquals(photoList,record.getPhotos());
     }

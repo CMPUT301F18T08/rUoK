@@ -13,6 +13,7 @@ public class Record {
     private ArrayList<Photo> photos = new ArrayList<Photo>(10);
     private String location;
 
+
     public Record(String d, String a, String b, Date date, String hi, String foot, String my_image, String location){
 
     }
