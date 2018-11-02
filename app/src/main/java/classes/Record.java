@@ -10,7 +10,7 @@ public class Record {
     private Date date;
     private String comment;
     private String bodyLocation;
-    private ArrayList<Photo> photos = new ArrayList<>(10);
+    private ArrayList<Photo> photos = new ArrayList<Photo>(10);
     private String location;
 
     public Record(String d, String a, String b, Date date, String hi, String foot, String my_image, String location){
@@ -34,7 +34,7 @@ public class Record {
 
     public String getBodyLocation() { return bodyLocation; }
 
-    public ArrayList<Photo> getPhoto() { return photos; }
+    public ArrayList<Photo> getPhotos() { return photos; }
 
     public String getLocation() { return location; }
 

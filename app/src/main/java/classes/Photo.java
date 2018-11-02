@@ -2,7 +2,7 @@ package classes;
 
 import java.io.File;
 
-public abstract class Photo {
+public class Photo {
     private int height;
     private int width;
     private int resolution;
