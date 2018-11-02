@@ -1,30 +1,39 @@
 package com.example.ruok;
+
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.Date;
 
+import classes.CareProvider;
 import classes.Patient;
 import classes.Problem;
 import classes.Record;
-import static org.junit.Assert.*;
+
+import static org.junit.Assert.assertEquals;
+
 public class CareProviderTest {
-	@Test
+
+    @Test
     public void addPatientTest(){
-        Patient yasuo = new Patient();
-        Problem problem = new Problem();
-        yasuo.addProblem(problem);
-        assertEquals(problem,yasuo.getProblems().get(0));
+        CareProvider careProvider = new CareProvider();
+        Patient patient = new Patient();
+        careProvider.addPatient(patient);
+        assertEquals(patient,careProvider.getPatients().get(0));
     }
     @Test
-    public void addCommentTest(){
-
-        Patient yasuo = new Patient();
+    public void addProblemTest(){
+        Patient joseph = new Patient();
         Problem problem = new Problem();
+        joseph.addProblem(problem);
+        assertEquals(problem,joseph.getProblems().get(0));
+    }
+    @Test
+    public void addCommentTest() {
+        CareProvider careProvider = new CareProvider();
+        String newComment = "sdd";
         Record record = new Record();
-        yasuo.addProblem(problem);
-        yasuo.addRecord(problem,record);
-        record.setComment("Hasagi");
-        assertEquals("Hasagi",record.getComment());
+        careProvider.addComment(newComment, record);
+        assertEquals(newComment,record.getComment());
+
     }
 }
