@@ -34,7 +34,7 @@ public class Record {
 
     public String getBodyLocation() { return bodyLocation; }
 
-    public ArrayList<Photo> getPhotoGraph() { return photos; }
+    public ArrayList<Photo> getPhoto() { return photos; }
 
     public String getLocation() { return location; }
 
