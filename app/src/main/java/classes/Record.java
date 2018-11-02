@@ -2,18 +2,19 @@ package classes;
 
 import android.location.Location;
 
+import java.io.File;
 import java.net.URL;
 import java.util.Date;
 
 public class Record {
+    private String recordTitle;
     private String patientName;
     private String doctorName;
     private Date date;
     private String comment;
     private String bodyLocation;
-    private URL photoGraph;
+    private File photoGraph;
     private Location location;
-    // missing body location,location and photo
 
     public Record(){
 
@@ -36,9 +37,11 @@ public class Record {
 
     public String getBodyLocation() { return bodyLocation; }
 
-    public URL getPhotoGraph() { return photoGraph; }
-    
+    public File getPhotoGraph() { return photoGraph; }
+
     public Location getLocation() { return location; }
+
+    public String getRecordTitle() { return recordTitle; }
 
     public void setDate(Date date) {
         this.date = date;
@@ -61,5 +64,7 @@ public class Record {
     public void setPatientName(String patientName) {
         this.patientName = patientName;
     }
+
+    public void setRecordTitle(String recordTitle) { this.recordTitle = recordTitle; }
 
 }
