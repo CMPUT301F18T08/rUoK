@@ -1,5 +1,6 @@
 package classes;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Record {
@@ -9,7 +10,7 @@ public class Record {
     private Date date;
     private String comment;
     private String bodyLocation;
-    private String photoGraph;
+    private ArrayList<Photo> photos = new ArrayList<>(10);
     private String location;
 
     public Record(String d, String a, String b, Date date, String hi, String foot, String my_image, String location){
@@ -33,7 +34,7 @@ public class Record {
 
     public String getBodyLocation() { return bodyLocation; }
 
-    public String getPhotoGraph() { return photoGraph; }
+    public ArrayList<Photo> getPhotoGraph() { return photos; }
 
     public String getLocation() { return location; }
 
@@ -44,8 +45,6 @@ public class Record {
     }
 
     public void setBodyLocation(String bodyLocation) { this.bodyLocation = bodyLocation; }
-
-    public void setPhotoGraph() { this.photoGraph = photoGraph; }
 
     public void setLocation() { this.location = location; }
 
@@ -62,5 +61,9 @@ public class Record {
     }
 
     public void setRecordTitle(String recordTitle) { this.recordTitle = recordTitle; }
+
+    public void addPhoto(Photo photo) { photos.add(photo); }
+
+    public void deletePhoto(Photo photo) { photos.remove(photo); }
 
 }
