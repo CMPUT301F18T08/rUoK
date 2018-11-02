@@ -12,6 +12,7 @@ public class CareProviderTest {
 	@Test
     public void addPatientTest(){
         Patient yasuo = new Patient();
+        Problem problem = new Problem();
         yasuo.addProblem(problem);
         assertEquals(problem,yasuo.getProblems().get(0));
     }
@@ -20,7 +21,7 @@ public class CareProviderTest {
 
         Patient yasuo = new Patient();
         Problem problem = new Problem();
-        Record record = new Record("a","b",new Date(),"hi");
+        Record record = new Record();
         yasuo.addProblem(problem);
         yasuo.addRecord(problem,record);
         record.setComment("Hasagi");
