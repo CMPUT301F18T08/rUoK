@@ -3,7 +3,9 @@ package classes;
 import java.util.ArrayList;
 
 public class CareProvider extends User {
-    private ArrayList<Patient> patients;
+    private ArrayList<Patient> patients = new ArrayList<>();
+
+    public ArrayList<Patient> getPatients() {return patients;}
     public void addPatient(Patient patient){
         patients.add(patient);
     }
