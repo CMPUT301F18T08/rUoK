@@ -2,6 +2,8 @@ package classes;
 
 import java.util.ArrayList;
 
+// This should be a abstract class
+// define as a class for testing issue
 public class BodyLocation {
     private ArrayList<Photo> bodyLocationPhotos = new ArrayList<>();
     private Photo frontPhoto;
