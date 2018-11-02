@@ -49,7 +49,7 @@ public class PatientTest {
 
         Patient joseph = new Patient();
         Problem problem = new Problem();
-        Record record = new Record();
+        Record record = new Record("d", "a", "b", new Date(), "hi", "foot", "my_image", "location");
         joseph.addProblem(problem);
         joseph.addRecord(problem,record);
         assertEquals(record,joseph.getProblems().get(0).getRecords().get(0));

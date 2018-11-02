@@ -1,9 +1,5 @@
 package classes;
 
-import android.location.Location;
-
-import java.io.File;
-import java.net.URL;
 import java.util.Date;
 
 public class Record {
@@ -13,10 +9,10 @@ public class Record {
     private Date date;
     private String comment;
     private String bodyLocation;
-    private File photoGraph;
-    private Location location;
+    private String photoGraph;
+    private String location;
 
-    public Record(){
+    public Record(String d, String a, String b, Date date, String hi, String foot, String my_image, String location){
 
     }
     public String getComment() {
@@ -37,9 +33,9 @@ public class Record {
 
     public String getBodyLocation() { return bodyLocation; }
 
-    public File getPhotoGraph() { return photoGraph; }
+    public String getPhotoGraph() { return photoGraph; }
 
-    public Location getLocation() { return location; }
+    public String getLocation() { return location; }
 
     public String getRecordTitle() { return recordTitle; }
 

@@ -13,7 +13,7 @@ public class ProblemTest {
     @Test
     public void addRecordTest(){
         Problem problem = new Problem();
-        Record record = new Record();
+        Record record = new Record("d", "a", "b", new Date(), "hi", "foot", "my_image", "location");
         problem.addRecord(record);
         assertEquals(record,problem.getRecords().get(0));
     }
@@ -22,7 +22,7 @@ public class ProblemTest {
     public void deleteRecordTest(){
         ArrayList A = new ArrayList();
         Problem problem = new Problem();
-        Record record = new Record();
+        Record record = new Record("d", "a", "b", new Date(), "hi", "foot", "my_image", "location");
         problem.addRecord(record);
         assertEquals(record,problem.getRecords().get(0));
         problem.deleteRecord(record);

@@ -17,7 +17,7 @@ import static org.junit.Assert.*;
 public class RecordTest {
     @Test
     public void testSetComment() {
-        Record record = new Record("d","a","b",new Date(),"hi", "foot", new File("my_image.jpg"), new Location("PRINCETON_NJ", 40.366633, 74.640832));
+        Record record = new Record("d","a","b",new Date(),"hi","foot","my_image.jpg","location");
         record.setComment("hello world");
         assertEquals("hello world",record.getComment());
     }
