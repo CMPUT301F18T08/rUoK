@@ -19,7 +19,13 @@ public class CareProviderTest {
         careProvider.addPatient(patient);
         assertEquals(patient,careProvider.getPatients().get(0));
     }
-
+    @Test
+    public void BrowseProblemTest(){
+        Patient yasuo = new Patient();
+        Problem problem = new Problem();
+        yasuo.addProblem(problem);
+        assertEquals(problem,yasuo.getProblems().get(0));
+    }
     @Test
     public void addCommentTest() {
         CareProvider careProvider = new CareProvider();
