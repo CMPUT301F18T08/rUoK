@@ -1,11 +1,28 @@
 package classes;
 
-public abstract class User {
+import java.util.ArrayList;
+
+public class User {
+
+    public static ArrayList<User> user_data = new ArrayList<User>();
+
     private String userName;
     private String password;
     private String gender;
     private String email;
     private String phoneNumber;
+    private String userType;
+
+    public User(String userName, String password, String gender, String email, String phoneNumber, String userType){
+        this.userName = userName;
+        this.password = password;
+        this.gender = gender;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.userType = userType;
+
+
+    }
 
     public String getPassword() {
         return password;
@@ -26,6 +43,15 @@ public abstract class User {
     public String getPhoneNumber() {
         return phoneNumber;
     }
+
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType= userType;
+    }
+
 
     public void setPassword(String password) {
         this.password = password;

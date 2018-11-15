@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="0dp"
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
-    android:paddingBottom="0dp"
     tools:context=".activities.SignUpActivity">
 
 
@@ -39,7 +38,7 @@
 
     <EditText
         android:id="@+id/editText5"
-        android:layout_width="match_parent"
+        android:layout_width="97dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -51,7 +50,7 @@
 
     <EditText
         android:id="@+id/editText6"
-        android:layout_width="match_parent"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
@@ -63,7 +62,7 @@
 
     <EditText
         android:id="@+id/editText7"
-        android:layout_width="match_parent"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
@@ -86,7 +85,7 @@
 
     <EditText
         android:id="@+id/editText17"
-        android:layout_width="match_parent"
+        android:layout_width="151dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
@@ -108,40 +107,98 @@
         android:text="at least 8 charcters"
         android:textColor="@android:color/darker_gray" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="127dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="62dp"
-        android:layout_marginStart="20dp"
-        android:text="PATIENT" />
 
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="153dp"
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText5"
+        android:layout_toEndOf="@+id/editText5"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="228dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText17"
+        android:layout_toEndOf="@+id/editText17"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText6"
+        android:layout_toEndOf="@+id/editText6"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/editText26"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/radioButton"
-        android:layout_marginEnd="21dp"
-        android:text="CARE PROVIDER" />
+        android:layout_alignTop="@+id/editText7"
+        android:ems="10"
+        android:inputType="textPassword" />
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <RadioGroup
+
+        android:id="@+id/radio"
+        android:layout_width="314dp"
+        android:layout_height="63dp"
+        android:layout_alignStart="@+id/radioButton"
+        android:layout_below="@+id/editText3"
+        tools:ignore="NotSibling">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="180dp"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/radioButton2"
+            android:layout_alignTop="@+id/radioButton3"
+            android:text="Male" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="180dp"
-        android:text="Female" />
+        android:layout_marginBottom="57dp"
+        tools:ignore="NotSibling">
 
-    <RadioButton
-        android:id="@+id/radioButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/radioButton2"
-        android:layout_alignTop="@+id/radioButton3"
-        android:text="Male" />
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="62dp"
+            android:layout_marginStart="20dp"
+            android:text="PATIENT" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/radioButton"
+            android:layout_marginEnd="21dp"
+            android:text="CARE PROVIDER" />
+
+    </RadioGroup>
 </RelativeLayout>

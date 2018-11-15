@@ -35,8 +35,7 @@
         <activity android:name=".activities.AddRecordActivity" />
         <activity android:name=".activities.BodyLocationActivity" />
         <activity android:name=".activities.FrontAndBackPhotoActivity" />
-        <activity android:name=".activities.AddPhotoActivity" />
-        <activity android:name=".activities.RecordDetailActicity"></activity>
+        <activity android:name=".activities.AddPhotoActivity"></activity>
     </application>
 
 </manifest>

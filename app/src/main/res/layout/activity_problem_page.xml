@@ -44,13 +44,21 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="94dp"
-        android:layout_height="34dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="11dp"
+        android:layout_width="117dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@+id/editText8"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginStart="-23dp"
+        android:layout_toEndOf="@+id/button"
         android:text="Problem" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText8"
+        android:layout_alignEnd="@+id/button"
+        android:text="TextView" />
 
 
 </RelativeLayout>
