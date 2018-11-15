@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".activities.CareProviderViewRecordDetailsActivity">
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/recordDetailsRecord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/recordDetailsPatient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -33,10 +33,10 @@
         tools:layout_editor_absoluteY="75dp" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/recordDetailsCareprovider"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/editText21"
+        android:layout_above="@+id/recordDetailsEmail"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="-229dp"
         android:ems="10"
@@ -46,7 +46,7 @@
         tools:layout_editor_absoluteY="151dp" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/recordDetailsDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -59,10 +59,10 @@
         tools:layout_editor_absoluteY="223dp" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/recordDetailsComment"
         android:layout_width="284dp"
         android:layout_height="42dp"
-        android:layout_above="@+id/editText6"
+        android:layout_above="@+id/recordDetailsDate"
         android:layout_alignParentStart="true"
         android:ems="10"
         android:inputType="textPersonName"
@@ -71,7 +71,7 @@
         tools:layout_editor_absoluteY="401dp" />
 
     <EditText
-        android:id="@+id/editText22"
+        android:id="@+id/recordDetailsPhoneNumber"
         android:layout_width="284dp"
         android:layout_height="42dp"
         android:layout_alignParentStart="true"
@@ -83,7 +83,7 @@
         tools:layout_editor_absoluteY="349dp" />
 
     <EditText
-        android:id="@+id/editText21"
+        android:id="@+id/recordDetailsEmail"
         android:layout_width="284dp"
         android:layout_height="42dp"
         android:layout_alignParentStart="true"
@@ -96,7 +96,7 @@
         tools:layout_editor_absoluteY="296dp" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/recordDetailsAddComment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -107,7 +107,7 @@
         tools:layout_editor_absoluteX="210dp" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/recordDetailsBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

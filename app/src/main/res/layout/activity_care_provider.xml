@@ -7,7 +7,7 @@
     tools:context=".activities.CareProviderActivity">
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/careProviderAddAPatient"
         android:layout_width="141dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -20,7 +20,7 @@
         tools:layout_editor_absoluteY="418dp" />
 
     <EditText
-        android:id="@+id/editText20"
+        android:id="@+id/careProviderName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -34,10 +34,10 @@
         tools:layout_editor_absoluteY="7dp" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/careProviderSearch"
         android:layout_width="146dp"
         android:layout_height="42dp"
-        android:layout_below="@+id/button4"
+        android:layout_below="@+id/careProviderAddAPatient"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-123dp"
         android:text="@string/search"
@@ -46,10 +46,10 @@
         tools:layout_editor_absoluteY="466dp" />
 
     <Button
-        android:id="@+id/button12"
+        android:id="@+id/careProviderResetPassword"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_below="@+id/button11"
+        android:layout_below="@+id/careProviderSearch"
         android:layout_centerHorizontal="true"
         android:onClick="resetPassword"
         android:text="@string/reset_password"
@@ -58,7 +58,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ListView
-        android:id="@+id/listview1"
+        android:id="@+id/careProviderListView"
         android:layout_width="match_parent"
         android:layout_height="322dp"
         android:layout_alignParentBottom="true"

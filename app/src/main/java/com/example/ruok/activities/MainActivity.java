@@ -8,10 +8,6 @@ import android.widget.EditText;
 
 import com.example.ruok.R;
 
-import classes.CareProvider;
-
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
-
 public class MainActivity extends AppCompatActivity {
     public static final String SignInInfo = "DEFAULT";
     @Override
@@ -27,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void SignIn(View view){
-        EditText userName_input = (EditText) findViewById(R.id.editText);
-        EditText password_input = (EditText) findViewById(R.id.editText);
+        EditText userName_input = (EditText) findViewById(R.id.userName);
+        EditText password_input = (EditText) findViewById(R.id.password);
         String userName = userName_input.getText().toString();
         String password = password_input.getText().toString();
         // TODO: 2018/10/29 validate username and password  and databaseissue

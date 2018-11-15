@@ -6,12 +6,12 @@ import com.example.ruok.activities.ResetPasswordActivity;
 import com.example.ruok.activities.SearchActivity;
 import com.robotium.solo.Solo;
 
-import junit.framework.TestCase;
 import android.support.test.rule.ActivityTestRule;
 import classes.CareProvider;
 
 import static android.support.test.InstrumentationRegistry.getInstrumentation;
 
+/* created by Yuhan Ye*/
 public class CareProviderActivityTest extends ActivityTestRule{
     private Solo solo;
     private CareProvider yyh = new CareProvider();
@@ -30,20 +30,20 @@ public class CareProviderActivityTest extends ActivityTestRule{
 
     public void testAddPatient() throws Exception{
         CareProviderActivity activity = (CareProviderActivity)solo.getCurrentActivity();
-        solo.assertCurrentActivity("Wrong Activity",CareProviderActivity.class);
+        solo.assertCurrentActivity("should be CareProviderActivity",CareProviderActivity.class);
         solo.clickOnButton("ADD A PATIENT");
 //        solo.assertCurrentActivity();
     }
     public void testSearch() throws Exception{
         CareProviderActivity activity = (CareProviderActivity)solo.getCurrentActivity();
-        solo.assertCurrentActivity("Wrong Activity",CareProviderActivity.class);
+        solo.assertCurrentActivity("should be CareProviderActivity",CareProviderActivity.class);
         solo.clickOnButton("SEARCH");
-        solo.assertCurrentActivity("Wrong Activity", SearchActivity.class);
+        solo.assertCurrentActivity("should be SearchActivity", SearchActivity.class);
     }
     public void resetPassword() throws Exception{
         CareProviderActivity activity = (CareProviderActivity)solo.getCurrentActivity();
-        solo.assertCurrentActivity("Wrong Activity",CareProviderActivity.class);
+        solo.assertCurrentActivity("should be CareProviderActivity",CareProviderActivity.class);
         solo.clickOnButton("RESET PASSWORD");
-        solo.assertCurrentActivity("Wrong Activity", ResetPasswordActivity.class);
+        solo.assertCurrentActivity("should be ResetPasswordActivity", ResetPasswordActivity.class);
     }
 }
