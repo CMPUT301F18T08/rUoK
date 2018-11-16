@@ -8,6 +8,8 @@ import com.robotium.solo.Solo;
 import android.support.test.rule.ActivityTestRule;
 import android.widget.EditText;
 
+import org.junit.Test;
+
 import classes.CareProvider;
 
 import static android.support.test.InstrumentationRegistry.getInstrumentation;
@@ -17,8 +19,9 @@ public class MainActivityTest extends ActivityTestRule{
     private Solo solo;
     private CareProvider yyh = new CareProvider();
 
-    public MainActivityTest(Class activityClass) {
-        super(activityClass);
+
+    public MainActivityTest() {
+        super(MainActivity.class);
     }
 
     public void setUp() throws Exception{
@@ -28,14 +31,14 @@ public class MainActivityTest extends ActivityTestRule{
     public void testStart() throws Exception{
         Activity activity = getActivity();
     }
-
+    @Test
     public void testSignUp() throws Exception{
         MainActivity activity = (MainActivity) solo.getCurrentActivity();
         solo.assertCurrentActivity("should be MainActivity",MainActivity.class);
         solo.clickOnButton("SIGN UP");
         solo.assertCurrentActivity("should be SignUpActivity", SignUpActivity.class);
     }
-
+    @Test
     public void testCareproviderSignIn() throws Exception{
         MainActivity activity = (MainActivity) solo.getCurrentActivity();
         solo.assertCurrentActivity("should be MainActivity",MainActivity.class);
@@ -44,7 +47,7 @@ public class MainActivityTest extends ActivityTestRule{
         solo.clickOnButton("SIGN IN");
         solo.assertCurrentActivity("should be CareProviderActivity", CareProvider.class);
     }
-
+    @Test
     public void testPatientSignIn() throws Exception{
         MainActivity activity = (MainActivity) solo.getCurrentActivity();
         solo.assertCurrentActivity("should be MainActivity",MainActivity.class);

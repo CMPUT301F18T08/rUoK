@@ -21,6 +21,8 @@ import java.util.ArrayList;
 
 import com.google.gson.Gson;
 
+import classes.CareProvider;
+import classes.Patient;
 import classes.User;
 
 
@@ -63,7 +65,7 @@ public class SignUpActivity extends AppCompatActivity {
         as_patient = (RadioButton) findViewById(R.id.signUpPatient);
         save = (Button)findViewById(R.id.signUpSave);
 
-//        user_type = (RadioGroup) findViewById(R.id.signup);
+        user_type = (RadioGroup) findViewById(R.id.radio);
 
 
         gender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
@@ -104,10 +106,24 @@ public class SignUpActivity extends AppCompatActivity {
                 String edit_password = password.getText().toString();
                 String edit_confirm_password = confirm_password.getText().toString();
 
-
+                if(get_user_type == "patient"){
+                    Patient patient = new Patient();
+                    patient.setUserName(edit_user_name);
+                    patient.setEmail(edit_email);
+                    patient.setPhoneNumber(edit_phone_number);
+                    patient.setPassword(edit_password);
+                    user_data.add(patient);
+                }
+                else if(get_user_type == "care_provider"){
+                    CareProvider careProvider = new CareProvider();
+                    careProvider.setUserName(edit_user_name);
+                    careProvider.setEmail(edit_email);
+                    careProvider.setPhoneNumber(edit_phone_number);
+                    careProvider.setPassword(edit_password);
+                    user_data.add(careProvider);
+                }
                 //todo: if password == confirm_pssword
-                User new_user = new User(edit_user_name, edit_password, get_gender, edit_email,edit_phone_number,get_user_type);
-                user_data.add(new_user);
+
                 saveInFile();
 
             }

@@ -1,10 +1,6 @@
 package classes;
 
-import java.util.ArrayList;
-
-public class User {
-
-    public static ArrayList<User> user_data = new ArrayList<User>();
+public abstract class User {
 
     private String userName;
     private String password;
@@ -12,6 +8,7 @@ public class User {
     private String email;
     private String phoneNumber;
     private String userType;
+    public User(){}
 
     public User(String userName, String password, String gender, String email, String phoneNumber, String userType){
         this.userName = userName;
@@ -20,7 +17,6 @@ public class User {
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.userType = userType;
-
 
     }
 

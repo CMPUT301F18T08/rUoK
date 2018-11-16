@@ -16,8 +16,8 @@ public class CareProviderActivityTest extends ActivityTestRule{
     private Solo solo;
     private CareProvider yyh = new CareProvider();
 
-    public CareProviderActivityTest(Class activityClass) {
-        super(activityClass);
+    public CareProviderActivityTest() {
+        super(CareProviderActivity.class);
     }
 
     public void setUp() throws Exception{

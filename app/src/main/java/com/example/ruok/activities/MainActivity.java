@@ -31,14 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void SignUp(View view) {
         // Do something in response to button
-
-        sign_up_button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
-                startActivity(intent);
-            }
-        });
+        Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
+        startActivity(intent);
 
     }
 
@@ -59,11 +53,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent_careprovider);
 
                 // if user is a patient
-                Intent intent_patient = new Intent(MainActivity.this, ProblemListActivity.class);
-                intent_patient.putExtra("USERNAME", userName);
-                startActivity(intent_patient);
-
-
+//                Intent intent_patient = new Intent(MainActivity.this, ProblemListActivity.class);
+//                intent_patient.putExtra("USERNAME", userName);
+//                startActivity(intent_patient);
 
             }
         });
