@@ -56,12 +56,12 @@ public class MainActivity extends AppCompatActivity {
 
                 // if user is a care provider
                 Intent intent_careprovider = new Intent(MainActivity.this, CareProviderActivity.class);
-                intent_careprovider.putExtra(SignInInfo, userName);
+                intent_careprovider.putExtra("USERNAME", userName);
                 startActivity(intent_careprovider);
 
                 // if user is a patient
                 Intent intent_patient = new Intent(MainActivity.this, ProblemListActivity.class);
-                intent_patient.putExtra(SignInInfo, userName);
+                intent_patient.putExtra("USERNAME", userName);
                 startActivity(intent_patient);
 
 

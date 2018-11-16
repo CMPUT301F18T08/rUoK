@@ -9,11 +9,15 @@
 
     <EditText
         android:id="@+id/editText8"
-        android:layout_width="wrap_content"
+        android:layout_width="79dp"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="69dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Patient: Mary"
+        android:text="Patient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.011"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,27 +42,40 @@
     <ListView
         android:id="@+id/listview1"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="401dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/editText8" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="117dp"
+        android:id="@+id/username"
+        android:layout_width="88dp"
         android:layout_height="39dp"
-        android:layout_alignBottom="@+id/editText8"
-        android:layout_marginBottom="-5dp"
-        android:layout_marginStart="-23dp"
-        android:layout_toEndOf="@+id/button"
-        android:text="Problem" />
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/editText8"
+        android:layout_marginStart="102dp"
+        android:text="TextView" />
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText8"
-        android:layout_alignEnd="@+id/button"
-        android:text="TextView" />
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="0dp"
+        android:background="@android:color/black"
+        android:text="Problem List"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp" />
+
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="64dp"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:text="Problem List" />-->
 
 
 </RelativeLayout>
