@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.example.ruok.R;
 
@@ -54,10 +55,10 @@ public class SignUpActivity extends AppCompatActivity {
 
 
         user_name =(EditText) findViewById(R.id.editText18);
-        email = (EditText) findViewById(R.id.signUpEmail);
-        phone_number= (EditText) findViewById(R.id.signUpPhoneNumber);
-        password = (EditText) findViewById(R.id.signUpPassword);
-        confirm_password = (EditText) findViewById(R.id.signUpConfirmPassword);
+        email = (EditText) findViewById(R.id.emailTextField);
+        phone_number= (EditText) findViewById(R.id.phoneNumTextField);
+        password = (EditText) findViewById(R.id.passwordTextField);
+        confirm_password = (EditText) findViewById(R.id.confirmPasswordTextField);
         gender = (RadioGroup) findViewById(R.id.radio);
         female = (RadioButton) findViewById(R.id.signUpFemale);
         male = (RadioButton) findViewById(R.id.signUpMale);
@@ -66,6 +67,8 @@ public class SignUpActivity extends AppCompatActivity {
         save = (Button)findViewById(R.id.signUpSave);
 
         user_type = (RadioGroup) findViewById(R.id.radio);
+
+
 
 
         gender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener()
@@ -112,6 +115,8 @@ public class SignUpActivity extends AppCompatActivity {
                     patient.setEmail(edit_email);
                     patient.setPhoneNumber(edit_phone_number);
                     patient.setPassword(edit_password);
+                    patient.setGender(get_gender);
+                    patient.setUserType(get_user_type);
                     user_data.add(patient);
                 }
                 else if(get_user_type == "care_provider"){
@@ -120,14 +125,29 @@ public class SignUpActivity extends AppCompatActivity {
                     careProvider.setEmail(edit_email);
                     careProvider.setPhoneNumber(edit_phone_number);
                     careProvider.setPassword(edit_password);
+                    careProvider.setGender(get_gender);
+                    careProvider.setUserType(get_user_type);
                     user_data.add(careProvider);
                 }
-                //todo: if password == confirm_pssword
+                //todo: if password == confirm_pssword  encryption??
+                if (edit_password.equals(edit_confirm_password) ){
+                    saveInFile();
+                    Toast.makeText(SignUpActivity.this, "Sign up successfully", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                    startActivity(intent);
 
-                saveInFile();
-
+                } else {
+                    Toast.makeText(SignUpActivity.this, "Passwords entered don't match!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
+    }
+
+    public void Back(View view) {
+        // Do something in response to back button
+        Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+        startActivity(intent);
+
     }
     private void saveInFile(){
         try {

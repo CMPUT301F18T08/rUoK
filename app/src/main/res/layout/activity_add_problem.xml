@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".activities.AddRecordActivity"
+    android:background="@drawable/case1"
+    >
+
+    <TextView
+        android:id="@+id/addProblemText"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/add_a_problem"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/text0"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/text3"
+        android:layout_marginTop="162dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/descp" />
+
+    <EditText
+        android:id="@+id/text3"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/ProblemTitle" />
+
+    <Button
+        android:id="@+id/addProblemBack"
+        android:layout_width="142dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/frame2"
+        android:text="@string/back"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/addProblemSave2"
+        android:layout_width="142dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/frame2"
+        android:text="@string/save"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/problemTitleTextField"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/text3"
+        android:layout_marginEnd="39dp"
+        android:ems="10"
+        android:hint="@string/hintforrecord"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/problemDescription"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/text0"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:hint="@string/hintforproblemdescp"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray" />
+
+</RelativeLayout>

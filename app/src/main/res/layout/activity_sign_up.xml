@@ -39,7 +39,7 @@
 
     <EditText
         android:id="@+id/signUpEmail"
-        android:layout_width="match_parent"
+        android:layout_width="65dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -51,7 +51,7 @@
 
     <EditText
         android:id="@+id/signUpPassword"
-        android:layout_width="match_parent"
+        android:layout_width="102dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
@@ -63,7 +63,7 @@
 
     <EditText
         android:id="@+id/signUpConfirmPassword"
-        android:layout_width="match_parent"
+        android:layout_width="177dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
@@ -74,11 +74,26 @@
         android:typeface="serif" />
 
     <Button
+        android:id="@+id/backButton"
+        android:layout_width="158dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/signUpSave"
+        android:layout_marginStart="26dp"
+        android:background="@drawable/frame2"
+        android:onClick="Back"
+        android:text="@string/back"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
         android:id="@+id/signUpSave"
         android:layout_width="158dp"
         android:layout_height="49dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="33dp"
         android:background="@drawable/frame2"
         android:text="@string/save"
         android:textSize="24sp"
@@ -86,7 +101,7 @@
 
     <EditText
         android:id="@+id/signUpPhoneNumber"
-        android:layout_width="match_parent"
+        android:layout_width="143dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
@@ -104,61 +119,106 @@
         android:layout_alignTop="@+id/signUpUserName"
         android:layout_marginEnd="1dp"
         android:ems="10"
+        android:hint="@string/hintforusername"
         android:inputType="textPersonName"
-        android:text="at least 8 charcters"
         android:textColor="@android:color/darker_gray" />
-<RadioGroup
-    android:id="@+id/radio2"
-    android:layout_width="match_parent"
-    android:layout_height="40dp"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentStart="true"
-    android:layout_marginBottom="57dp"
-    tools:ignore="NotSibling">
 
-    <RadioButton
-        android:id="@+id/signUpPatient"
-        android:layout_width="127dp"
+    <RadioGroup
+        android:id="@+id/radio2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="62dp"
-        android:layout_marginStart="20dp"
-        android:text="PATIENT" />
+        android:layout_below="@+id/signUpConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-108dp"
+        android:orientation="horizontal"
+        tools:ignore="NotSibling">
 
-    <RadioButton
-        android:id="@+id/signUpCareProvider"
-        android:layout_width="153dp"
+        <RadioButton
+            android:id="@+id/signUpPatient"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="62dp"
+            android:layout_marginStart="20dp"
+            android:text="PATIENT" />
+
+        <RadioButton
+            android:id="@+id/signUpCareProvider"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/signUpPatient"
+            android:layout_marginEnd="21dp"
+            android:text="CARE PROVIDER" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="169dp"
+        android:orientation="horizontal"
+        tools:ignore="NotSibling">
+
+        <RadioButton
+            android:id="@+id/signUpFemale"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="62dp"
+            android:layout_marginStart="20dp"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/signUpMale"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/signUpPatient"
+            android:layout_marginEnd="21dp"
+            android:text="Male" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/emailTextField"
+        android:layout_width="293dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/signUpPatient"
-        android:layout_marginEnd="21dp"
-        android:text="CARE PROVIDER" />
-    </RadioGroup>
-<RadioGroup
-    android:id="@+id/radio"
-    android:layout_width="314dp"
-    android:layout_height="63dp"
-    android:layout_alignStart="@+id/signUpPatient"
-    android:layout_below="@+id/signUpUserName"
-    tools:ignore="NotSibling">
-    <RadioButton
-        android:id="@+id/signUpFemale"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="43dp"
-        android:layout_marginTop="180dp"
-        android:text="Female" />
+        android:layout_alignTop="@+id/signUpEmail"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
 
-    <RadioButton
-        android:id="@+id/signUpMale"
+    <EditText
+        android:id="@+id/phoneNumTextField"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/signUpCareProvider"
-        android:layout_alignTop="@+id/signUpFemale"
-        android:text="Male" />
-</RadioGroup>>
+        android:layout_alignEnd="@+id/emailTextField"
+        android:layout_alignTop="@+id/signUpPhoneNumber"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/passwordTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText18"
+        android:layout_alignTop="@+id/signUpPassword"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/confirmPasswordTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/signUpConfirmPassword"
+        android:ems="10"
+        android:inputType="textPassword" />
+
 
 </RelativeLayout>

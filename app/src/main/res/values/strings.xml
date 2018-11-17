@@ -46,6 +46,7 @@
     <string name="patient_name_1">Patient name 1</string>
     <string name="patient_name_2">Patient name 2</string>
     <string name="view">VIEW</string>
+    <string name="descp">Description</string>
 
     <string name="add_a_patient">ADD A PATIENT</string>
     <string name="care_provider_dr_smith">Care provider: Dr Smith</string>
@@ -60,7 +61,16 @@
     <string name="body_location_arm">Body location: arm</string>
     <string name="back">BACK</string>
     <string name="add_a_comment">ADD A COMMENT</string>
+    <string name="add_a_problem">Add Problem</string>
+    <string name="ProblemTitle">Problem Title</string>
     <string name="button">Button</string>
+    <string name="hintforusername">at least 8 characters</string>
+    <string name="hintforrecord">max 30 characters</string>
+    <string name="hintforproblemdescp">max 300 characters</string>
+    <string name="editproblem">Edit</string>
+    <string name="viewgelo">View Geolocation</string>
+    <string name="deleteproblem">Delete</string>
+    <string name="viewgeolocation">View Location</string>
 
 
 </resources>

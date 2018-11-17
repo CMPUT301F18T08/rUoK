@@ -28,19 +28,21 @@
         android:text="Search" />
 
     <Button
-        android:id="@+id/problemPageResetPassword"
+        android:id="@+id/addProblemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="103dp"
+        android:text="@string/add_a_problem" />
+
+    <Button
+        android:id="@+id/problemPageResetPassword2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/problemPageSearch"
         android:layout_centerHorizontal="true"
         android:text="reset password" />
-
-    <ListView
-        android:id="@+id/problemPageListView"
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/problemPagePatient" />
 
     <TextView
         android:id="@+id/problemPageProblem"
@@ -51,6 +53,13 @@
         android:layout_marginStart="148dp"
         android:layout_marginTop="11dp"
         android:text="Problem" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/problemPageListView"
+        android:layout_width="match_parent"
+        android:layout_height="362dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/problemPagePatient" />
 
 
 </RelativeLayout>
