@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Patient extends User {
-    ArrayList<Problem> problems = new ArrayList<Problem>();
+    private ArrayList<Problem> problems = new ArrayList<Problem>();
 
     public ArrayList<Problem> getProblems() {
         return problems;

@@ -11,30 +11,31 @@
     tools:context=".activities.RecordPageActivity">
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/recordPageAnimate"
         android:layout_width="142dp"
         android:layout_height="39dp"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/button9"
-        android:layout_marginEnd="69dp"
+        android:layout_alignTop="@+id/recordPageMyProfile"
+        android:layout_marginEnd="87dp"
         android:background="@drawable/frame2"
         android:text="animate"
         android:textSize="18sp" />
 
     <Button
-        android:id="@+id/button9"
-        android:layout_width="142dp"
+        android:id="@+id/recordPageMyProfile"
+        android:layout_width="126dp"
         android:layout_height="39dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="83dp"
-        android:layout_marginStart="38dp"
+        android:layout_marginBottom="107dp"
+        android:layout_marginStart="53dp"
         android:background="@drawable/frame2"
+        android:onClick="myProfile"
         android:text="my profile"
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/recordPageTitle"
         android:layout_width="209dp"
         android:layout_height="95dp"
         android:layout_alignParentTop="true"
@@ -45,33 +46,43 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <ListView
-        android:id="@+id/listview1"
-        android:layout_width="333dp"
-        android:layout_height="265dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView3"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="6dp" />
-
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/recordPageAddRecord"
+        android:layout_width="140dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/recordPageAnimate"
+        android:layout_marginStart="122dp"
+        android:background="@drawable/frame2"
+        android:onClick="viewGeoLocation"
+        android:text="@string/viewgeolocation"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/recordPageAddRecord2"
         android:layout_width="136dp"
         android:layout_height="38dp"
-        android:layout_above="@+id/button14"
-        android:layout_toStartOf="@+id/button14"
+        android:layout_alignTop="@+id/recordPageBodyPicture"
+        android:layout_toStartOf="@+id/recordPageAnimate"
         android:background="@drawable/frame2"
+        android:onClick="addRecord"
         android:text="@string/add_new"
         android:textSize="18sp" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/recordPageBodyPicture"
         android:layout_width="142dp"
         android:layout_height="39dp"
-        android:layout_above="@+id/button14"
-        android:layout_alignStart="@+id/button14"
+        android:layout_above="@+id/recordPageAnimate"
+        android:layout_alignStart="@+id/recordPageAnimate"
         android:background="@drawable/frame2"
         android:text="Body picture"
         android:textSize="18sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="314dp"
+        android:layout_height="266dp"
+        android:layout_alignStart="@+id/recordPageMyProfile"
+        android:layout_below="@+id/recordPageTitle" />
 </RelativeLayout>

@@ -9,7 +9,7 @@
     >
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/careProviderViewListOfRecordsTextView"
         android:layout_width="293dp"
         android:layout_height="41dp"
         android:layout_marginTop="48dp"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText19"
+        android:id="@+id/careProviderViewListOfRecordsPatient"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -34,11 +34,22 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ListView
-        android:id="@+id/listview2"
+        android:id="@+id/careProviderViewListOfRecordsListView"
         android:layout_width="match_parent"
-        android:layout_height="452dp"
+        android:layout_height="337dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText8" />
+        android:layout_below="@+id/careProviderViewListOfRecordsTextView" />
+
+    <Button
+        android:id="@+id/viewGeolocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="82dp"
+        android:layout_marginEnd="61dp"
+        android:onClick="viewGeolocation"
+        android:text="@string/viewgelo" />
 
 
 </RelativeLayout>

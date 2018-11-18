@@ -1,9 +1,12 @@
 package classes;
 
+import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Locale;
 
-public class Problem {
+public class Problem implements Serializable{
     private Date date;
     private String title;
     private String description;
@@ -15,6 +18,12 @@ public class Problem {
     }
     public Date getDate() {
         return date;
+    }
+
+    public static String DateToString(){
+        Date date = new Date();
+        SimpleDateFormat format = new SimpleDateFormat(("yyyy-MM-dd HH:mm:ss"), Locale.getDefault());
+        return format.format(date);
     }
 
     // title func

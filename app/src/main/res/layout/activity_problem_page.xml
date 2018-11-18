@@ -8,23 +8,19 @@
     tools:context=".activities.ProblemListActivity">
 
     <EditText
-        android:id="@+id/editText8"
-        android:layout_width="79dp"
+        android:id="@+id/problemPagePatient"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="69dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Patient"
+        android:text="Patient: Mary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.011"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/problemPageSearch"
         android:layout_width="145dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -32,50 +28,38 @@
         android:text="Search" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/addProblemButton"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="103dp"
+        android:text="@string/add_a_problem" />
+
+    <Button
+        android:id="@+id/problemPageResetPassword2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/button"
+        android:layout_above="@+id/problemPageSearch"
         android:layout_centerHorizontal="true"
         android:text="reset password" />
 
-    <ListView
-        android:id="@+id/listview1"
-        android:layout_width="match_parent"
-        android:layout_height="401dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText8" />
-
     <TextView
-        android:id="@+id/username"
-        android:layout_width="88dp"
-        android:layout_height="39dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/editText8"
-        android:layout_marginStart="102dp"
-        android:text="TextView" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="68dp"
+        android:id="@+id/problemPageProblem"
+        android:layout_width="94dp"
+        android:layout_height="34dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="11dp"
+        android:text="Problem" />
 
-        android:layout_marginTop="0dp"
-        android:background="@android:color/black"
-        android:text="Problem List"
-        android:textColor="@android:color/background_light"
-        android:textSize="30sp" />
-
-
-    <!--<TextView-->
-        <!--android:id="@+id/textView4"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="64dp"-->
-        <!--android:layout_alignParentStart="true"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:text="Problem List" />-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/problemPageListView"
+        android:layout_width="match_parent"
+        android:layout_height="362dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/problemPagePatient" />
 
 
 </RelativeLayout>

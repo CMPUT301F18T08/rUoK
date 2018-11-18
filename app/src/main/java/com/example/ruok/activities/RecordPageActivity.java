@@ -21,7 +21,12 @@ public class RecordPageActivity extends AppCompatActivity {
     }
 
     public void myProfile(View view){
-        Intent intent_myProfile = new Intent(this, AddRecordActivity.class);
+        Intent intent_myProfile = new Intent(this, PatientProfileActivity.class);
         startActivity(intent_myProfile);
+    }
+
+    public void viewGeoLocation(View view){
+        Intent intent = new Intent(this, GeolocationActivity.class);
+        startActivity(intent);
     }
 }

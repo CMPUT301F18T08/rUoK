@@ -13,7 +13,7 @@
     >
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/addRecordText"
         android:layout_width="172dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -26,7 +26,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editText13"
+        android:id="@+id/text0"
         android:layout_width="199dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -38,38 +38,28 @@
         android:text="@string/what_s_wrong_title" />
 
     <EditText
-        android:id="@+id/editText14"
-        android:layout_width="293dp"
+        android:id="@+id/addRecordbodyLocation"
+        android:layout_width="131dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText15"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/text0"
+        android:layout_marginTop="176dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/body_location" />
 
     <EditText
-        android:id="@+id/editText15"
-        android:layout_width="289dp"
+        android:id="@+id/addRecordMoreDetail"
+        android:layout_width="112dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="167dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/date" />
-
-    <EditText
-        android:id="@+id/editText16"
-        android:layout_width="298dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText25"
-        android:layout_centerHorizontal="true"
+        android:layout_alignStart="@+id/text0"
+        android:layout_below="@+id/addRecordLocation"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/more_detail" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/addProblemBack"
         android:layout_width="142dp"
         android:layout_height="54dp"
         android:layout_alignParentBottom="true"
@@ -84,37 +74,37 @@
         android:id="@+id/editText23"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/editText14"
-        android:layout_alignTop="@+id/editText16"
+        android:layout_alignTop="@+id/addRecordMoreDetail"
+        android:layout_toEndOf="@+id/addRecordbodyLocation"
         android:ems="10"
+        android:hint="@string/max_300characters"
         android:inputType="textPersonName"
-        android:text="@string/max_300characters"
         android:textColor="@android:color/darker_gray" />
 
     <EditText
-        android:id="@+id/editText24"
+        android:id="@+id/editText"
         android:layout_width="168dp"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/editText13"
+        android:layout_alignTop="@+id/text0"
         android:layout_marginTop="0dp"
         android:ems="10"
+        android:hint="@string/hintforrecord"
         android:inputType="textPersonName"
-        android:text="@string/max_30characters"
         android:textColor="@android:color/darker_gray" />
 
     <EditText
-        android:id="@+id/editText25"
-        android:layout_width="292dp"
+        android:id="@+id/addRecordLocation"
+        android:layout_width="85dp"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/editText13"
+        android:layout_alignStart="@+id/text0"
         android:layout_centerVertical="true"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/Llocation" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/addRecordLocationImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -123,11 +113,11 @@
         app:srcCompat="@android:drawable/ic_dialog_map" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/addRecordBodyLocationImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/editText14"
-        android:layout_toEndOf="@+id/button8"
+        android:layout_alignBottom="@+id/addRecordbodyLocation"
+        android:layout_toEndOf="@+id/addProblemBack"
         app:srcCompat="@android:drawable/ic_menu_camera" />
 
 </RelativeLayout>

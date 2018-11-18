@@ -8,7 +8,7 @@
     tools:context=".activities.FrontAndBackPhotoActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/frontBackPhotoImage"
         android:layout_width="285dp"
         android:layout_height="479dp"
         android:layout_alignParentTop="true"
@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/ppp" />
 
     <Button
-        android:id="@+id/button16"
+        android:id="@+id/frontBackPhotoBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

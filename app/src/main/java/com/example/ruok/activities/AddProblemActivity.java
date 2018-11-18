@@ -7,18 +7,18 @@ import android.view.View;
 
 import com.example.ruok.R;
 
-public class CareProviderViewListOfProblemsActivity extends AppCompatActivity {
+public class AddProblemActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_care_provider_view_list_of_problems);
+        setContentView(R.layout.activity_add_problem2);
     }
 
-    public void popupComment(View view) {
-        Intent intent = new Intent(CareProviderViewListOfProblemsActivity.this, ShowPopupCommentActivity.class);
+    public void back(View view) {
+        // Do something in response to button
+        Intent intent = new Intent(AddProblemActivity.this, ProblemListActivity.class);
         startActivity(intent);
-    }
 
-
+     }
 }

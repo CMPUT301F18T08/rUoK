@@ -7,37 +7,10 @@
     android:layout_height="match_parent"
     tools:context=".activities.PatientProfileActivity">
 
-    <Button
-        android:id="@+id/button11"
-        android:layout_width="134dp"
-        android:layout_height="40dp"
-        android:layout_alignStart="@+id/button10"
-        android:layout_alignTop="@+id/editText22"
-        android:background="@drawable/frame2"
-        android:text="EDIT"
-        android:textSize="18sp"
-        tools:ignore="UnknownId"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="450dp" />
-
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="142dp"
-        android:layout_height="39dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/editText21"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/frame2"
-        android:text="EDIT"
-        android:textSize="18sp"
-        tools:ignore="UnknownId"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="319dp" />
-
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/myProfile"
         android:layout_width="match_parent"
-        android:layout_height="87dp"
+        android:layout_height="89dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:background="@android:color/background_dark"
@@ -49,8 +22,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText19"
-        android:layout_width="382dp"
+        android:id="@+id/myProfileUserName"
+        android:layout_width="116dp"
         android:layout_height="49dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -62,12 +35,12 @@
         tools:layout_editor_absoluteY="114dp" />
 
     <EditText
-        android:id="@+id/editText21"
-        android:layout_width="379dp"
+        android:id="@+id/myProfileEmail"
+        android:layout_width="111dp"
         android:layout_height="54dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="154dp"
+        android:layout_marginBottom="202dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Email:"
@@ -75,12 +48,11 @@
         tools:layout_editor_absoluteY="251dp" />
 
     <EditText
-        android:id="@+id/editText22"
-        android:layout_width="380dp"
+        android:id="@+id/myProfilePhoneNumber"
+        android:layout_width="138dp"
         android:layout_height="54dp"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="232dp"
+        android:layout_centerVertical="true"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Phone number:"
@@ -89,7 +61,7 @@
         tools:layout_editor_absoluteY="379dp" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/myProfileSave"
         android:layout_width="150dp"
         android:layout_height="43dp"
         android:layout_alignParentBottom="true"
@@ -103,22 +75,63 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="519dp" />
 
-    <RadioButton
-        android:id="@+id/radioButton5"
+    <RadioGroup
+        android:id="@+id/radio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="207dp"
-        android:text="Male" />
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="223dp"
+        android:orientation="horizontal"
+        tools:ignore="NotSibling">
 
-    <RadioButton
-        android:id="@+id/radioButton7"
+        <RadioButton
+            android:id="@+id/signUpFemale"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="62dp"
+            android:layout_marginStart="20dp"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/signUpMale"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/signUpPatient"
+            android:layout_marginEnd="21dp"
+            android:text="Male" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/radioButton5"
-        android:layout_marginEnd="77dp"
-        android:text="Female" />
+        android:layout_alignTop="@+id/myProfileUserName"
+        android:layout_toEndOf="@+id/myProfileUserName"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/myProfilePhoneNumber"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/myProfileEmail"
+        android:layout_toEndOf="@+id/myProfileUserName"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
 </RelativeLayout>

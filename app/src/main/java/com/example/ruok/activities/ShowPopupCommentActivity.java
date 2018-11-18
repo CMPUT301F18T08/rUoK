@@ -6,19 +6,16 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.ruok.R;
-
-public class CareProviderViewListOfProblemsActivity extends AppCompatActivity {
+public class ShowPopupCommentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_care_provider_view_list_of_problems);
+        setContentView(R.layout.popup_add_comment2);
     }
 
-    public void popupComment(View view) {
-        Intent intent = new Intent(CareProviderViewListOfProblemsActivity.this, ShowPopupCommentActivity.class);
+    public void back(View view) {
+        Intent intent = new Intent(ShowPopupCommentActivity.this, CareProviderViewListOfProblemsActivity.class);
         startActivity(intent);
     }
-
-
 }
