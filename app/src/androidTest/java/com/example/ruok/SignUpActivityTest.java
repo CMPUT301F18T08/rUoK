@@ -1,13 +1,12 @@
-
 package com.example.ruok;
 import android.app.Activity;
 
 import com.example.ruok.activities.AddPatientActivity;
 import com.example.ruok.activities.CareProviderActivity;
-import com.example.ruok.activities.CareProviderViewListOfRecordsActivity;
-import com.example.ruok.activities.CareProviderViewRecordDetailsActivity;
+import com.example.ruok.activities.MainActivity;
 import com.example.ruok.activities.ResetPasswordActivity;
 import com.example.ruok.activities.SearchActivity;
+import com.example.ruok.activities.SignUpActivity;
 import com.robotium.solo.Solo;
 
 import android.support.test.rule.ActivityTestRule;
@@ -19,12 +18,12 @@ import classes.CareProvider;
 import static android.support.test.InstrumentationRegistry.getInstrumentation;
 
 /* created by Yuhan Ye*/
-public class CareProviderViewRecordDetailsTest extends ActivityTestRule {
+public class SignUpActivityTest extends ActivityTestRule{
     private Solo solo;
     private CareProvider yyh = new CareProvider();
 
-    public CareProviderViewRecordDetailsTest() {
-        super(CareProviderViewRecordDetailsActivity.class);
+    public SignUpActivityTest() {
+        super(AddPatientActivity.class);
     }
 
     public void setUp() throws Exception{
@@ -36,10 +35,10 @@ public class CareProviderViewRecordDetailsTest extends ActivityTestRule {
     }
 
     @Test
-    public void testBack() throws Exception{
-        CareProviderViewRecordDetailsActivity activity = (CareProviderViewRecordDetailsActivity)solo.getCurrentActivity();
-        solo.assertCurrentActivity("should be CareProviderViewRecordDetailsActivity",CareProviderViewRecordDetailsActivity.class);
-        solo.clickOnButton("BACK");
-        solo.assertCurrentActivity("should be CareProviderActivity", CareProviderActivity.class);
+    public void testSave() throws Exception{
+        SignUpActivity activity = (SignUpActivity)solo.getCurrentActivity();
+        solo.assertCurrentActivity("should be SignUpActivity",SignUpActivity.class);
+        solo.clickOnButton("save");
+        solo.assertCurrentActivity("should be MainActivity", MainActivity.class);
     }
 }
