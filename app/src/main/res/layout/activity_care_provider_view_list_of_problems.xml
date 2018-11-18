@@ -20,18 +20,6 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text00"
-        android:layout_width="234dp"
-        android:layout_height="42dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="181dp"
-        android:layout_marginStart="20dp"
-        android:text="@string/ProblemTitle"
-        android:textSize="24sp"
-        tools:text="Doctor's Comment:" />
-
-    <TextView
         android:id="@+id/problemTitle2"
         android:layout_width="153dp"
         android:layout_height="42dp"
@@ -41,34 +29,14 @@
         android:text="@string/ProblemTitle"
         android:textSize="24sp" />
 
-    <Button
-        android:id="@+id/doctorAddComment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
-        android:onClick="popupComment"
-        android:text="@string/add_a_comment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="68dp" />
-
-    <TextView
-        android:id="@+id/commentField"
-        android:layout_width="166dp"
-        android:layout_height="82dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="89dp"
-        android:text="TextView" />
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/careProviderViewListOfProblemsListView"
         android:layout_width="341dp"
-        android:layout_height="234dp"
+        android:layout_height="335dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/text00"
-        android:layout_marginTop="101dp" />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="102dp" />
 
 
 </RelativeLayout>

@@ -13,14 +13,14 @@
 
     <EditText
         android:id="@+id/userName"
-        android:layout_width="302dp"
-        android:layout_height="65dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="228dp"
         android:ems="10"
+        android:hint="@string/user_name"
         android:inputType="textPersonName"
-        android:text="@string/user_name"
         android:typeface="monospace" />
 
     <Button
@@ -58,14 +58,14 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="304dp"
-        android:layout_height="64dp"
-        android:layout_below="@+id/userName"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="-228dp"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="171dp"
+        android:layout_marginEnd="85dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/password"
-        android:typeface="monospace" />
+        android:hint="@string/password"
+        android:inputType="textPersonName" />
 
 </RelativeLayout>

@@ -51,7 +51,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
                 if (edit_password.equals(edit_confirm_password) ){
                     saveInFile();
                     Toast.makeText(ResetPasswordActivity.this, "change successfully", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(ResetPasswordActivity.this, ProblemListActivity.class);
+                    Intent intent = new Intent(ResetPasswordActivity.this, MainActivity.class);
                     startActivity(intent);
 
                 } else {

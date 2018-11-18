@@ -38,6 +38,11 @@ public class ProblemListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_problem_page);
 
+        String display_username = getIntent().getStringExtra("USERNAME");
+        TextView display = (TextView)findViewById(R.id.problemPagePatient);
+        display.setText(display_username);
+
+
         reset_button = (Button) findViewById(R.id.problemPageResetPassword2);
         search_button = (Button) findViewById(R.id.problemPageSearch);
         problem_button = (Button) findViewById(R.id.addProblemButton);
@@ -73,12 +78,12 @@ public class ProblemListActivity extends AppCompatActivity {
         usernameTextView.setText(userName);
 
         //todo from here
-        problems = new Problem(this);
-        //load data
-        adapter.setData(problems);
+//        problems = new Problem(this);
+//        //load data
+//        adapter.setData(problems);
 
 
 
 
     }
-//}
+}

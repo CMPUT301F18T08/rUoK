@@ -13,12 +13,11 @@ public class CareProviderViewListOfProblemsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_care_provider_view_list_of_problems);
+
+
     }
 
-    public void popupComment(View view) {
-        Intent intent = new Intent(CareProviderViewListOfProblemsActivity.this, ShowPopupCommentActivity.class);
-        startActivity(intent);
-    }
+
 
 
 }

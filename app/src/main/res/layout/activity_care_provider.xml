@@ -13,6 +13,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="123dp"
+        android:onClick="addAPatient"
         android:text="@string/add_a_patient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -29,7 +30,6 @@
         android:layout_marginTop="17dp"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:text="@string/care_provider_dr_smith"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="7dp" />
 
@@ -40,6 +40,7 @@
         android:layout_below="@+id/careProviderAddAPatient"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-123dp"
+        android:onClick="search"
         android:text="@string/search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

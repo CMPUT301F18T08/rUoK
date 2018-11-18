@@ -91,18 +91,8 @@
         android:layout_marginTop="229dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/body_location_arm"
+        android:text="Body location："
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="296dp" />
 
-    <Button
-        android:id="@+id/recordDetailsBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="22dp"
-        android:text="@string/back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="68dp" />
 </RelativeLayout>

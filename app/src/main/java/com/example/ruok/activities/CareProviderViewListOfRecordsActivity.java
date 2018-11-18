@@ -21,4 +21,8 @@ public class CareProviderViewListOfRecordsActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void popupComment(View view) {
+        Intent intent = new Intent(this, ShowPopupCommentActivity.class);
+        startActivity(intent);
+    }
 }
