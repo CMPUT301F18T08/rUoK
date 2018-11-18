@@ -75,9 +75,5 @@ public class ProblemListActivity extends AppCompatActivity {
         problems = new Problem(this);
         //load data
         adapter.setData(problems);
-
-
-
-
     }
 }
