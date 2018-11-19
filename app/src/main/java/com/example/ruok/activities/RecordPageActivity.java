@@ -29,4 +29,5 @@ public class RecordPageActivity extends AppCompatActivity {
         Intent intent = new Intent(this, GeolocationActivity.class);
         startActivity(intent);
     }
+
 }
