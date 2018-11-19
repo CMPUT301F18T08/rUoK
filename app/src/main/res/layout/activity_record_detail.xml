@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:background="@drawable/case1"
+    tools:context=".activities.RecordDetailActivity">
+
+    <Button
+        android:id="@+id/recordsave"
+        android:layout_width="126dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="98dp"
+        android:background="@drawable/frame2"
+        android:text="save" />
+
+    <TextView
+        android:id="@+id/recordDetailTitle"
+        android:layout_width="209dp"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Record detail"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/recordDetailDoctor"
+        android:layout_width="114dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="134dp"
+        android:text="Doctor:" />
+
+    <TextView
+        android:id="@+id/RecordDate"
+        android:layout_width="116dp"
+        android:layout_height="38dp"
+        android:layout_alignStart="@+id/recordDetailDoctor"
+        android:layout_below="@+id/recordDetailDoctor"
+        android:text="Date:" />
+
+    <TextView
+        android:id="@+id/RecordLocation"
+        android:layout_width="115dp"
+        android:layout_height="39dp"
+        android:layout_alignStart="@+id/recordDetailDoctor"
+        android:layout_below="@+id/RecordDate"
+        android:text="location:" />
+
+    <TextView
+        android:id="@+id/recordBodyLocation"
+        android:layout_width="113dp"
+        android:layout_height="37dp"
+        android:layout_alignStart="@+id/recordDetailDoctor"
+        android:layout_below="@+id/RecordLocation"
+        android:text="Body location:" />
+
+    <TextView
+        android:id="@+id/RecordMoreDetail"
+        android:layout_width="114dp"
+        android:layout_height="36dp"
+        android:layout_alignStart="@+id/recordDetailDoctor"
+        android:layout_below="@+id/recordBodyLocation"
+        android:text="more detail:" />
+
+    <TextView
+        android:id="@+id/recordComment"
+        android:layout_width="113dp"
+        android:layout_height="36dp"
+        android:layout_alignBottom="@+id/editComment"
+        android:layout_alignStart="@+id/recordDetailDoctor"
+        android:text="comment:" />
+
+    <EditText
+        android:id="@+id/editDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editdate"
+        android:layout_alignStart="@+id/recordsave"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/RecordDate"
+        android:layout_alignStart="@+id/recordsave"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/recordsave"
+        android:layout_below="@+id/RecordMoreDetail"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editMoreDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/RecordMoreDetail"
+        android:layout_alignStart="@+id/recordsave"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <ImageButton
+        android:id="@+id/addRecordLocationImage"
+        android:layout_width="40dp"
+        android:layout_height="37dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/recordDetailDoctor"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+    <ImageButton
+        android:id="@+id/addRecordBodyLocationImage"
+        android:layout_width="46dp"
+        android:layout_height="34dp"
+        android:layout_below="@+id/RecordDate"
+        android:layout_toEndOf="@+id/recordDetailDoctor"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+
+</RelativeLayout>

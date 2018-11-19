@@ -38,7 +38,8 @@
         <activity android:name=".activities.AddPhotoActivity" />
         <activity android:name=".activities.AddProblemActivity" />
         <activity android:name=".activities.ShowPopupCommentActivity" />
-        <activity android:name=".activities.AddPatientActivity"></activity>
+        <activity android:name=".activities.AddPatientActivity" />
+        <activity android:name=".activities.RecordDetailActivity"></activity>
     </application>
 
 </manifest>

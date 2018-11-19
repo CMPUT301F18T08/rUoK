@@ -15,14 +15,14 @@
         android:layout_width="142dp"
         android:layout_height="39dp"
         android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/recordPageMyProfile"
+        android:layout_alignTop="@+id/recordsave"
         android:layout_marginEnd="87dp"
         android:background="@drawable/frame2"
         android:text="animate"
         android:textSize="18sp" />
 
     <Button
-        android:id="@+id/recordPageMyProfile"
+        android:id="@+id/recordsave"
         android:layout_width="126dp"
         android:layout_height="39dp"
         android:layout_alignParentBottom="true"
@@ -35,7 +35,7 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/recordPageTitle"
+        android:id="@+id/recordDetailTitle"
         android:layout_width="209dp"
         android:layout_height="95dp"
         android:layout_alignParentTop="true"
@@ -83,6 +83,6 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="314dp"
         android:layout_height="266dp"
-        android:layout_alignStart="@+id/recordPageMyProfile"
-        android:layout_below="@+id/recordPageTitle" />
+        android:layout_alignStart="@+id/recordsave"
+        android:layout_below="@+id/recordDetailTitle" />
 </RelativeLayout>
