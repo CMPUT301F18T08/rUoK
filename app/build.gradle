@@ -3,6 +3,9 @@ apply plugin: 'com.android.application'
 android {
     useLibrary 'org.apache.http.legacy'
     compileSdkVersion 28
+//    packagingOptions {
+//        exclude 'META-INF/DEPENDENCIES'
+//    }
     defaultConfig {
         applicationId "com.example.ruok"
         minSdkVersion 21
@@ -34,8 +37,8 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.google.android.gms:play-services-maps:16.0.0'
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
-    implementation 'com.google.code.gson:gson:2.8.2'
+//    implementation 'com.google.code.gson:gson:2.8.2'
     compile 'io.searchbox:jest-droid:2.0.0'
-    compile 'org.apache.httpcomponents:httpcore:4.4.1'
-    compile 'org.apache.httpcomponents:httpclient:4.5'
+//    compile 'org.apache.httpcomponents:httpcore:4.4.1'
+//    compile 'org.apache.httpcomponents:httpclient:4.5'
 }
