@@ -46,8 +46,9 @@
         android:layout_marginBottom="69dp"
         android:background="@drawable/frame2"
         android:onClick="save"
-        android:text="@string/save"
+        android:text="save"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:text="@string/save" />
 
 </RelativeLayout>

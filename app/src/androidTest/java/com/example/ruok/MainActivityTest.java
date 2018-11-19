@@ -6,15 +6,14 @@ import com.example.ruok.activities.MainActivity;
 import com.example.ruok.activities.ProblemListActivity;
 import com.example.ruok.activities.SignUpActivity;
 import com.robotium.solo.Solo;
-
-import android.support.test.rule.ActivityTestRule;
 import android.widget.EditText;
-
 import org.junit.Test;
-
-import classes.CareProvider;
 import android.test.ActivityInstrumentationTestCase2;
-import static android.support.test.InstrumentationRegistry.getInstrumentation;
+
+/**
+ * intent testing example
+ * need to edit layout button text for solo.clickOnbutton
+ */
 /* created by Yuhan Ye*/
 public class MainActivityTest extends ActivityInstrumentationTestCase2{
     private Solo solo;
