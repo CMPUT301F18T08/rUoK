@@ -1,18 +1,23 @@
 package classes;
 
 import java.io.File;
+import android.graphics.Bitmap;
 
 public class Photo {
-    private int height;
-    private int width;
-    private int resolution;
-    private int size = 65536;
-    private File photoGraph;
+    private Bitmap photoGraph;
+    private String photo_id;
 
-    public File getPhotoGraph() {
+
+    public Bitmap getPhotoGraph() {
         return photoGraph;
     }
-    public void setPhotoGraph(File photoGraph) { this.photoGraph = photoGraph; }
+    public String getPhoto_id() {
+        return photo_id;
+    }
+    public void setPhotoGraph(Bitmap photoGraph) { this.photoGraph = photoGraph; }
+    public void setPhoto_id(String photo_id) {
+        this.photo_id = photo_id;
+    }
 
 
 }

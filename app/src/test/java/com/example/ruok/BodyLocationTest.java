@@ -4,7 +4,6 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-import classes.Body;
 import classes.BodyLocation;
 import classes.Photo;
 
