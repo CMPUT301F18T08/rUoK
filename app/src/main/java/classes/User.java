@@ -41,6 +41,14 @@ public abstract class User {
     }
 
     /**
+     * method to set jestid
+     * @param id
+     */
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    /**
      * method to get user password
      * @return password
      */
