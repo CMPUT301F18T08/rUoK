@@ -8,17 +8,20 @@ import android.widget.TextView;
 
 import com.example.ruok.R;
 
+import static com.example.ruok.activities.MainActivity.display_username;
+
+
 public class CareProviderActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_care_provider);
         Intent intent = getIntent();
-        String display_username = getIntent().getStringExtra("USERNAME");
+        //display_username = getIntent().getStringExtra("USERNAME");
         TextView display = (TextView)findViewById(R.id.careProviderName);
         display.setText(display_username);
-
 
     }
  //todo 检查他病人的profile

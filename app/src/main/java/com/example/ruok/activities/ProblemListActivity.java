@@ -24,6 +24,8 @@ import java.io.OutputStreamWriter;
 
 import classes.Problem;
 
+import static com.example.ruok.activities.MainActivity.display_username;
+
 public class ProblemListActivity extends AppCompatActivity {
 
     private Button reset_button;
@@ -37,8 +39,6 @@ public class ProblemListActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_problem_page);
-
-        String display_username = getIntent().getStringExtra("USERNAME");
         TextView display = (TextView)findViewById(R.id.problemPagePatient);
         display.setText(display_username);
 
@@ -72,10 +72,8 @@ public class ProblemListActivity extends AppCompatActivity {
             }
         });
 
-        String userName = getIntent().getStringExtra("USERNAME");
-        //put this username to the textview
-        TextView usernameTextView = (TextView)findViewById(R.id.problemPageProblem);
-        usernameTextView.setText(userName);
+
+
 
         //todo from here
 //        problems = new Problem(this);

@@ -43,19 +43,10 @@
         android:layout_centerHorizontal="true"
         android:text="reset password" />
 
-    <TextView
-        android:id="@+id/problemPageProblem"
-        android:layout_width="94dp"
-        android:layout_height="34dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="97dp"
-        android:text="Problem" />
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/problemPageListView"
         android:layout_width="match_parent"
-        android:layout_height="362dp"
+        android:layout_height="304dp"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/problemPagePatient" />
 

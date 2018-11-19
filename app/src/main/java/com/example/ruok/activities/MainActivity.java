@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     public static final String FILENAME = "file.sav";
     private Button sign_in_button;
     private Button sign_up_button;
+    public static String display_username;
 
 
     @Override
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
                 //loadFromFile();
                 //get the user type
                 Log.i("MainActivity","from username"+ userName);
+                display_username = userName;
 
                 // if user is a care provider
                 if (userName.matches("joanne") && password.matches("111111")){

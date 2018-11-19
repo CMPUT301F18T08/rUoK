@@ -58,14 +58,13 @@
 
     <EditText
         android:id="@+id/password"
-        android:layout_width="224dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="171dp"
-        android:layout_marginEnd="85dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="168dp"
         android:ems="10"
         android:hint="@string/password"
-        android:inputType="textPersonName" />
+        android:inputType="textPassword" />
 
 </RelativeLayout>

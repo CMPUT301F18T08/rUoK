@@ -12,7 +12,7 @@ public class AddProblemActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_problem2);
+        setContentView(R.layout.activity_add_problem);
     }
 
     public void back(View view) {
