@@ -1,5 +1,7 @@
 package com.example.ruok;
 import android.app.Activity;
+
+import com.example.ruok.activities.CareProviderActivity;
 import com.example.ruok.activities.MainActivity;
 import com.example.ruok.activities.ProblemListActivity;
 import com.example.ruok.activities.SignUpActivity;
@@ -37,24 +39,24 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2{
         solo.clickOnButton("sign up");
         solo.assertCurrentActivity("should be SignUpActivity", SignUpActivity.class);
     }
-//    @Test
-//    public void testCareproviderSignIn() throws Exception{
-//        MainActivity activity = (MainActivity) solo.getCurrentActivity();
-//        solo.assertCurrentActivity("should be MainActivity",MainActivity.class);
-//        solo.enterText((EditText)solo.getView(R.id.userName),"yyh");
-//        solo.enterText((EditText)solo.getView(R.id.password),"qwerty");
-//        solo.clickOnButton(R.id.SignIn);
-//        solo.assertCurrentActivity("should be CareProviderActivity", CareProvider.class);
-//    }
-//    @Test
-//    public void testPatientSignIn() throws Exception{
-//        MainActivity activity = (MainActivity) solo.getCurrentActivity();
-//        solo.assertCurrentActivity("should be MainActivity",MainActivity.class);
-//        solo.enterText((EditText)solo.getView(R.id.userName),"shiki");
-//        solo.enterText((EditText)solo.getView(R.id.password),"qwerty");
-//        solo.clickOnButton("SIGN IN");
-//        solo.assertCurrentActivity("should be ProblemListActivity", ProblemListActivity.class);
-//    }
+    @Test
+    public void testCareproviderSignIn() throws Exception{
+        MainActivity activity = (MainActivity) solo.getCurrentActivity();
+        solo.assertCurrentActivity("should be MainActivity",MainActivity.class);
+        solo.enterText((EditText)solo.getView(R.id.userName),"joanne");
+        solo.enterText((EditText)solo.getView(R.id.password),"111111");
+        solo.clickOnButton("sign in");
+        solo.assertCurrentActivity("should be CareProviderActivity", CareProviderActivity.class);
+    }
+    @Test
+    public void testPatientSignIn() throws Exception{
+        MainActivity activity = (MainActivity) solo.getCurrentActivity();
+        solo.assertCurrentActivity("should be MainActivity",MainActivity.class);
+        solo.enterText((EditText)solo.getView(R.id.userName),"mingyue");
+        solo.enterText((EditText)solo.getView(R.id.password),"222222");
+        solo.clickOnButton("sign in");
+        solo.assertCurrentActivity("should be ProblemListActivity", ProblemListActivity.class);
+    }
 
 
 }

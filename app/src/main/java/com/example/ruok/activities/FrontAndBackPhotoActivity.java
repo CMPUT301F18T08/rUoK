@@ -16,7 +16,7 @@ public class FrontAndBackPhotoActivity extends AppCompatActivity {
         Intent intent = getIntent();
     }
 
-    public void addFrontPhoto(View view){
+    public void addFrontPhoto(View view) {
         Intent intent_addFrontBodyPhoto = new Intent(this, AddPhotoActivity.class);
         startActivity(intent_addFrontBodyPhoto);
     }
@@ -25,3 +25,4 @@ public class FrontAndBackPhotoActivity extends AppCompatActivity {
         Intent intent_addBackBodyPhoto = new Intent(this, AddPhotoActivity.class);
         startActivity(intent_addBackBodyPhoto);
     }
+}

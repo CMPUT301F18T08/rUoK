@@ -33,7 +33,7 @@
         android:background="@drawable/frame2"
         android:lineSpacingExtra="12sp"
         android:onClick="SignIn"
-        android:text="@string/sign_in"
+        android:text="sign in"
         android:textColor="@android:color/background_dark"
         android:textSize="18sp"
         android:textStyle="bold|italic"
