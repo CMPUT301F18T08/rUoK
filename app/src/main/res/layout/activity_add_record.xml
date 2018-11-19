@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    tools:context=".activities.AddRecordActivity"
+    android:background="@drawable/case1"
+    >
+
+    <TextView
+        android:id="@+id/addRecordText"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/add_Rrecord"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/doctorAddPatientName"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/what_s_wrong_title" />
+
+    <EditText
+        android:id="@+id/addRecordbodyLocation"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/doctorAddPatientName"
+        android:layout_marginTop="176dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/body_location" />
+
+    <EditText
+        android:id="@+id/addRecordMoreDetail"
+        android:layout_width="112dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/doctorAddPatientName"
+        android:layout_below="@+id/addRecordLocation"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/more_detail" />
+
+    <Button
+        android:id="@+id/addProblemBack"
+        android:layout_width="142dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/frame2"
+        android:onClick="save_record"
+        android:text="@string/save"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText23"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/addRecordMoreDetail"
+        android:layout_toEndOf="@+id/addRecordbodyLocation"
+        android:ems="10"
+        android:hint="@string/max_300characters"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/doctorAddPatientName"
+        android:layout_marginTop="0dp"
+        android:ems="10"
+        android:hint="@string/hintforrecord"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/addRecordLocation"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/doctorAddPatientName"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Llocation" />
+
+    <ImageButton
+        android:id="@+id/addRecordLocationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="67dp"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+    <ImageButton
+        android:id="@+id/addRecordBodyLocationImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/addRecordbodyLocation"
+        android:layout_toEndOf="@+id/addProblemBack"
+        app:srcCompat="@android:drawable/ic_menu_camera" />
+
+</RelativeLayout>

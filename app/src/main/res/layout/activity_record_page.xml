@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:background="@drawable/case1"
+    tools:context=".activities.RecordPageActivity">
+
+    <Button
+        android:id="@+id/recordPageAnimate"
+        android:layout_width="142dp"
+        android:layout_height="39dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/recordPageMyProfile"
+        android:layout_marginEnd="87dp"
+        android:background="@drawable/frame2"
+        android:text="animate"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/recordPageMyProfile"
+        android:layout_width="126dp"
+        android:layout_height="39dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="107dp"
+        android:layout_marginStart="53dp"
+        android:background="@drawable/frame2"
+        android:onClick="myProfile"
+        android:text="my profile"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/recordPageTitle"
+        android:layout_width="209dp"
+        android:layout_height="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="List Record"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/recordPageAddRecord"
+        android:layout_width="140dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/recordPageAnimate"
+        android:layout_marginStart="122dp"
+        android:background="@drawable/frame2"
+        android:onClick="viewGeoLocation"
+        android:text="@string/viewgeolocation"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/recordPageAddRecord2"
+        android:layout_width="136dp"
+        android:layout_height="38dp"
+        android:layout_alignTop="@+id/recordPageBodyPicture"
+        android:layout_toStartOf="@+id/recordPageAnimate"
+        android:background="@drawable/frame2"
+        android:onClick="addRecord"
+        android:text="@string/add_new"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/recordPageBodyPicture"
+        android:layout_width="142dp"
+        android:layout_height="39dp"
+        android:layout_above="@+id/recordPageAnimate"
+        android:layout_alignStart="@+id/recordPageAnimate"
+        android:background="@drawable/frame2"
+        android:text="Body picture"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="314dp"
+        android:layout_height="266dp"
+        android:layout_alignStart="@+id/recordPageMyProfile"
+        android:layout_below="@+id/recordPageTitle" />
+</RelativeLayout>

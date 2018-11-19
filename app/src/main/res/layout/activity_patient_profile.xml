@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.PatientProfileActivity">
+
+    <TextView
+        android:id="@+id/myProfile"
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/background_dark"
+        android:text="@string/my_profile"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/myProfileUserName"
+        android:layout_width="116dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="148dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="User name:"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <EditText
+        android:id="@+id/myProfileEmail"
+        android:layout_width="111dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="202dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Email:"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="251dp" />
+
+    <EditText
+        android:id="@+id/myProfilePhoneNumber"
+        android:layout_width="138dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Phone number:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <Button
+        android:id="@+id/myProfileSave"
+        android:layout_width="150dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/frame2"
+        android:text="save"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="519dp" />
+
+    <RadioGroup
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="223dp"
+        android:orientation="horizontal"
+        tools:ignore="NotSibling">
+
+        <RadioButton
+            android:id="@+id/signUpFemale"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="62dp"
+            android:layout_marginStart="20dp"
+            android:text="Female" />
+
+        <RadioButton
+            android:id="@+id/signUpMale"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/signUpPatient"
+            android:layout_marginEnd="21dp"
+            android:text="Male" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/myProfileUserName"
+        android:layout_toEndOf="@+id/myProfileUserName"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/myProfilePhoneNumber"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/myProfileEmail"
+        android:layout_toEndOf="@+id/myProfileUserName"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+
+</RelativeLayout>
