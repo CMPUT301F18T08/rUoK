@@ -1,6 +1,7 @@
 package classes;
 
 import java.io.File;
+import java.util.ArrayList;
 
 import android.graphics.Bitmap;
 
