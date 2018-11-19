@@ -18,8 +18,6 @@ import static android.support.test.InstrumentationRegistry.getInstrumentation;
 /* created by Yuhan Ye*/
 public class MainActivityTest extends ActivityInstrumentationTestCase2{
     private Solo solo;
-    private CareProvider yyh = new CareProvider();
-
 
     public MainActivityTest() {
         super(MainActivity.class);

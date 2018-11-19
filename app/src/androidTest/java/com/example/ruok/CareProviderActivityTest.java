@@ -7,7 +7,7 @@ import com.example.ruok.activities.ResetPasswordActivity;
 import com.example.ruok.activities.SearchActivity;
 import com.robotium.solo.Solo;
 
-import android.support.test.rule.ActivityTestRule;
+
 import android.test.ActivityInstrumentationTestCase2;
 
 import org.junit.Test;
@@ -19,7 +19,6 @@ import static android.support.test.InstrumentationRegistry.getInstrumentation;
 /* created by Yuhan Ye*/
 public class CareProviderActivityTest extends ActivityInstrumentationTestCase2 {
     private Solo solo;
-    private CareProvider yyh = new CareProvider();
 
     public CareProviderActivityTest() {
         super(CareProviderActivity.class);
