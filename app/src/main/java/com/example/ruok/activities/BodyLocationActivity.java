@@ -2,12 +2,12 @@
 
 package com.example.ruok.activities;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.drawable.BitmapDrawable;
-import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -22,9 +22,10 @@ public class BodyLocationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_body_location);
+        setContentView(R.layout.activity_body_location_photos);
         bodyLocationImage = (ImageView) findViewById(R.id.imageView8);
         bodyLocationImage.setOnTouchListener(new PicOnTouchListener());
+        Intent intent = getIntent();
     }
     private class PicOnTouchListener implements android.view.View.OnTouchListener {
         final Bitmap bitmap = ((BitmapDrawable) bodyLocationImage.getDrawable()).getBitmap().copy(Bitmap.Config.ARGB_8888, true);
@@ -42,5 +43,10 @@ public class BodyLocationActivity extends AppCompatActivity {
             bodyLocationImage.invalidate();
             return true;
         }
+    }
+
+    public void save(View view) {
+        Intent finish_pointing = new Intent(this, ViewBodyLocationPhotosActivity.class);
+        startActivity(finish_pointing);
     }
 }
