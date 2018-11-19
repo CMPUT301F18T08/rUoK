@@ -31,4 +31,15 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="486dp" />
 
+    <EditText
+        android:id="@+id/bodyPart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name" />
+
 </RelativeLayout>
