@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="123dp"
         android:onClick="addAPatient"
-        android:text="@string/add_a_patient"
+        android:text="add a patient"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +41,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-123dp"
         android:onClick="search"
-        android:text="@string/search"
+        android:text="search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="466dp" />
@@ -53,7 +53,7 @@
         android:layout_below="@+id/careProviderSearch"
         android:layout_centerHorizontal="true"
         android:onClick="resetPassword"
-        android:text="@string/reset_password"
+        android:text="reset password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
