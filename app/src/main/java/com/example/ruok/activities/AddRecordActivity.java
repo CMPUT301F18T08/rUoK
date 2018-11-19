@@ -15,6 +15,11 @@ public class AddRecordActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_record);
         Intent intent = getIntent();
     }
+
+    /**
+     * save info and go to record page
+     * @param view
+     */
     public void save_record(View view){
         Intent intent = new Intent(this, RecordPageActivity.class);
         startActivity(intent);

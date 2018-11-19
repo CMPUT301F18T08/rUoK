@@ -15,9 +15,13 @@ public class AddProblemActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_problem);
     }
 
+    /**
+     * back to problem list page
+     * @param view
+     */
     public void back(View view) {
         // Do something in response to button
-        Intent intent = new Intent(AddProblemActivity.this, ProblemListActivity.class);
+        Intent intent = new Intent(this, ProblemListActivity.class);
         startActivity(intent);
 
      }

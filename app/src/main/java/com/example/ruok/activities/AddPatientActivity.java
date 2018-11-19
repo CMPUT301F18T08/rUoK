@@ -14,6 +14,10 @@ public class AddPatientActivity extends AppCompatActivity {
         setContentView(R.layout.activity_add_patient);
     }
 
+    /**
+     * save info and go to care provider page
+     * @param view
+     */
     public void save(View view){
         Intent intent = new Intent(this, CareProviderActivity.class);
         startActivity(intent);
