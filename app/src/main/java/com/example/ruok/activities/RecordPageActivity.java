@@ -36,5 +36,8 @@ public class RecordPageActivity extends AppCompatActivity {
         Intent intent = new Intent(this, GeolocationActivity.class);
         startActivity(intent);
     }
-
+    /*public void upLoadphoto(View view){
+        Intent intent = new Intent(this, AddPhotoActivity.class);
+        startActivity(intent);
+    }*/    //photoIntent in bodylocation
 }
