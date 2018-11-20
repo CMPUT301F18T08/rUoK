@@ -28,6 +28,7 @@ public class AddPhotoActivity extends AppCompatActivity {
     private static final int PHOTO_FROM_GALLERY = 1;
     private static final int PHOTO_FROM_CAMERA = 2;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

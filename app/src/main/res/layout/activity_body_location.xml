@@ -49,25 +49,16 @@
         tools:text="back" />
 
     <Button
-        android:id="@+id/AddPhoto"
-        android:layout_width="104dp"
-        android:layout_height="88dp"
-        android:layout_marginBottom="24dp"
+        android:id="@+id/addPhoto"
+        android:layout_width="112dp"
+        android:layout_height="95dp"
         android:layout_marginEnd="36dp"
+        android:layout_marginBottom="21dp"
         android:background="@android:drawable/ic_input_add"
-        android:onClick="AddPhoto"
-        android:text="addphoto"
+        android:contentDescription="@string/add_Photo"
+        android:text="@string/add_Photo"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/browseBodyLocationPhoto"
-        android:layout_width="144dp"
-        android:layout_height="63dp"
-        android:onClick="browseBodyLocationPhoto"
-        android:text="browse photo"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="490dp" />
 
 </android.support.constraint.ConstraintLayout>
