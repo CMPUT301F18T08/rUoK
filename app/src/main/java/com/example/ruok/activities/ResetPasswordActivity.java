@@ -42,11 +42,9 @@ public class ResetPasswordActivity extends AppCompatActivity {
         //todo old password do not know
         new_password = (EditText) findViewById(R.id.passwordTextField);
         confirm_password = (EditText) findViewById(R.id.confirmPasswordTextField);
-        save = (Button)findViewById(R.id.careProviderAddAPatient);
+        save = (Button)findViewById(R.id.careProviderAddAPatient);}
 
-        save.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+    public void save(View view){
 
 
                 String edit_password = new_password.getText().toString();
@@ -64,8 +62,6 @@ public class ResetPasswordActivity extends AppCompatActivity {
                     Toast.makeText(ResetPasswordActivity.this, "Passwords entered don't match!", Toast.LENGTH_SHORT).show();
                 }
             }
-        });
-    }
     private void saveInFile(){
         try {
             FileOutputStream fos = openFileOutput(FILENAME,

@@ -63,7 +63,8 @@
         android:layout_alignEnd="@+id/searchRequestGeoLocation"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="85dp"
-        android:text="SEARCH"
+        android:onClick="search"
+        android:text="search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="310dp" />
