@@ -7,6 +7,12 @@ import android.view.View;
 
 import com.example.ruok.R;
 
+/**
+ * CareProviderViewListOfRecordsActivity
+ * Usage: Care provider viewing the records list for a problem. Care provider can add a comment to this problem.
+ *
+ * @version 1.1
+ */
 public class CareProviderViewListOfRecordsActivity extends AppCompatActivity {
 
     @Override

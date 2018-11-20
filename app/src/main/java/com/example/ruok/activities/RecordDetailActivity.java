@@ -7,6 +7,12 @@ import android.view.View;
 
 import com.example.ruok.R;
 
+/**
+ * RecordDetailActivity
+ * Usage: show the record detail for patient
+ * @version 1.1
+ */
+
 public class RecordDetailActivity extends AppCompatActivity {
 
     @Override

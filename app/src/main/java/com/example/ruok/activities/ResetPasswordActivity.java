@@ -23,6 +23,12 @@ import classes.Patient;
 
 import static com.example.ruok.activities.SignUpActivity.FILENAME;
 
+/**
+ * ResetPasswordActivity
+ * Usage: reset password
+ * @version 1.1
+ */
+
 public class ResetPasswordActivity extends AppCompatActivity {
     private EditText new_password;
     private EditText confirm_password;

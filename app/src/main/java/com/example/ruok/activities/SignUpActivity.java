@@ -27,6 +27,12 @@ import classes.CareProvider;
 import classes.Patient;
 import classes.User;
 
+/**
+ * SignUpActivity
+ * Usage: user sign up page
+ *
+ * @version 1.1
+ */
 
 public class SignUpActivity extends AppCompatActivity {
     public static ArrayList<User> user_data = new ArrayList<User>();

@@ -25,7 +25,15 @@ import io.searchbox.core.SearchResult;
 
 import classes.User;
 
-//https://github.com/alisajedi/lonelyTwitter/blob/ali/app/src/main/java/ca/ualberta/cs/lonelytwitter/ElasticsearchTweetController.java
+/**
+ * ElasticSearchUserController
+ * Usage: Controller for elastic search
+ * Source: https://github.com/alisajedi/lonelyTwitter/blob/ali/app/src/main/java/ca/ualberta/cs/lonelytwitter/ElasticsearchTweetController.java
+ *
+ * @version 1.1
+ */
+
+
 public class ElasticSearchUserController {
     private static JestDroidClient client;
     private static Gson gson;

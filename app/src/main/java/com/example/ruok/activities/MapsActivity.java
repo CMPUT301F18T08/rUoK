@@ -46,10 +46,13 @@ import com.google.android.gms.tasks.Task;
 
 import java.io.IOException;
 import java.util.List;
-// https://developers.google.com/maps/documentation/android-sdk/current-place-tutorial
 
 /**
- * An activity that displays a map showing the place at the device's current location.
+ * MapsActivity
+ * Usage: An activity that displays a map showing the place at the device's current location.
+ * Source: https://developers.google.com/maps/documentation/android-sdk/current-place-tutorial
+ *
+ * @version 1.1
  */
 public class MapsActivity extends AppCompatActivity
         implements OnMapReadyCallback,GoogleMap.OnMapClickListener,GoogleMap.OnMapLongClickListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, GoogleMap.OnMarkerClickListener, GoogleMap.OnInfoWindowClickListener {

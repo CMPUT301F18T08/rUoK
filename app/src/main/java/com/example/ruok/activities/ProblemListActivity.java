@@ -26,6 +26,13 @@ import classes.Problem;
 
 import static com.example.ruok.activities.MainActivity.display_username;
 
+/**
+ * ProblemListActivity
+ * Usage: show all the problems for a patient.
+ *
+ * @version 1.1
+ */
+
 public class ProblemListActivity extends AppCompatActivity {
 
     private Button reset_button;

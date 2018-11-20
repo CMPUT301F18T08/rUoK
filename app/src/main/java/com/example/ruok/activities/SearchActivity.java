@@ -9,6 +9,14 @@ import com.example.ruok.R;
 
 import classes.CareProvider;
 
+/**
+ * SearchActivity
+ * Usage: search function.
+ * Note: still working
+ *
+ * @version 1.1
+ */
+
 public class SearchActivity extends AppCompatActivity {
 
     @Override

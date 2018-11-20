@@ -7,6 +7,13 @@ import android.view.View;
 
 import com.example.ruok.R;
 
+/**
+ * RecordPageActivity
+ * Usage: user can add record to a problem, view geolocation, view and edit user progile
+ *
+ * @version 1.1
+ */
+
 public class RecordPageActivity extends AppCompatActivity {
 
     @Override

@@ -7,6 +7,14 @@ import android.view.View;
 
 import com.example.ruok.R;
 
+/**
+ * AddProblemActivity
+ * Usage: Patient can add a problem. On success, redirect back to ProblemListActivity
+ *
+ * @version 1.1
+ */
+
+
 public class AddProblemActivity extends AppCompatActivity {
 
     @Override

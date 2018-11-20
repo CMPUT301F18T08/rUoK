@@ -7,6 +7,13 @@ import android.view.View;
 
 import com.example.ruok.R;
 
+/**
+ * CareProviderViewListOfProblemsActivity
+ * Usage: Care provider viewing the list of problems for a patient selected.
+ *
+ * @version 1.1
+ */
+
 public class CareProviderViewListOfProblemsActivity extends AppCompatActivity {
 
     @Override

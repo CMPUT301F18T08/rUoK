@@ -2,6 +2,12 @@ package classes;
 
 import java.io.File;
 
+/**
+ * Photo class
+ * @author  Yundi
+ * @version 1.1
+ */
+
 public class Photo {
     private int height;
     private int width;

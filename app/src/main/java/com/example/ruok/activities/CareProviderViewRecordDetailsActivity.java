@@ -5,6 +5,12 @@ import android.os.Bundle;
 
 import com.example.ruok.R;
 
+/**
+ * CareProviderViewRecordDetailsActivity
+ * Usage: Viewing the record detail for a problem
+ *
+ * @version 1.1
+ */
 public class CareProviderViewRecordDetailsActivity extends AppCompatActivity {
 
     @Override

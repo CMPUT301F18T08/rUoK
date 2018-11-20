@@ -30,9 +30,9 @@ public class Patient extends User {
     /**
      * method to edit problem's title,date and description
      * @param problem
-     * @param title
-     * @param date
-     * @param description
+     * @param title problem title
+     * @param date  date is self-generated at the time of hitting save
+     * @param description this is the problem description
      */
     public void editProblem(Problem problem,String title, Date date,String description){
         problem.setTitle(title);

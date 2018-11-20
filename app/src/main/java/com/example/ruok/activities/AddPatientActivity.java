@@ -6,6 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.ruok.R;
+
+/**
+ * AddPatientActivity
+ * Usage: The care provider can add a patient to its patient list.
+ *
+ * @version 1.1
+ */
+
 public class AddPatientActivity extends AppCompatActivity {
 
     @Override

@@ -45,7 +45,7 @@ public class Problem implements Serializable{
 
     /**
      * method to get title
-     * @return title
+     * @return title problem title
      */
     public String getTitle() {
         return title;

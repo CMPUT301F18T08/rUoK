@@ -31,7 +31,7 @@ public class Record {
 
     /**
      * method to get doctor name
-     * @return doctorName
+     * @return doctorName this is the username of the care provider
      */
     public String getDoctorName() {
         return doctorName;
@@ -47,7 +47,7 @@ public class Record {
 
     /**
      * method to get patient name
-     * @return patientName
+     * @return patientName this is the username of the patient
      */
     public String getPatientName() {
         return patientName;
@@ -67,7 +67,7 @@ public class Record {
 
     /**
      * method to get location
-     * @return location
+     * @return location this is the geolocation
      */
     public String getLocation() { return location; }
 

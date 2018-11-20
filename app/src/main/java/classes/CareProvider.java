@@ -18,7 +18,7 @@ public class CareProvider extends User {
 
     /**
      * method to add patient to the list of patient
-     * @param patient
+     * @param patient patient is the user
      */
     public void addPatient(Patient patient){
         patients.add(patient);
@@ -26,8 +26,8 @@ public class CareProvider extends User {
 
     /**
      * method to add comment to the record
-     * @param comment
-     * @param record
+     * @param comment every record has a comment. the comment can be optional
+     * @param record  record is associated to a problem
      */
     public void addComment(String comment, Record record){
         record.setComment(comment);

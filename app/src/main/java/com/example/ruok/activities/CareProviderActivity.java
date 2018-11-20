@@ -10,6 +10,13 @@ import com.example.ruok.R;
 
 import static com.example.ruok.activities.MainActivity.display_username;
 
+/**
+ * CareProviderActivity
+ * Usage: This is the main page for signing in as care provider. The care provider can add a patient, search, and reset password here.
+ *        The patient name that assigned to the care provider is shown here.
+ *
+ * @version 1.1
+ */
 
 public class CareProviderActivity extends AppCompatActivity {
 

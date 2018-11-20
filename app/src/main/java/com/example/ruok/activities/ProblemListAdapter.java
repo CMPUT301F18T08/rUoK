@@ -16,6 +16,12 @@ import java.util.List;
 
 import classes.Problem;
 
+/**
+ * ProblemListAdapter
+ *
+ * @deprecated
+ * @version 1.1
+ */
 
 //public class ProblemListAdapter extends RecyclerView.Adapter<Adapter.item_holder> {
 //

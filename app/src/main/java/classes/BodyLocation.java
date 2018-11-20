@@ -2,9 +2,11 @@ package classes;
 
 import java.util.ArrayList;
 
+// note: not finalize yet
 // This should be a abstract class
 // define as a class for testing issue
 // location of body that patient could record using photos
+
 public class BodyLocation {
     private ArrayList<Photo> bodyLocationPhotos = new ArrayList<>();
     private Photo frontPhoto;

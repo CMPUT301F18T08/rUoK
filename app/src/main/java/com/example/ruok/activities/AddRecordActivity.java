@@ -7,6 +7,13 @@ import android.view.View;
 
 import com.example.ruok.R;
 
+/**
+ * AddRecordActivity
+ * Usage: Patient can add a record to a problem.
+ *
+ * @version 1.1
+ */
+
 public class AddRecordActivity extends AppCompatActivity {
 
     @Override

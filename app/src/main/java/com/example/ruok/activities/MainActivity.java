@@ -20,6 +20,12 @@ import classes.CareProvider;
 
 import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
+/**
+ * MainActivity
+ * Usage: handling sign in and signup.
+ *
+ * @version 1.1
+ */
 public class MainActivity extends AppCompatActivity {
     public static final String SignInInfo = "DEFAULT";
     public static final String FILENAME = "file.sav";

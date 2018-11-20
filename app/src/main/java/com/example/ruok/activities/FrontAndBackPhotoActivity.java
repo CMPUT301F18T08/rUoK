@@ -7,6 +7,12 @@ import android.view.View;
 
 import com.example.ruok.R;
 
+/**
+ * FrontAndBackPhotoActivity
+ * Usage: Handling photo
+ *
+ * @version 1.1
+ */
 public class FrontAndBackPhotoActivity extends AppCompatActivity {
 
     @Override

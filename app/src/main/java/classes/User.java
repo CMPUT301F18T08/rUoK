@@ -28,7 +28,7 @@ public abstract class User {
      * @param gender
      * @param email
      * @param phoneNumber
-     * @param userType
+     * @param userType patient or care provider
      */
     public User(String userName, String password, String gender, String email, String phoneNumber, String userType){
         this.userName = userName;

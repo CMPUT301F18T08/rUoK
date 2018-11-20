@@ -5,6 +5,13 @@ import android.os.Bundle;
 
 import com.example.ruok.R;
 
+/**
+ * AddPhotoActivity
+ * Usage: Patient can add a photo to a record
+ *
+ * @version 1.1
+ */
+
 public class AddPhotoActivity extends AppCompatActivity {
 
     @Override
