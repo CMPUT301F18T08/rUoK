@@ -16,9 +16,10 @@ public class ViewBodyLocationPhotosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_body_location);
+
     }
 
-    public void addBodyPhoto(View view){
+    public void AddPhoto(View view){
         Intent intent_addBodyPhoto = new Intent(this, AddPhotoActivity.class);
         startActivity(intent_addBodyPhoto);
     }

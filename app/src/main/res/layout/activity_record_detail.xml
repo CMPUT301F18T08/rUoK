@@ -19,7 +19,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="98dp"
         android:background="@drawable/frame2"
-        android:text="save" />
+        android:text="back" />
 
     <TextView
         android:id="@+id/recordDetailTitle"

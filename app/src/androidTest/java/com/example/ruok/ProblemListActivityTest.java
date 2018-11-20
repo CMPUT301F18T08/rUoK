@@ -31,19 +31,19 @@ public class ProblemListActivityTest extends ActivityInstrumentationTestCase2 {
     public void testResetPassword() throws Exception{
         ProblemListActivity activity = (ProblemListActivity) solo.getCurrentActivity();
         solo.assertCurrentActivity("should be ProblemListActivity",ProblemListActivity.class);
-        solo.clickOnButton("Reset Password");
+        solo.clickOnButton("reset password");
         solo.assertCurrentActivity("should be ResetPasswordActivity", ResetPasswordActivity.class);
     }
     public void testSearch() throws Exception{
         ProblemListActivity activity = (ProblemListActivity) solo.getCurrentActivity();
         solo.assertCurrentActivity("should be ProblemListActivity",ProblemListActivity.class);
-        solo.clickOnButton("search");
+        solo.clickOnButton("Search");
         solo.assertCurrentActivity("should be SearchActivity", SearchActivity.class);
     }
     public void testaddproblem() throws Exception{
         ProblemListActivity activity = (ProblemListActivity) solo.getCurrentActivity();
         solo.assertCurrentActivity("should be ProblemListActivity",ProblemListActivity.class);
-        solo.clickOnButton("add a problem");
+        solo.clickOnButton("add problem");
         solo.assertCurrentActivity("should be AddProblemActivity", AddProblemActivity.class);
     }
     

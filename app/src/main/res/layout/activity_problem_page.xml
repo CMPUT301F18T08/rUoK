@@ -33,7 +33,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="103dp"
-        android:text="@string/add_a_problem" />
+        android:text="add problem" />
 
     <Button
         android:id="@+id/problemPageResetPassword2"

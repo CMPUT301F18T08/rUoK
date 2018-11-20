@@ -48,15 +48,26 @@
         app:layout_constraintTop_toBottomOf="@+id/BackPhoto"
         tools:text="back" />
 
-    <ImageView
-        android:id="@+id/addBodyPhoto"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="13dp"
-        android:contentDescription="@string/add_body_location_photo"
+    <Button
+        android:id="@+id/AddPhoto"
+        android:layout_width="104dp"
+        android:layout_height="88dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="36dp"
+        android:background="@android:drawable/ic_input_add"
+        android:onClick="AddPhoto"
+        android:text="addphoto"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/material" />
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/browseBodyLocationPhoto"
+        android:layout_width="144dp"
+        android:layout_height="63dp"
+        android:onClick="browseBodyLocationPhoto"
+        android:text="browse photo"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="490dp" />
 
 </android.support.constraint.ConstraintLayout>
