@@ -29,19 +29,19 @@ public class BodyLocationActivityTest extends ActivityInstrumentationTestCase2 {
     public void testSave() throws Exception{
         BodyLocationActivity activity = (BodyLocationActivity) solo.getCurrentActivity();
         solo.assertCurrentActivity("should be BodyLocationActivity",BodyLocationActivity.class);
-        solo.clickOnButton("savephoto");
+        solo.clickOnButton("savePhoto");
         solo.assertCurrentActivity("should be ViewBodyLocationPhotosActivity", ViewBodyLocationPhotosActivity.class);
     }
-    public void testdelete() throws Exception{
+    public void testDelete() throws Exception{
         BodyLocationActivity activity = (BodyLocationActivity) solo.getCurrentActivity();
         solo.assertCurrentActivity("should be BodyLocationActivity",BodyLocationActivity.class);
-        solo.clickOnButton("delete");
+        solo.clickOnButton("Delete");
         solo.assertCurrentActivity("should be ViewBodyLocationPhotosActivity", ViewBodyLocationPhotosActivity.class);
     }
-    public void testback() throws Exception{
+    public void testBack() throws Exception{
         BodyLocationActivity activity = (BodyLocationActivity) solo.getCurrentActivity();
         solo.assertCurrentActivity("should be BodyLocationActivity",BodyLocationActivity.class);
-        solo.clickOnButton("back");
+        solo.clickOnButton("BACK");
         solo.assertCurrentActivity("should be ViewBodyLocationPhotosActivity", ViewBodyLocationPhotosActivity.class);
     }
 }

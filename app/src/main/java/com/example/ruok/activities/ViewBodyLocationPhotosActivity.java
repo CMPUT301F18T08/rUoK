@@ -9,7 +9,12 @@ import android.widget.ImageView;
 
 import com.example.ruok.R;
 
-import classes.BodyLocation;
+/**
+ * ViewBodyLocationPhotosActivity
+ * Usage: Handling photo
+ *
+ * @version 1.1
+ */
 
 public class ViewBodyLocationPhotosActivity extends AppCompatActivity {
     private Button addPhoto_Button;
@@ -20,7 +25,7 @@ public class ViewBodyLocationPhotosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_body_location);
-        addPhoto_Button = (Button)findViewById(R.id.AddPhoto);
+        addPhoto_Button = (Button)findViewById(R.id.addPhoto);
         frontPhoto = (ImageView)findViewById(R.id.FrontPhoto);
         backPhoto = (ImageView)findViewById(R.id.BackPhoto);
 

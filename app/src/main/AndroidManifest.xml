@@ -41,7 +41,6 @@
         <activity android:name=".activities.GeolocationActivity" />
         <activity android:name=".activities.AddRecordActivity" />
         <activity android:name=".activities.BodyLocationActivity" />
-        <activity android:name=".activities.FrontAndBackPhotoActivity" />
         <activity android:name=".activities.AddPhotoActivity" />
         <activity android:name=".activities.AddProblemActivity" />
         <activity android:name=".activities.ShowPopupCommentActivity" />

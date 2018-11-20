@@ -29,14 +29,8 @@ public class ViewBodyLocationPhotosActivityTest extends ActivityInstrumentationT
     public void testaddPhoto() throws Exception{
         ViewBodyLocationPhotosActivity activity = (ViewBodyLocationPhotosActivity) solo.getCurrentActivity();
         solo.assertCurrentActivity("should be ViewBodyLocationPhotosActivity",ViewBodyLocationPhotosActivity.class);
-        solo.clickOnButton("addphoto");
+        solo.clickOnButton("addPhoto");
         solo.assertCurrentActivity("should be AddPhotoActivity", AddPhotoActivity.class);
-    }
-    public void testBrowse() throws Exception{
-        ViewBodyLocationPhotosActivity activity = (ViewBodyLocationPhotosActivity) solo.getCurrentActivity();
-        solo.assertCurrentActivity("should be ViewBodyLocationPhotosActivity",ViewBodyLocationPhotosActivity.class);
-        solo.clickOnButton("browse photo");
-        solo.assertCurrentActivity("should be BodyLocationActivity", BodyLocationActivity.class);
     }
     
 }
