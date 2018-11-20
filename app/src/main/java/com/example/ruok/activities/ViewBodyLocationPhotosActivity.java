@@ -9,23 +9,22 @@ import com.example.ruok.R;
 
 import classes.BodyLocation;
 
+
 public class ViewBodyLocationPhotosActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_body_location_photos);
-        Intent intent = getIntent();
+        setContentView(R.layout.activity_body_location);
     }
 
     public void addBodyPhoto(View view){
-        Intent intent_addBodyPhoto = new Intent(this, AddPhotoActivity.class);
+        Intent intent_addBodyPhoto = new Intent(ViewBodyLocationPhotosActivity.this, AddPhotoActivity.class);
         startActivity(intent_addBodyPhoto);
     }
-
-    public void pointBodyLocation(View view) {
-        Intent intent_addPoint = new Intent(this, BodyLocationActivity.class);
-        startActivity(intent_addPoint);
+    public void browseBodyLocationPhoto(View view) {
+        Intent intent = new Intent(this, BodyLocationActivity.class);
+        startActivity(intent);
     }
 
 }

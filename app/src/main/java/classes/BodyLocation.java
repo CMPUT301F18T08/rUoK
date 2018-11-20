@@ -1,21 +1,21 @@
 package classes;
 
-import java.util.ArrayList;
-
-// note: not finalize yet
-// This should be a abstract class
-// define as a class for testing issue
-// location of body that patient could record using photos
+import java.util.Date;
 
 public class BodyLocation {
-    private ArrayList<Photo> bodyLocationPhotos = new ArrayList<>();
-    private Photo frontPhoto;
-    private Photo backPhoto;
+    private static int touchX;
+    private static int touchY;
+    private String bodyLocation;
 
-    public ArrayList<Photo> getBodyLocationPhoto() { return bodyLocationPhotos; }
 
-    public void addFrontPhoto(Photo frontPhoto) { bodyLocationPhotos.add(frontPhoto); }
-    public void addBackPhoto(Photo backPhoto) { bodyLocationPhotos.add(backPhoto); }
-    public void addBodyLocationPhoto(Photo bodyLocationPhoto) { bodyLocationPhotos.add(bodyLocationPhoto);}
-    public void deletePhoto(Photo bodyLocationPhoto) { bodyLocationPhotos.remove(bodyLocationPhoto); }
+    public static int getTouchX() { return touchX; }
+    public static int getTouchY() { return touchY; }
+
+    public void setTouchX(int touchX) {this.touchX = touchX; }
+    public void setTouchY(int touchY) {this.touchX = touchY; }
+    public void setBodyLocation(String bodyLocation) {this.bodyLocation = bodyLocation; }
+
+    public String getBodyLocation() { return  bodyLocation; }
+
+    public void update(int touchX, int touchY){}
 }

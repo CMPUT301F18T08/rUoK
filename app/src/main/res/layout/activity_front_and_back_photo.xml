@@ -13,7 +13,8 @@
         android:layout_height="479dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="11dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/body_location_photo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ppp" />
@@ -22,13 +23,41 @@
         android:id="@+id/frontBackPhotoBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="17dp"
-        android:layout_marginStart="105dp"
-        android:text="back"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="212dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="14dp"
+        android:contentDescription="@string/back"
+        android:text="@string/back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="486dp" />
+
+    <EditText
+        android:id="@+id/bodyPart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/frontBackPhotoImage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="78dp"
+        android:contentDescription="@string/body_part_input"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:text="bodyPart" />
+
+    <Button
+        android:id="@+id/deletePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/frontBackPhotoBack"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="83dp"
+        android:contentDescription="@string/DELETE"
+        android:text="@string/DELETE" />
 
 </RelativeLayout>
