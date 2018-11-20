@@ -30,7 +30,9 @@ import classes.BodyLocationPhotos;
 public class BodyLocationActivity extends AppCompatActivity {
     private ImageView bodyLocationImage = null;
     private BodyLocationPhotos bodyLocationPhotos;
-    private Button delete;
+    private Button delete_button;
+    private Button save_button;
+    private Button back_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,10 +40,12 @@ public class BodyLocationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_front_and_back_photo);
         bodyLocationImage = findViewById(R.id.frontBackPhotoImage);
         bodyLocationImage.setOnTouchListener(new PicOnTouchListener());
-        delete = (Button)findViewById(R.id.deletePhoto);
+        delete_button = (Button)findViewById(R.id.deletePhoto);
+        save_button = (Button)findViewById(R.id.savePhoto);
+        back_button = (Button)findViewById(R.id.frontBackPhotoBack);
         Intent intent = getIntent();
 
-        delete.setOnClickListener(new View.OnClickListener() {
+        delete_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 bodyLocationPhotos.deletePhoto(bodyLocationImage);
@@ -65,6 +69,20 @@ public class BodyLocationActivity extends AppCompatActivity {
                 AlertDialog alert = alertDialog.create();
                 alert.setTitle("Delete Photo Warning");
                 alert.show();
+            }
+        });
+        save_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BodyLocationActivity.this,ViewBodyLocationPhotosActivity.class);
+                startActivity(intent);
+            }
+        });
+        back_button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(BodyLocationActivity.this,ViewBodyLocationPhotosActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -122,7 +140,6 @@ public class BodyLocationActivity extends AppCompatActivity {
         }
 
     }
-
     public void save(View view) {
         Intent finish_pointing = new Intent(this, ViewBodyLocationPhotosActivity.class);
         startActivity(finish_pointing);

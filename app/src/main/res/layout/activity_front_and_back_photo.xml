@@ -26,9 +26,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="212dp"
-        android:layout_marginEnd="84dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="17dp"
         android:contentDescription="@string/back"
         android:text="@string/back"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,8 +56,20 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/frontBackPhotoBack"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="83dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="1dp"
         android:contentDescription="@string/DELETE"
         android:text="@string/DELETE" />
+
+    <Button
+        android:id="@+id/savePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/savePhoto"
+        android:text="@string/savePhoto" />
 
 </RelativeLayout>

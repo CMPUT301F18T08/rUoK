@@ -83,4 +83,5 @@
     <string name="body_location_photo">bodyLocationPhoto</string>
     <string name="body_part_input">bodyPart</string>
     <string name="DELETE">Delete</string>
+    <string name="savePhoto">savePhoto</string>
 </resources>

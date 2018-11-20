@@ -19,7 +19,7 @@ public class ViewBodyLocationPhotosActivity extends AppCompatActivity {
     }
 
     public void addBodyPhoto(View view){
-        Intent intent_addBodyPhoto = new Intent(ViewBodyLocationPhotosActivity.this, AddPhotoActivity.class);
+        Intent intent_addBodyPhoto = new Intent(this, AddPhotoActivity.class);
         startActivity(intent_addBodyPhoto);
     }
     public void browseBodyLocationPhoto(View view) {
