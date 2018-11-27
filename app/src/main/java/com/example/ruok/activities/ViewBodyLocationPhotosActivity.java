@@ -1,4 +1,4 @@
-package com.example.ruok.Activities;
+package com.example.ruok.activities;
 
 import android.content.Intent;
 import android.os.Bundle;

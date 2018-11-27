@@ -1,10 +1,10 @@
 package com.example.ruok;
 import android.app.Activity;
 
-import com.example.ruok.Activities.CareProviderActivity;
-import com.example.ruok.Activities.MainActivity;
-import com.example.ruok.Activities.ProblemListActivity;
-import com.example.ruok.Activities.SignUpActivity;
+import com.example.ruok.activities.CareProviderActivity;
+import com.example.ruok.activities.MainActivity;
+import com.example.ruok.activities.ProblemListActivity;
+import com.example.ruok.activities.SignUpActivity;
 import com.robotium.solo.Solo;
 import android.widget.EditText;
 import org.junit.Test;

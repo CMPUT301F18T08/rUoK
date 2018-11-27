@@ -1,20 +1,4 @@
-package com.example.ruok.Activities;
-
-import android.support.v7.widget.RecyclerView;
-import android.text.TextUtils;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Adapter;
-import android.widget.Button;
-import android.widget.TextView;
-
-import com.example.ruok.R;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import classes.Problem;
+package com.example.ruok.activities;
 
 /**
  * ProblemListAdapter

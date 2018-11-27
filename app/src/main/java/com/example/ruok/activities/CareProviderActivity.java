@@ -1,4 +1,4 @@
-package com.example.ruok.Activities;
+package com.example.ruok.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.example.ruok.R;
 
-import static com.example.ruok.Activities.MainActivity.display_username;
+import static com.example.ruok.activities.MainActivity.display_username;
 
 /**
  * CareProviderActivity

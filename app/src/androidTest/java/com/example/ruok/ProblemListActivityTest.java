@@ -5,10 +5,10 @@ import android.test.ActivityInstrumentationTestCase2;
 
 
 
-import com.example.ruok.Activities.ProblemListActivity;
-import com.example.ruok.Activities.ResetPasswordActivity;
-import com.example.ruok.Activities.SearchActivity;
-import com.example.ruok.Activities.AddProblemActivity;
+import com.example.ruok.activities.ProblemListActivity;
+import com.example.ruok.activities.ResetPasswordActivity;
+import com.example.ruok.activities.SearchActivity;
+import com.example.ruok.activities.AddProblemActivity;
 import com.robotium.solo.Solo;
 
 import org.junit.Test;

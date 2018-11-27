@@ -7,7 +7,7 @@
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
-    tools:context=".Activities.MainActivity"
+    tools:context=".activities.MainActivity"
     android:background="@drawable/background2">
 
 

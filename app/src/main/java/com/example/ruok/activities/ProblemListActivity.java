@@ -1,4 +1,4 @@
-package com.example.ruok.Activities;
+package com.example.ruok.activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +13,7 @@ import com.example.ruok.R;
 
 import classes.Problem;
 
-import static com.example.ruok.Activities.MainActivity.display_username;
+import static com.example.ruok.activities.MainActivity.display_username;
 
 /**
  * ProblemListActivity

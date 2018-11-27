@@ -1,4 +1,4 @@
-package com.example.ruok.Constant;
+package com.example.ruok.constant;
 
 public class Constants {
 

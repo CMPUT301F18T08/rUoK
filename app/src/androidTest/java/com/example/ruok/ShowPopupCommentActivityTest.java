@@ -5,8 +5,8 @@ import android.test.ActivityInstrumentationTestCase2;
 
 
 
-import com.example.ruok.Activities.ShowPopupCommentActivity;
-import com.example.ruok.Activities.CareProviderViewListOfRecordsActivity;
+import com.example.ruok.activities.ShowPopupCommentActivity;
+import com.example.ruok.activities.CareProviderViewListOfRecordsActivity;
 
 import com.robotium.solo.Solo;
 

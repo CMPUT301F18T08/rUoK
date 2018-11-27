@@ -1,4 +1,4 @@
-package com.example.ruok.Activities;
+package com.example.ruok.activities;
 
 import android.graphics.Bitmap;
 import android.support.v7.app.AppCompatActivity;

@@ -1,7 +1,6 @@
-package com.example.ruok.Activities;
+package com.example.ruok.activities;
 
 
-import android.net.http.AndroidHttpClient;
 import android.os.AsyncTask;
 import android.util.Log;
 

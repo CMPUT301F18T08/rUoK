@@ -1,4 +1,4 @@
-package com.example.ruok.Adapter;
+package com.example.ruok.adapter;
 
 import android.content.Context;
 import android.view.View;

@@ -1,10 +1,10 @@
 package com.example.ruok;
 import android.app.Activity;
 
-import com.example.ruok.Activities.AddPatientActivity;
-import com.example.ruok.Activities.CareProviderActivity;
-import com.example.ruok.Activities.ResetPasswordActivity;
-import com.example.ruok.Activities.SearchActivity;
+import com.example.ruok.activities.AddPatientActivity;
+import com.example.ruok.activities.CareProviderActivity;
+import com.example.ruok.activities.ResetPasswordActivity;
+import com.example.ruok.activities.SearchActivity;
 import com.robotium.solo.Solo;
 
 

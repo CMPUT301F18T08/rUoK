@@ -1,4 +1,4 @@
-package com.example.ruok.Activities;
+package com.example.ruok.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -18,7 +18,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
-import static com.example.ruok.Activities.SignUpActivity.FILENAME;
+import static com.example.ruok.activities.SignUpActivity.FILENAME;
 
 /**
  * ResetPasswordActivity

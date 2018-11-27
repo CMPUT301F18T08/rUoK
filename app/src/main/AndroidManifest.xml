@@ -21,31 +21,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activities.MainActivity">
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.SignUpActivity" />
-        <activity android:name=".Activities.ResetPasswordActivity" />
-        <activity android:name=".Activities.ProblemListActivity" />
-        <activity android:name=".Activities.RecordPageActivity" />
-        <activity android:name=".Activities.CareProviderActivity" />
-        <activity android:name=".Activities.PatientProfileActivity" />
-        <activity android:name=".Activities.CareProviderViewListOfProblemsActivity" />
-        <activity android:name=".Activities.CareProviderViewListOfRecordsActivity" />
-        <activity android:name=".Activities.CareProviderViewRecordDetailsActivity" />
-        <activity android:name=".Activities.SearchActivity" />
-        <activity android:name=".Activities.GeolocationActivity" />
-        <activity android:name=".Activities.AddRecordActivity" />
-        <activity android:name=".Activities.BodyLocationActivity" />
-        <activity android:name=".Activities.AddPhotoActivity" />
-        <activity android:name=".Activities.AddProblemActivity" />
-        <activity android:name=".Activities.ShowPopupCommentActivity" />
-        <activity android:name=".Activities.AddPatientActivity" />
-        <activity android:name=".Activities.RecordDetailActivity" />
+        <activity android:name=".activities.SignUpActivity" />
+        <activity android:name=".activities.ResetPasswordActivity" />
+        <activity android:name=".activities.ProblemListActivity" />
+        <activity android:name=".activities.RecordPageActivity" />
+        <activity android:name=".activities.CareProviderActivity" />
+        <activity android:name=".activities.PatientProfileActivity" />
+        <activity android:name=".activities.CareProviderViewListOfProblemsActivity" />
+        <activity android:name=".activities.CareProviderViewListOfRecordsActivity" />
+        <activity android:name=".activities.CareProviderViewRecordDetailsActivity" />
+        <activity android:name=".activities.SearchActivity" />
+        <activity android:name=".activities.GeolocationActivity" />
+        <activity android:name=".activities.AddRecordActivity" />
+        <activity android:name=".activities.BodyLocationActivity" />
+        <activity android:name=".activities.AddPhotoActivity" />
+        <activity android:name=".activities.AddProblemActivity" />
+        <activity android:name=".activities.ShowPopupCommentActivity" />
+        <activity android:name=".activities.AddPatientActivity" />
+        <activity android:name=".activities.RecordDetailActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -59,7 +59,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".Activities.MapsActivity"
+            android:name=".activities.MapsActivity"
             android:label="@string/title_activity_maps"></activity>
     </application>
 

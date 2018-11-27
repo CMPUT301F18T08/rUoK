@@ -9,7 +9,7 @@
     android:paddingTop="0dp"
     android:paddingBottom="0dp"
     android:background="@drawable/case1"
-    tools:context=".Activities.RecordDetailActivity">
+    tools:context=".activities.RecordDetailActivity">
 
     <Button
         android:id="@+id/recordsave"

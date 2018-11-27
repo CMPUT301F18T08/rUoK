@@ -1,14 +1,5 @@
 package com.example.ruok;
 
-import android.app.Activity;
-import android.test.ActivityInstrumentationTestCase2;
-
-import com.example.ruok.Activities.BodyLocationActivity;
-import com.example.ruok.Activities.ViewBodyLocationPhotosActivity;
-import com.robotium.solo.Solo;
-
-import org.junit.Test;
-
 //public class BodyLocationActivityTest extends ActivityInstrumentationTestCase2 {
 //    private Solo solo;
 //
