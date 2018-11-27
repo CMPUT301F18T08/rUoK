@@ -5,8 +5,8 @@ import android.test.ActivityInstrumentationTestCase2;
 
 
 
-import com.example.ruok.activities.SignUpActivity;
-import com.example.ruok.activities.MainActivity;
+import com.example.ruok.Activities.SignUpActivity;
+import com.example.ruok.Activities.MainActivity;
 
 import com.robotium.solo.Solo;
 

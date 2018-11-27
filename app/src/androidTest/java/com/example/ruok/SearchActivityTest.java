@@ -5,8 +5,8 @@ import android.test.ActivityInstrumentationTestCase2;
 
 
 
-import com.example.ruok.activities.SearchActivity;
-import com.example.ruok.activities.CareProviderActivity;
+import com.example.ruok.Activities.SearchActivity;
+import com.example.ruok.Activities.CareProviderActivity;
 
 import com.robotium.solo.Solo;
 

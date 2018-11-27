@@ -1,4 +1,4 @@
-package com.example.ruok.activities;
+package com.example.ruok.Activities;
 
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;

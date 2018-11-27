@@ -5,8 +5,8 @@ import android.test.ActivityInstrumentationTestCase2;
 
 
 
-import com.example.ruok.activities.AddRecordActivity;
-import com.example.ruok.activities.RecordPageActivity;
+import com.example.ruok.Activities.AddRecordActivity;
+import com.example.ruok.Activities.RecordPageActivity;
 
 import com.robotium.solo.Solo;
 

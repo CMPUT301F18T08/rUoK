@@ -1,9 +1,8 @@
 // create dot activity - Author: Piyush Malaviya @Jul 11, 2015 from https://stackoverflow.com/questions/31360507/how-to-create-a-point-on-touch-of-a-particular-position-of-a-image-in-android
 // isLongPress - Author: pbreak @Jan 6, 2014 from https://blog.csdn.net/pbreak/article/details/17919551
 // Android Alert Dialog Box with yes and now - Author: Android Hari @Jan 18,2016 https://www.youtube.com/watch?v=3CotB4pclTw
-package com.example.ruok.activities;
+package com.example.ruok.Activities;
 
-import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;

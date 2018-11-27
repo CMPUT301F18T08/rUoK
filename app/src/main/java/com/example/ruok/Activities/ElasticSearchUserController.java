@@ -1,4 +1,4 @@
-package com.example.ruok.activities;
+package com.example.ruok.Activities;
 
 
 import android.net.http.AndroidHttpClient;

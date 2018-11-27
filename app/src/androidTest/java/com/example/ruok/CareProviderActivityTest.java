@@ -1,20 +1,16 @@
 package com.example.ruok;
 import android.app.Activity;
 
-import com.example.ruok.activities.AddPatientActivity;
-import com.example.ruok.activities.CareProviderActivity;
-import com.example.ruok.activities.ResetPasswordActivity;
-import com.example.ruok.activities.SearchActivity;
+import com.example.ruok.Activities.AddPatientActivity;
+import com.example.ruok.Activities.CareProviderActivity;
+import com.example.ruok.Activities.ResetPasswordActivity;
+import com.example.ruok.Activities.SearchActivity;
 import com.robotium.solo.Solo;
 
 
 import android.test.ActivityInstrumentationTestCase2;
 
 import org.junit.Test;
-
-import classes.CareProvider;
-
-import static android.support.test.InstrumentationRegistry.getInstrumentation;
 
 /* created by Yuhan Ye*/
 public class CareProviderActivityTest extends ActivityInstrumentationTestCase2 {

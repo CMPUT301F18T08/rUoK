@@ -3,12 +3,8 @@ package com.example.ruok;
 import android.app.Activity;
 import android.test.ActivityInstrumentationTestCase2;
 
-import com.example.ruok.activities.AddPatientActivity;
-import com.example.ruok.activities.CareProviderActivity;
-import com.example.ruok.activities.CareProviderViewListOfRecordsActivity;
-import com.example.ruok.activities.GeolocationActivity;
-import com.example.ruok.activities.PatientProfileActivity;
-import com.example.ruok.activities.ProblemListActivity;
+import com.example.ruok.Activities.PatientProfileActivity;
+import com.example.ruok.Activities.ProblemListActivity;
 import com.robotium.solo.Solo;
 
 import org.junit.Test;

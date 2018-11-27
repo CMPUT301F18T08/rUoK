@@ -1,4 +1,4 @@
-package com.example.ruok.activities;
+package com.example.ruok.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -15,10 +15,6 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStreamReader;
-
-import classes.CareProvider;
-
-import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
 /**
  * MainActivity

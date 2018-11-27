@@ -1,15 +1,9 @@
 package com.example.ruok;
 import android.app.Activity;
 
-import com.example.ruok.activities.AddPatientActivity;
-import com.example.ruok.activities.CareProviderActivity;
-import com.example.ruok.activities.CareProviderViewListOfRecordsActivity;
-import com.example.ruok.activities.GeolocationActivity;
-import com.example.ruok.activities.MainActivity;
-import com.example.ruok.activities.ResetPasswordActivity;
-import com.example.ruok.activities.SearchActivity;
-import com.example.ruok.activities.ShowPopupCommentActivity;
-import com.example.ruok.activities.SignUpActivity;
+import com.example.ruok.Activities.CareProviderViewListOfRecordsActivity;
+import com.example.ruok.Activities.GeolocationActivity;
+import com.example.ruok.Activities.ShowPopupCommentActivity;
 import com.robotium.solo.Solo;
 
 
