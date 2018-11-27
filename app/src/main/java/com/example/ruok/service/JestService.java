@@ -60,6 +60,7 @@ public class JestService {
      * @return
      * @throws Exception
      */
+    
     public DocumentResult createIndex(String indexName, String typeName, Object source) throws Exception {
         String id = System.currentTimeMillis() + "";
         if (source instanceof User) {
@@ -79,6 +80,7 @@ public class JestService {
      * @return
      * @throws Exception
      */
+
     public String getIndexMapping(String indexName, String typeName) throws Exception {
         GetMapping getMapping = new GetMapping.Builder().addIndex(indexName).addType(typeName).build();
         JestResult jr = client.execute(getMapping);
@@ -95,6 +97,7 @@ public class JestService {
      * @return
      * @throws Exception
      */
+
     public SearchResult search(String indexName, String typeName, String query) throws Exception {
 
         Search search = new Search.Builder(query)
@@ -163,6 +166,7 @@ public class JestService {
      * @return
      * @throws Exception
      */
+
     public boolean delete(String indexName, String typeName, String id) throws Exception {
 
         DocumentResult dr = client.execute(new Delete.Builder(id).index(indexName).type(typeName).build());
@@ -178,6 +182,7 @@ public class JestService {
      * @param id
      * @return
      */
+
     public JestResult updateDocument(String script, String index, String type, String id) {
         Update update = new Update.Builder(script).index(index).type(type).id(id).build();
         JestResult result = null;
@@ -194,6 +199,7 @@ public class JestService {
      *
      * @throws Exception
      */
+
     public void closeJestClient() throws Exception {
 
         if (client != null) {
