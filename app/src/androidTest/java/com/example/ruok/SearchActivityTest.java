@@ -30,7 +30,7 @@ public class SearchActivityTest extends ActivityInstrumentationTestCase2 {
     public void testSave() throws Exception{
         SearchActivity activity = (SearchActivity) solo.getCurrentActivity();
         solo.assertCurrentActivity("should be SearchActivity",SearchActivity.class);
-        solo.clickOnButton("save");
+        solo.clickOnButton("search");
         solo.assertCurrentActivity("should be CareProviderActivity", CareProviderActivity.class);
     }
 }

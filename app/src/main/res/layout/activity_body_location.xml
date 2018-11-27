@@ -52,11 +52,11 @@
         android:id="@+id/addPhoto"
         android:layout_width="112dp"
         android:layout_height="95dp"
-        android:layout_marginEnd="36dp"
         android:layout_marginBottom="21dp"
+        android:layout_marginEnd="36dp"
         android:background="@android:drawable/ic_input_add"
         android:contentDescription="@string/add_Photo"
-        android:text="@string/add_Photo"
+        android:text=" add photo"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

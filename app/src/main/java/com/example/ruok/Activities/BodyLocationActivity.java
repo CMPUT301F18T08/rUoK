@@ -39,14 +39,13 @@ public class BodyLocationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_front_and_back_photo);
         bodyLocationImage = findViewById(R.id.frontBackPhotoImage);
         bodyLocationImage.setOnTouchListener(new PicOnTouchListener());
-        delete_button = (Button)findViewById(R.id.deletePhoto);
-        save_button = (Button)findViewById(R.id.savePhoto);
-        back_button = (Button)findViewById(R.id.frontBackPhotoBack);
+        delete_button = (Button) findViewById(R.id.deletePhoto);
+        save_button = (Button) findViewById(R.id.savePhoto);
+        back_button = (Button) findViewById(R.id.frontBackPhotoBack);
         Intent intent = getIntent();
+    }
 
-        delete_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+    public void delete(View view){
                 bodyLocationPhotos.deletePhoto(bodyLocationImage);
                 AlertDialog.Builder alertDialog = new AlertDialog.Builder(BodyLocationActivity.this);
                 alertDialog.setMessage("Do you want to delete this photo ?").setCancelable(false)
@@ -69,22 +68,16 @@ public class BodyLocationActivity extends AppCompatActivity {
                 alert.setTitle("Delete Photo Warning");
                 alert.show();
             }
-        });
-        save_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+
+    public void savephoto(View view){
                 Intent intent = new Intent(BodyLocationActivity.this,ViewBodyLocationPhotosActivity.class);
                 startActivity(intent);
             }
-        });
-        back_button.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view) {
+
+    public void back(View view){
                 Intent intent = new Intent(BodyLocationActivity.this,ViewBodyLocationPhotosActivity.class);
                 startActivity(intent);
             }
-        });
-    }
 
     private class PicOnTouchListener implements android.view.View.OnTouchListener {
         final Bitmap bitmap = ((BitmapDrawable) bodyLocationImage.getDrawable()).getBitmap().copy(Bitmap.Config.ARGB_8888, true);

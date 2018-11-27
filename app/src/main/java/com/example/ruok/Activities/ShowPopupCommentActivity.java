@@ -23,7 +23,7 @@ public class ShowPopupCommentActivity extends AppCompatActivity {
     }
 
     public void back(View view) {
-        Intent intent = new Intent(ShowPopupCommentActivity.this, CareProviderViewListOfProblemsActivity.class);
+        Intent intent = new Intent(ShowPopupCommentActivity.this, CareProviderViewListOfRecordsActivity.class);
         startActivity(intent);
     }
 }

@@ -54,6 +54,7 @@ public class ViewBodyLocationPhotosActivity extends AppCompatActivity {
         });
 
     }
+
     //public void browseBodyLocationPhoto(View view) {
       //  Intent intent = new Intent(ViewBodyLocationPhotosActivity.this, BodyLocationActivity.class);
         //startActivity(intent);

@@ -16,7 +16,7 @@ public class ShowPopupCommentActivityTest extends ActivityInstrumentationTestCas
     private Solo solo;
 
     public ShowPopupCommentActivityTest() {
-        super(ShowPopupCommentActivityTest.class);
+        super(ShowPopupCommentActivity.class);
     }
 
     public void setUp() throws Exception{
@@ -27,10 +27,10 @@ public class ShowPopupCommentActivityTest extends ActivityInstrumentationTestCas
         Activity activity = getActivity();
     }
     @Test
-    public void testsearch() throws Exception{
+    public void testback() throws Exception{
         ShowPopupCommentActivity activity = (ShowPopupCommentActivity) solo.getCurrentActivity();
         solo.assertCurrentActivity("should be ShowPopupCommentActivity",ShowPopupCommentActivity.class);
-        solo.clickOnButton("search");
+        solo.clickOnButton("back");
         solo.assertCurrentActivity("should be CareProviderViewListOfRecordsActivity", CareProviderViewListOfRecordsActivity.class);
     }
 }
