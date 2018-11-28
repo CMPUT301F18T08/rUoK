@@ -97,9 +97,17 @@ public abstract class User {
     }
 
     /**
+     * method to get user ID ( patient/care provider)
+     * @return id
+     */
+    public String getId() {
+        return id;
+    }
+    /**
      * method to set user type ( patient/care provider)
      * @param userType
      */
+
     public void setUserType(String userType) {
         this.userType= userType;
     }
