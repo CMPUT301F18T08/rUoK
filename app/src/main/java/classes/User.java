@@ -9,7 +9,7 @@ import io.searchbox.annotations.JestId;
  * @author  Yuhan Ye
  * @version 1.1
  */
-public abstract class User implements Serializable{
+public  class User  implements Serializable {
 
     private String userName;
     private String password;
@@ -99,17 +99,9 @@ public abstract class User implements Serializable{
     }
 
     /**
-     * method to get user ID ( patient/care provider)
-     * @return id
-     */
-    public String getId() {
-        return id;
-    }
-    /**
      * method to set user type ( patient/care provider)
      * @param userType
      */
-
     public void setUserType(String userType) {
         this.userType= userType;
     }
@@ -151,5 +143,9 @@ public abstract class User implements Serializable{
      */
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public String getId() {
+        return id;
     }
 }
