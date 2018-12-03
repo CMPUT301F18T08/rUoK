@@ -22,7 +22,7 @@ public class SearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_request);
     }
-    //todo 会到privider还是patient需要设置
+    //todo consider go back to care provider or patient
     public void search(View view){
         Intent intent = new Intent(this, CareProviderActivity.class);
         startActivity(intent);

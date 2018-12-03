@@ -31,7 +31,7 @@ public class CareProviderActivity extends AppCompatActivity {
         display.setText(display_username);
 
     }
- //todo 检查他病人的profile
+ //todo check patient profile
     public void resetPassword(View view){
         Intent intent_resetPassword = new Intent(this, ResetPasswordActivity.class);
         startActivity(intent_resetPassword);

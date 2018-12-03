@@ -55,10 +55,10 @@ public class SearchPatientsTask extends AsyncTask<Void, Void, SearchResult> {
         super.onPostExecute(searchResult);
         Log.d("SearchPatientsTask", "searchResult:" + searchResult);
 
-        if (searchResult == null || !searchResult.isSucceeded()) {//查询失败,从本地读取Patient
+        if (searchResult == null || !searchResult.isSucceeded()) {//search failed, load patient from local
             List<JsonUser> localPatients = FileUtils.getInstance(MyApplication.context).readPatientsFromLocal();
             response.onSuccess(localPatients);
-        } else {//查询成功,返回Patient
+        } else {//search success, return Patient
             List<JsonUser> users = searchResult.getSourceAsObjectList(JsonUser.class);
             response.onSuccess(users);
         }

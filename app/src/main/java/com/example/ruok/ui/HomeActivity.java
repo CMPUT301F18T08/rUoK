@@ -32,7 +32,7 @@ public class HomeActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_problem:
                     index = 0;
-                    //设置底部标题，如果是patient，就设置为problem；如果是CareProvider就设置为Patient
+                    //set navigation，if user is patient，set to problem；if user is CareProvider then set to Patient
                     String userType = SpUtil.getCurrentUser().getUserType();
                     if ("patient".equals(userType)) {
                         item.setTitle("Problem List");
@@ -75,7 +75,7 @@ public class HomeActivity extends AppCompatActivity {
 
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        //设置默认选中第一项，目的是为了触发mOnNavigationItemSelectedListener事件，然后根据UserType设置底部的标题
+        //default set to the first item，to trigger mOnNavigationItemSelectedListener event，then set the navigation based on UserType
         navigation.setSelectedItemId(R.id.navigation_problem);
 
         //根据不同的身份添加不同的页面

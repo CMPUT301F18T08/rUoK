@@ -13,7 +13,7 @@ import io.searchbox.client.JestResult;
 import io.searchbox.core.DocumentResult;
 
 /**
- * 添加 或 修改用户信息
+ * add or edit user info
  *
  * @Date 2018-11-30.
  */
