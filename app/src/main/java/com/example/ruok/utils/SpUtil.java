@@ -48,7 +48,7 @@ public class SpUtil {
     public static Object getData(Context context, String key, Object defValue) {
 
         String type = defValue.getClass().getSimpleName();
-        //defValue为为默认值，如果当前获取不到数据就返回它
+        //defValue is default value，if cannot get Data then return default
         if ("Integer".equals(type)) {
             return prefs.getInt(key, (Integer) defValue);
         } else if ("Boolean".equals(type)) {

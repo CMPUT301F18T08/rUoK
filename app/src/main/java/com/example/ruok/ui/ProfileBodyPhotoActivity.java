@@ -69,57 +69,57 @@ public class ProfileBodyPhotoActivity extends AppCompatActivity implements View.
             case R.id.view_head:
                 bodyPart = "head";
                 bodyImage = R.mipmap.ic_body_head;
-//                Toast.makeText(this, "头部", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "head", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.view_left_hand:
                 bodyPart = "hand";
                 bodyImage = R.mipmap.ic_body_hand;
-//                Toast.makeText(this, "左手", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "left hand", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.view_right_hand:
                 bodyPart = "hand";
                 bodyImage = R.mipmap.ic_body_hand;
-//                Toast.makeText(this, "右手", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "right hand", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.view_left_arm:
                 bodyPart = "arm";
                 bodyImage = R.mipmap.ic_body_right_arm;
-//                Toast.makeText(this, "左胳膊", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "left arm", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.view_right_arm:
                 bodyPart = "arm";
                 bodyImage = R.mipmap.ic_body_right_arm;
-//                Toast.makeText(this, "右胳膊", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "right arm", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.view_chest:
                 bodyPart = "chest";
                 bodyImage = R.mipmap.ic_body_chest;
-//                Toast.makeText(this, "胸部", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "chest", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.view_abdomen:
                 bodyPart = "abdomen";
                 bodyImage = R.mipmap.ic_body_fubu;
-//                Toast.makeText(this, "腹部", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "abdomen", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.view_left_leg:
                 bodyPart = "leg";
                 bodyImage = R.mipmap.ic_body_leg;
-//                Toast.makeText(this, "左腿", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "left leg", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.view_right_leg:
                 bodyPart = "leg";
                 bodyImage = R.mipmap.ic_body_leg;
-//                Toast.makeText(this, "右腿", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "right leg", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.view_left_foot:
                 bodyPart = "foot";
                 bodyImage = R.mipmap.ic_body_foot;
-//                Toast.makeText(this, "左脚", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "left foot", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.view_right_foot:
                 bodyPart = "foot";
                 bodyImage = R.mipmap.ic_body_foot;
-//                Toast.makeText(this, "右脚", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(this, "right foot", Toast.LENGTH_SHORT).show();
                 break;
         }
 

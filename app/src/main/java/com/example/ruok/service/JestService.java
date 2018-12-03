@@ -39,7 +39,7 @@ public class JestService {
     }
 
     /**
-     * 获取JestClient对象
+     * method to get JestClient
      *
      * @return
      */
@@ -75,7 +75,7 @@ public class JestService {
 
 
     /**
-     * Get映射
+     * method to get mapping
      *
      * @param indexName
      * @param typeName
@@ -90,7 +90,7 @@ public class JestService {
 
 
     /**
-     * 搜索文档
+     * method to search file
      *
      * @param indexName
      * @param typeName
@@ -109,7 +109,7 @@ public class JestService {
 
 
     /**
-     * Get文档
+     * method to get file
      *
      * @param indexName
      * @param typeName
@@ -124,7 +124,7 @@ public class JestService {
     }
 
     /**
-     * Count文档
+     * method to count file
      *
      * @param indexName
      * @param typeName
@@ -145,7 +145,7 @@ public class JestService {
 
 
     /**
-     * Delete索引
+     * method to delete index name
      *
      * @param indexName
      * @return
@@ -158,7 +158,7 @@ public class JestService {
     }
 
     /**
-     * Delete文档
+     * method to delete file
      *
      * @param indexName
      * @param typeName
@@ -173,7 +173,7 @@ public class JestService {
     }
 
     /**
-     * update
+     * method to update
      *
      * @param script
      * @param index
@@ -193,7 +193,7 @@ public class JestService {
     }
 
     /**
-     * 关闭JestClient客户端
+     * method to close JestClient
      *
      * @throws Exception
      */
