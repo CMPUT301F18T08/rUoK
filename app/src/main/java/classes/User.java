@@ -1,5 +1,7 @@
 package classes;
 
+import java.io.Serializable;
+
 import io.searchbox.annotations.JestId;
 
 /**
@@ -7,7 +9,7 @@ import io.searchbox.annotations.JestId;
  * @author  Yuhan Ye
  * @version 1.1
  */
-public abstract class User {
+public abstract class User implements Serializable{
 
     private String userName;
     private String password;

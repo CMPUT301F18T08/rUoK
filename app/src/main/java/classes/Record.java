@@ -1,17 +1,21 @@
 
 package classes;
 
-import com.google.android.gms.maps.model.LatLng;
+import java.io.Serializable;
 
 import java.util.ArrayList;
 import java.util.Date;
+
+import io.searchbox.annotations.JestId;
 
 /**
  * Record class
  * @author  Yuhan Ye
  * @version 1.1
  */
-public class Record {
+public class Record implements Serializable{
+    @JestId
+    private String id;
     private String recordTitle;
     private String patientName;
     private String doctorName;
@@ -21,6 +25,15 @@ public class Record {
     private ArrayList<Photo> photos = new ArrayList<Photo>(10);
     private String location;
 
+    private String detail;
+    private Double longitude;
+    private Double latitude;
+
+    /**
+     * method to get id
+     * @return comment
+     */
+    public String getId() { return id; }
     /**
      * method to get comment
      * @return comment
@@ -78,6 +91,29 @@ public class Record {
     public String getRecordTitle() { return recordTitle; }
 
     /**
+     * method to get detail
+     * @return detail
+     */
+    public String getDetail() { return detail; }
+
+    /**
+     * method to get longitude
+     * @return longitude
+     */
+    public Double getLongitude() { return longitude; }
+
+    /**
+     * method to get latitude
+     * @return latitude
+     */
+    public Double getLatitude() { return latitude; }
+
+    /**
+     * method to set id
+     * @param id
+     */
+    public void setId(String id) {this.id = id;}
+    /**
      * method to set date
      * @param date
      */
@@ -126,6 +162,24 @@ public class Record {
      * @param recordTitle
      */
     public void setRecordTitle(String recordTitle) { this.recordTitle = recordTitle; }
+
+    /**
+     * method to set detail
+     * @param detail
+     */
+    public void setDetail(String detail) { this.detail = detail;}
+
+    /**
+     * method to set longitude
+     * @param longitude
+     */
+    public void setLongitude(Double longitude) { this.longitude = longitude; }
+
+    /**
+     * method to set latitude
+     * @param latitude
+     */
+    public void setLatitude(Double latitude) { this.latitude = latitude; }
 
     /**
      * method to add photo to the photo array list
