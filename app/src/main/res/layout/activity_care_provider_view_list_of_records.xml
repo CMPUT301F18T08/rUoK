@@ -1,49 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.CareProviderViewListOfRecordsActivity"
-    >
+    tools:context=".activities.CareProviderViewListOfRecordsActivity">
 
     <Button
         android:id="@+id/doctorAddComment2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="40dp"
         android:onClick="popupComment"
         android:text="add a comment"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:layout_editor_absoluteX="68dp" />
 
-    <TextView
-        android:id="@+id/commentField2"
-        android:layout_width="166dp"
-        android:layout_height="82dp"
-        android:layout_below="@+id/careProviderViewListOfRecordsListView"
-        android:layout_toEndOf="@+id/careProviderViewListOfRecordsPatient"
-        android:text="TextView" />
 
     <TextView
         android:id="@+id/text4"
         android:layout_width="234dp"
         android:layout_height="42dp"
-        android:layout_alignParentStart="true"
         android:layout_below="@+id/careProviderViewListOfRecordsListView"
+        android:layout_alignParentStart="true"
         android:text="@string/ProblemTitle"
         android:textSize="24sp"
         tools:text="Doctor's Comment:" />
 
+    <ListView
+        android:id="@+id/list_comments"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/text4">
+
+    </ListView>
+
     <EditText
         android:id="@+id/careProviderViewListOfRecordsTextView"
-        android:layout_width="293dp"
-        android:layout_height="41dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:inputType="textPersonName"
         android:text="Viewing records for Problem1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,6 +57,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:inputType="textPersonName"
         android:text="Patient: Mary"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,8 +70,8 @@
         android:id="@+id/careProviderViewListOfRecordsListView"
         android:layout_width="match_parent"
         android:layout_height="337dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/careProviderViewListOfRecordsTextView" />
+        android:layout_below="@+id/careProviderViewListOfRecordsTextView"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/viewGeolocation"

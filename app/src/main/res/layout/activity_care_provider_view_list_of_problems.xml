@@ -1,42 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activities.CareProviderViewListOfProblemsActivity">
 
-    <EditText
-        android:id="@+id/careProviderViewListOfRecordsPatient"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/patient_mary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.011"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:elevation="6dp">
 
-    <TextView
-        android:id="@+id/problemTitle2"
-        android:layout_width="153dp"
-        android:layout_height="42dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/careProviderViewListOfRecordsPatient"
-        android:layout_marginStart="11dp"
-        android:text="@string/ProblemTitle"
-        android:textSize="24sp" />
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/careProviderViewListOfProblemsListView"
-        android:layout_width="341dp"
-        android:layout_height="335dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="102dp" />
+        <TextView
+            android:id="@+id/careProviderViewListOfRecordsPatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/patient_mary"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
 
 
-</RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp">
+
+    </ListView>
+
+
+</LinearLayout>

@@ -6,7 +6,7 @@ import android.test.ActivityInstrumentationTestCase2;
 import com.example.ruok.activities.AddPhotoActivity;
 import com.example.ruok.activities.ViewBodyLocationPhotosActivity;
 import com.example.ruok.activities.BodyLocationActivity;
-//import com.example.ruok.activities.ProblemListActivity;
+import com.example.ruok.activities.ProblemListActivity;
 import com.robotium.solo.Solo;
 
 import org.junit.Test;

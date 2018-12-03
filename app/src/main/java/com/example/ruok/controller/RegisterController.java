@@ -1,6 +1,7 @@
 package com.example.ruok.controller;
 
 import android.os.AsyncTask;
+import android.text.TextUtils;
 
 import com.example.ruok.MyApplication;
 import com.example.ruok.constant.Constants;
@@ -16,6 +17,7 @@ import io.searchbox.core.DocumentResult;
  */
 public class RegisterController extends AsyncTask<JsonUser, Void, JestResult> {
     private Response<String> response;
+    private JsonUser user;
 
     public void setResponse(Response<String> response) {
         this.response = response;
@@ -23,17 +25,18 @@ public class RegisterController extends AsyncTask<JsonUser, Void, JestResult> {
 
     @Override
     protected JestResult doInBackground(JsonUser... users) {
+        user = users[0];
         //设置 id
-        if (users[0].getId() == null) {
-            users[0].setId(System.currentTimeMillis() + "");
+        if (TextUtils.isEmpty(user.getId())) {
+            user.setId(System.currentTimeMillis() + "");
         }
         //1. save user to local file
-        FileUtils.getInstance(MyApplication.context).saveUser(users[0]);
+        FileUtils.getInstance(MyApplication.context).saveUser(user);
         //2. submit user to es
         DocumentResult result = null;
         try {
             JestService service = JestService.getInstance();
-            result = service.createIndex(Constants.INDEX_USER, Constants.TYPE_NAME, users[0]);
+            result = service.createIndex(Constants.INDEX_USER, Constants.TYPE_NAME, user);
         } catch (Exception e) {
             e.printStackTrace();
         }

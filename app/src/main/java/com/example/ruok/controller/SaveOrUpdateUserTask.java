@@ -13,13 +13,13 @@ import io.searchbox.client.JestResult;
 import io.searchbox.core.DocumentResult;
 
 /**
- * add or edit user info
+ * 添加 或 修改用户信息
  *
  * @Date 2018-11-30.
  */
 public class SaveOrUpdateUserTask extends AsyncTask<JsonUser, Void, JestResult> {
     private JsonUser user;
-    private com.example.ruok.controller.Response<String> response;
+    private Response<String> response;
 
     public void setResponse(Response<String> response) {
         this.response = response;

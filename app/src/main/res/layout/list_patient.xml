@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:foreground="?android:attr/selectableItemBackground"
-    android:minHeight="60dp">
+    android:minHeight="60dp"
+    android:orientation="horizontal"
+    android:padding="14dp">
 
     <TextView
         android:id="@+id/tv_patient_name"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:minWidth="80dp"
-        android:padding="14dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textSize="15sp"
         android:textStyle="bold"
         tools:text="xxxxxxx" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btn_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg_selector"
+        android:text="View" />
+
+
+</LinearLayout>

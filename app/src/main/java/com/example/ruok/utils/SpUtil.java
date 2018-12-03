@@ -10,7 +10,8 @@ import com.google.gson.Gson;
 
 /**
  * @time 2017-12-13 10:18
- *
+ * @类描述：
+ * @变更记录:
  */
 public class SpUtil {
     static SharedPreferences prefs;
@@ -47,7 +48,7 @@ public class SpUtil {
     public static Object getData(Context context, String key, Object defValue) {
 
         String type = defValue.getClass().getSimpleName();
-        //defValue is default value，if cannot get Data then return default
+        //defValue为为默认值，如果当前获取不到数据就返回它
         if ("Integer".equals(type)) {
             return prefs.getInt(key, (Integer) defValue);
         } else if ("Boolean".equals(type)) {
