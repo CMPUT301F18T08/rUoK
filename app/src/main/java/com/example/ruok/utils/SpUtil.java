@@ -10,8 +10,7 @@ import com.google.gson.Gson;
 
 /**
  * @time 2017-12-13 10:18
- * @类描述：
- * @变更记录:
+ *
  */
 public class SpUtil {
     static SharedPreferences prefs;
