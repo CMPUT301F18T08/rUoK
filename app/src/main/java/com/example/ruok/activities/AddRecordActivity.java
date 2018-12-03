@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.example.ruok.R;
 import com.example.ruok.controller.Response;
 import com.example.ruok.controller.SaveOrUpdateUserTask;
+import com.example.ruok.ui.ProfileBodyPhotoActivity;
 import com.example.ruok.utils.JsonUser;
 import com.example.ruok.utils.SpUtil;
 
@@ -83,7 +84,9 @@ public class AddRecordActivity extends AppCompatActivity implements View.OnClick
                 startActivity(new Intent(AddRecordActivity.this, GeolocationActivity.class));
                 break;
             case R.id.addRecordBodyLocationImage://photo
-                startActivity(new Intent(AddRecordActivity.this, BodyLocationActivity.class));
+//                startActivity(new Intent(AddRecordActivity.this, BodyLocationActivity.class));
+
+                startActivityForResult(new Intent(AddRecordActivity.this, ProfileBodyPhotoActivity.class), 11);
                 break;
         }
     }
@@ -102,11 +105,13 @@ public class AddRecordActivity extends AppCompatActivity implements View.OnClick
         record.setDate(new Date());
 
         record.setLocation("");
-        record.setBodyLocation("");
+        record.setLatitude(0.0d);
+        record.setLongitude(0.0d);
+        record.setBodyLocation(body);
 
         problem.addRecord(record);
 
-        JsonUser user = (JsonUser) SpUtil.getCurrentUser();
+        JsonUser user = SpUtil.getCurrentUser();
         user.getProblems().remove(problemIndex);
         user.getProblems().add(problem);
 
@@ -128,5 +133,17 @@ public class AddRecordActivity extends AppCompatActivity implements View.OnClick
 
     }
 
+    private String body = "";
+    private Integer bodyImage;
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 11 && RESULT_OK == resultCode) {
+            body = data.getStringExtra("body");
+            bodyImage = data.getIntExtra("bodyImage", R.mipmap.ic_body_head);
+            addRecordBodyLocationImage.setImageResource(bodyImage);
+        }
+    }
 
 }

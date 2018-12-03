@@ -84,7 +84,7 @@ public class ResetPasswordActivity extends AppCompatActivity implements View.OnC
             return;
         }
 
-        final JsonUser user = (JsonUser) SpUtil.getCurrentUser();
+        final JsonUser user = SpUtil.getCurrentUser();
         user.setPassword(newPassword);
         ResetPasswordController rpc = new ResetPasswordController();
         rpc.execute(user);

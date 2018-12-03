@@ -8,7 +8,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -16,7 +15,6 @@ import com.example.ruok.R;
 import com.example.ruok.adapter.PatientAdapter;
 import com.example.ruok.controller.GetUserInfoTask;
 import com.example.ruok.controller.Response;
-import com.example.ruok.ui.DoctorViewPatientDetailActivity;
 import com.example.ruok.ui.SearchAddPatientActivity;
 import com.example.ruok.utils.JsonUser;
 import com.example.ruok.utils.SpUtil;
@@ -26,7 +24,7 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class PatientListFragment extends Fragment implements View.OnClickListener, AdapterView.OnItemClickListener {
+public class PatientListFragment extends Fragment implements View.OnClickListener {
 
 
     private ListView patient_list;
@@ -50,7 +48,6 @@ public class PatientListFragment extends Fragment implements View.OnClickListene
         fab_add = (FloatingActionButton) view.findViewById(R.id.fab_add);
 
         fab_add.setOnClickListener(this);
-        patient_list.setOnItemClickListener(this);
     }
 
     @Override
@@ -88,14 +85,5 @@ public class PatientListFragment extends Fragment implements View.OnClickListene
     public void onResume() {
         super.onResume();
         initData();
-    }
-
-    @Override
-    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-//        startActivity(new Intent(getContext(), PatientProfileActivity.class));
-        Intent intent = new Intent(getContext(), DoctorViewPatientDetailActivity.class);
-        intent.putExtra("patient", list.get(i));
-        startActivity(intent);
-
     }
 }

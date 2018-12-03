@@ -49,7 +49,7 @@ public class FileUtils {
             HashMap<String, Object> map = new HashMap<>();
             List<JsonUser> list = readUsersFromLocal();
 
-            //check if the user already exist，if so，remove user then save
+            //查询是否已经存在，如果存在，移除user并保存，然后添加保存
             int index = -1;
             for (int i = 0; i < list.size(); i++) {
                 JsonUser temp = list.get(i);
@@ -88,7 +88,7 @@ public class FileUtils {
             FileInputStream fis = mContext.openFileInput(FILENAME);
             BufferedReader br = new BufferedReader(new InputStreamReader(fis));
             String s = null;
-            while ((s = br.readLine()) != null) {//use readLine，one line each time
+            while ((s = br.readLine()) != null) {//使用readLine方法，一次读一行
                 result.append(s);
             }
             br.close();
@@ -101,7 +101,7 @@ public class FileUtils {
     }
 
     /**
-     * base on id, load local user information
+     * 根据id 读取本地用户信息
      *
      * @param id
      * @return
@@ -113,7 +113,7 @@ public class FileUtils {
             FileInputStream fis = mContext.openFileInput(FILENAME);
             BufferedReader br = new BufferedReader(new InputStreamReader(fis));
             String s = null;
-            while ((s = br.readLine()) != null) {//use readLine，one line each time
+            while ((s = br.readLine()) != null) {//使用readLine方法，一次读一行
                 result.append(s);
             }
             br.close();
@@ -144,7 +144,7 @@ public class FileUtils {
             FileInputStream fis = mContext.openFileInput(FILENAME);
             BufferedReader br = new BufferedReader(new InputStreamReader(fis));
             String s = null;
-            while ((s = br.readLine()) != null) {//use readLine，one line each time
+            while ((s = br.readLine()) != null) {//使用readLine方法，一次读一行
                 result.append(s);
             }
             br.close();
@@ -165,4 +165,3 @@ public class FileUtils {
 
 
 }
-

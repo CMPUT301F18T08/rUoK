@@ -44,7 +44,7 @@ public class RecordAdapter extends BaseAdapter{
 
     @Override
     public View getView(final int i, View view, ViewGroup viewGroup) {
-        ViewHolder holder = null;
+       ViewHolder holder = null;
         if (view == null) {
             view = View.inflate(mContext, R.layout.list_record_new, null);
             holder = new ViewHolder(view);

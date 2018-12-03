@@ -27,7 +27,6 @@ public class RecordListActivity extends AppCompatActivity implements View.OnClic
     private ListView lv_record;
     private FloatingActionButton fab_record;
     private Problem problem;
-    private ArrayList<Record> recordsList;
     private int problemIndex;
     private RecordAdapter adapter;
     private List<Record> list = new ArrayList<>();
@@ -68,7 +67,6 @@ public class RecordListActivity extends AppCompatActivity implements View.OnClic
 
     private void initData() {
         this.problem = (Problem) getIntent().getSerializableExtra("problem");
-        this.recordsList = problem.getRecords();
         problemIndex = getIntent().getIntExtra("problemIndex", -1);
 
         list.addAll(problem.getRecords());

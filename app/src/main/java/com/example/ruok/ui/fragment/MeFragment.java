@@ -13,6 +13,7 @@ import com.example.ruok.R;
 import com.example.ruok.activities.MainActivity;
 import com.example.ruok.activities.PatientProfileActivity;
 import com.example.ruok.activities.ResetPasswordActivity;
+import com.example.ruok.ui.ProfileBodyPhotoActivity;
 import com.example.ruok.utils.JsonUser;
 import com.example.ruok.utils.SpUtil;
 import com.makeramen.roundedimageview.RoundedImageView;
@@ -24,6 +25,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
     private TextView tv_nick;
     private TextView tv_introduction;
     private LinearLayout ll_my_info;
+    private LinearLayout ll_profile;
     private LinearLayout ll_reset_password;
     private LinearLayout ll_logout;
 
@@ -63,10 +65,12 @@ public class MeFragment extends Fragment implements View.OnClickListener {
         ll_my_info = (LinearLayout) view.findViewById(R.id.ll_my_info);
         ll_reset_password = (LinearLayout) view.findViewById(R.id.ll_reset_password);
         ll_logout = (LinearLayout) view.findViewById(R.id.ll_logout);
+        ll_profile = (LinearLayout) view.findViewById(R.id.ll_profile);
 
         tv_introduction.setOnClickListener(this);
         ll_reset_password.setOnClickListener(this);
         ll_logout.setOnClickListener(this);
+        ll_profile.setOnClickListener(this);
     }
 
     @Override
@@ -82,6 +86,9 @@ public class MeFragment extends Fragment implements View.OnClickListener {
                 SpUtil.logout();
                 startActivity(new Intent(getContext(), MainActivity.class));
                 getActivity().finish();
+                break;
+            case R.id.ll_profile:
+                startActivity(new Intent(getContext(), ProfileBodyPhotoActivity.class));
                 break;
         }
     }

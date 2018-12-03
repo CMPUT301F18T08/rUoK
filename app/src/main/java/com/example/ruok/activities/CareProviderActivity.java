@@ -1,8 +1,8 @@
 package com.example.ruok.activities;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
@@ -31,7 +31,7 @@ public class CareProviderActivity extends AppCompatActivity {
         display.setText(display_username);
 
     }
- //todo check patient profile
+ //todo 检查他病人的profile
     public void resetPassword(View view){
         Intent intent_resetPassword = new Intent(this, ResetPasswordActivity.class);
         startActivity(intent_resetPassword);

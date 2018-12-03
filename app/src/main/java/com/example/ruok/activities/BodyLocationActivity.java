@@ -3,6 +3,7 @@
 // Android Alert Dialog Box with yes and now - Author: Android Hari @Jan 18,2016 https://www.youtube.com/watch?v=3CotB4pclTw
 package com.example.ruok.activities;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -11,9 +12,9 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.BitmapDrawable;
-import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -79,7 +80,7 @@ public class BodyLocationActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
-    private class PicOnTouchListener implements View.OnTouchListener {
+    private class PicOnTouchListener implements android.view.View.OnTouchListener {
         final Bitmap bitmap = ((BitmapDrawable) bodyLocationImage.getDrawable()).getBitmap().copy(Bitmap.Config.ARGB_8888, true);
         EditText bodyPartInput = (EditText) findViewById(R.id.bodyPart);
         boolean isLongClickModule = false;
