@@ -77,6 +77,7 @@ public class CareProviderViewListOfRecordsActivity extends AppCompatActivity imp
     public void viewGeolocation(View view) {
         // Do something in response to button
         Intent intent = new Intent(CareProviderViewListOfRecordsActivity.this, GeolocationActivity.class);
+        intent.putExtra("Problem",problem);
         startActivity(intent);
 
     }

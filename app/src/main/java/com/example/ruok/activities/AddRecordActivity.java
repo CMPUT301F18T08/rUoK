@@ -15,6 +15,7 @@ import com.example.ruok.controller.SaveOrUpdateUserTask;
 import com.example.ruok.ui.ProfileBodyPhotoActivity;
 import com.example.ruok.utils.JsonUser;
 import com.example.ruok.utils.SpUtil;
+import com.google.android.gms.maps.model.LatLng;
 
 import java.util.Date;
 
@@ -30,6 +31,7 @@ import classes.Record;
 
 public class AddRecordActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private static final int CODE_LOCATION = 0x10;
     private EditText doctorAddPatientName;
     private EditText addRecordbodyLocation;
     private EditText addRecordMoreDetail;
@@ -42,6 +44,8 @@ public class AddRecordActivity extends AppCompatActivity implements View.OnClick
 
     private Problem problem;
     private int problemIndex;
+    private LatLng latLng;
+    private String address;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +85,8 @@ public class AddRecordActivity extends AppCompatActivity implements View.OnClick
                 save();
                 break;
             case R.id.addRecordLocationImage:// location
-                startActivity(new Intent(AddRecordActivity.this, GeolocationActivity.class));
+
+                startActivityForResult(new Intent(AddRecordActivity.this, MapsActivity.class), CODE_LOCATION);
                 break;
             case R.id.addRecordBodyLocationImage://photo
 //                startActivity(new Intent(AddRecordActivity.this, BodyLocationActivity.class));
@@ -104,9 +109,12 @@ public class AddRecordActivity extends AppCompatActivity implements View.OnClick
         record.setDetail(detail);
         record.setDate(new Date());
 
-        record.setLocation("");
-        record.setLatitude(0.0d);
-        record.setLongitude(0.0d);
+        if (latLng != null) {
+            record.setLocation(address);
+            record.setLatitude(latLng.latitude);
+            record.setLongitude(latLng.longitude);
+        }
+
         record.setBodyLocation(body);
 
         problem.addRecord(record);
@@ -143,6 +151,9 @@ public class AddRecordActivity extends AppCompatActivity implements View.OnClick
             body = data.getStringExtra("body");
             bodyImage = data.getIntExtra("bodyImage", R.mipmap.ic_body_head);
             addRecordBodyLocationImage.setImageResource(bodyImage);
+        } else if (requestCode == CODE_LOCATION && RESULT_OK == resultCode) {
+            latLng = data.getParcelableExtra("latLng");
+            address = data.getStringExtra("address");
         }
     }
 

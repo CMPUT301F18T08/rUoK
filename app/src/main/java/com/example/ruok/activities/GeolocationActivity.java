@@ -1,6 +1,7 @@
 package com.example.ruok.activities;
 
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 
 import com.example.ruok.R;
@@ -10,6 +11,11 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.util.ArrayList;
+
+import classes.Problem;
+import classes.Record;
 
 /**
  * GeolocationActivity
@@ -46,11 +52,21 @@ public class GeolocationActivity extends AppCompatActivity implements OnMapReady
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        Problem problem = (Problem) getIntent().getSerializableExtra("problem");
+        if (problem != null) {
+            ArrayList<Record> records = problem.getRecords();
+            if (records != null) {
+                for (int i = 0; i < records.size(); i++) {
+                    Double latitude = records.get(i).getLatitude();
+                    Double longitude = records.get(i).getLongitude();
+                    // Add a marker in Sydney and move the camera
+                    LatLng sydney = new LatLng(latitude, longitude);
+                    mMap.addMarker(new MarkerOptions().position(sydney).title(records.get(i).getRecordTitle()));
+                    mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                }
+            }
+        }
 
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 }

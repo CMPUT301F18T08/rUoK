@@ -55,7 +55,7 @@ import java.util.List;
  * @version 1.1
  */
 public class MapsActivity extends AppCompatActivity
-        implements OnMapReadyCallback,GoogleMap.OnMapClickListener,GoogleMap.OnMapLongClickListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, GoogleMap.OnMarkerClickListener, GoogleMap.OnInfoWindowClickListener {
+        implements OnMapReadyCallback, GoogleMap.OnMapClickListener, GoogleMap.OnMapLongClickListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, GoogleMap.OnMarkerClickListener, GoogleMap.OnInfoWindowClickListener {
 
     private static final String TAG = MapsActivity.class.getSimpleName();
     private GoogleMap mMap;
@@ -90,6 +90,9 @@ public class MapsActivity extends AppCompatActivity
     private String[] mLikelyPlaceAttributions;
     private LatLng[] mLikelyPlaceLatLngs;
 
+    private String titleStr;
+    private LatLng latLng;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -104,7 +107,6 @@ public class MapsActivity extends AppCompatActivity
         setContentView(R.layout.activity_maps);
 
         Intent intent = getIntent();
-
 
 
         // Construct a GeoDataClient.
@@ -127,22 +129,24 @@ public class MapsActivity extends AppCompatActivity
                     .addApi(LocationServices.API)
                     .build();
         }
-        FloatingActionButton confirm = (FloatingActionButton)findViewById(R.id.accept);
-        confirm.setOnClickListener(new View.OnClickListener(){
+        FloatingActionButton confirm = (FloatingActionButton) findViewById(R.id.accept);
+        confirm.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                if(chosenAddress!=null) {
-                    Toast.makeText(MapsActivity.this, "success", Toast.LENGTH_SHORT).show();
+                if (chosenAddress != null) {
                     Log.v("CLICKED", "");
-                }
-                else{
+                    Intent intent1 = getIntent();
+                    intent1.putExtra("latLng", latLng);
+                    intent1.putExtra("address", titleStr);
+                    setResult(RESULT_OK, intent1);
+                    finish();
+                } else {
                     Toast.makeText(MapsActivity.this, "long click to select a place", Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
-
 
 
     @Override
@@ -156,7 +160,7 @@ public class MapsActivity extends AppCompatActivity
     protected void onStop() {
         super.onStop();
         // 3
-        if( mGoogleApiClient != null && mGoogleApiClient.isConnected() ) {
+        if (mGoogleApiClient != null && mGoogleApiClient.isConnected()) {
             mGoogleApiClient.disconnect();
         }
     }
@@ -175,6 +179,7 @@ public class MapsActivity extends AppCompatActivity
 
     /**
      * Sets up the options menu.
+     *
      * @param menu The options menu.
      * @return Boolean.
      */
@@ -188,6 +193,7 @@ public class MapsActivity extends AppCompatActivity
 
     /**
      * Handles a click on the menu option to get a place.
+     *
      * @param item The menu item to handle.
      * @return Boolean.
      */
@@ -260,7 +266,7 @@ public class MapsActivity extends AppCompatActivity
                         if (task.isSuccessful()) {
                             // Set the map's camera position to the current location of the device.
                             mLastKnownLocation = task.getResult();
-                            LatLng currentPlace = new LatLng(mLastKnownLocation.getLatitude(),mLastKnownLocation.getLongitude());
+                            LatLng currentPlace = new LatLng(mLastKnownLocation.getLatitude(), mLastKnownLocation.getLongitude());
                             mMap.addMarker(new MarkerOptions().position(currentPlace).title("current place"));
                             mMap.setOnMapLongClickListener(MapsActivity.this);
                             mMap.setOnMarkerClickListener(MapsActivity.this);
@@ -278,7 +284,7 @@ public class MapsActivity extends AppCompatActivity
                     }
                 });
             }
-        } catch (SecurityException e)  {
+        } catch (SecurityException e) {
             Log.e("Exception: %s", e.getMessage());
         }
     }
@@ -336,8 +342,7 @@ public class MapsActivity extends AppCompatActivity
         if (mLocationPermissionGranted) {
             // Get the likely places - that is, the businesses and other points of interest that
             // are the best match for the device's current location.
-            @SuppressWarnings("MissingPermission") final
-            Task<PlaceLikelihoodBufferResponse> placeResult =
+            @SuppressWarnings("MissingPermission") final Task<PlaceLikelihoodBufferResponse> placeResult =
                     mPlaceDetectionClient.getCurrentPlace(null);
             placeResult.addOnCompleteListener
                     (new OnCompleteListener<PlaceLikelihoodBufferResponse>() {
@@ -454,7 +459,7 @@ public class MapsActivity extends AppCompatActivity
                 mLastKnownLocation = null;
                 getLocationPermission();
             }
-        } catch (SecurityException e)  {
+        } catch (SecurityException e) {
             Log.e("Exception: %s", e.getMessage());
         }
     }
@@ -466,7 +471,8 @@ public class MapsActivity extends AppCompatActivity
 
     @Override
     public void onMapLongClick(LatLng latLng) {
-        String titleStr = getAddress(latLng);
+        titleStr = getAddress(latLng);
+        this.latLng = latLng;
         chosenAddress = mMap.addMarker(new MarkerOptions().position(latLng).title("chosen address"));
     }
 
@@ -487,25 +493,24 @@ public class MapsActivity extends AppCompatActivity
     }
 
 
-
     //https://developer.android.com/training/location/display-address#java
-    private String getAddress( LatLng latLng ) {
+    private String getAddress(LatLng latLng) {
         // 1
-        Geocoder geocoder = new Geocoder( this );
+        Geocoder geocoder = new Geocoder(this);
         String addressText = "";
         List<Address> addresses = null;
         Address address = null;
         try {
             // 2
-            addresses = geocoder.getFromLocation( latLng.latitude, latLng.longitude, 1 );
+            addresses = geocoder.getFromLocation(latLng.latitude, latLng.longitude, 1);
             // 3
             if (null != addresses && !addresses.isEmpty()) {
                 address = addresses.get(0);
                 for (int i = 0; i < address.getMaxAddressLineIndex(); i++) {
-                    addressText += (i == 0)?address.getAddressLine(i):("\n" + address.getAddressLine(i));
+                    addressText += (i == 0) ? address.getAddressLine(i) : ("\n" + address.getAddressLine(i));
                 }
             }
-        } catch (IOException e ) {
+        } catch (IOException e) {
         }
         return addressText;
     }
@@ -521,7 +526,6 @@ public class MapsActivity extends AppCompatActivity
     public void onInfoWindowClick(Marker marker) {
 
     }
-
 
 
 }
