@@ -3,8 +3,9 @@ import android.app.Activity;
 
 import com.example.ruok.activities.CareProviderActivity;
 import com.example.ruok.activities.MainActivity;
-import com.example.ruok.activities.ProblemListActivity;
+//import com.example.ruok.activities.ProblemListActivity;
 import com.example.ruok.activities.SignUpActivity;
+import com.example.ruok.ui.HomeActivity;
 import com.robotium.solo.Solo;
 import android.widget.EditText;
 import org.junit.Test;
@@ -52,7 +53,7 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2{
         solo.enterText((EditText)solo.getView(R.id.userName),"mingyue");
         solo.enterText((EditText)solo.getView(R.id.password),"222222");
         solo.clickOnButton("sign in");
-        solo.assertCurrentActivity("should be ProblemListActivity", ProblemListActivity.class);
+        solo.assertCurrentActivity("should be HomeActivity", HomeActivity.class);
     }
 
 

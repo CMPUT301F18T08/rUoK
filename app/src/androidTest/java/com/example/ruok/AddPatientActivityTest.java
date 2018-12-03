@@ -5,6 +5,8 @@ import android.test.ActivityInstrumentationTestCase2;
 
 import com.example.ruok.activities.AddPatientActivity;
 import com.example.ruok.activities.CareProviderActivity;
+import com.example.ruok.activities.CareProviderViewListOfRecordsActivity;
+import com.example.ruok.activities.GeolocationActivity;
 import com.robotium.solo.Solo;
 
 import org.junit.Test;

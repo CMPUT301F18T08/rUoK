@@ -8,17 +8,21 @@ android {
 //    }
     defaultConfig {
         applicationId "com.example.ruok"
-        minSdkVersion 21
+        minSdkVersion 17
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
     }
 }
 
@@ -42,9 +46,22 @@ dependencies {
     implementation 'com.google.android.gms:play-services-maps:16.0.0'
     androidTestImplementation 'com.android.support.test:rules:1.0.2'
 //    implementation 'com.google.code.gson:gson:2.8.2'
-    implementation 'io.searchbox:jest-droid:2.0.0'
+    implementation 'io.searchbox:jest-droid:2.0.1'
 //    compile 'org.apache.httpcomponents:httpcore:4.4.1'
 //    compile 'org.apache.httpcomponents:httpclient:4.5'
     implementation 'com.google.android.gms:play-services-location:16.0.0'
     implementation 'com.google.android.gms:play-services-places:16.0.0'
+
+    implementation 'com.android.support:cardview-v7:27.1.1'
+
+    //圆形头像 http://blog.csdn.net/cccrunner/article/details/72594703
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.1.0'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test:rules:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+
+
+
 }

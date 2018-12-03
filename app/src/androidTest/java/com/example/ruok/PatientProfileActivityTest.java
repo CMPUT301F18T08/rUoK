@@ -3,8 +3,14 @@ package com.example.ruok;
 import android.app.Activity;
 import android.test.ActivityInstrumentationTestCase2;
 
+import com.example.ruok.activities.AddPatientActivity;
+import com.example.ruok.activities.CareProviderActivity;
+import com.example.ruok.activities.CareProviderViewListOfRecordsActivity;
+import com.example.ruok.activities.GeolocationActivity;
 import com.example.ruok.activities.PatientProfileActivity;
-import com.example.ruok.activities.ProblemListActivity;
+
+
+import com.example.ruok.ui.HomeActivity;
 import com.robotium.solo.Solo;
 
 import org.junit.Test;
@@ -28,6 +34,6 @@ public class PatientProfileActivityTest extends ActivityInstrumentationTestCase2
         PatientProfileActivity activity = (PatientProfileActivity) solo.getCurrentActivity();
         solo.assertCurrentActivity("should be PatientProfileActivity",PatientProfileActivity.class);
         solo.clickOnButton("save");
-        solo.assertCurrentActivity("should be ProblemListActivity", ProblemListActivity.class);
+        solo.assertCurrentActivity("should be HomeActivity", HomeActivity.class);
     }
 }

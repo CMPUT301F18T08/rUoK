@@ -1,5 +1,17 @@
 package com.example.ruok;
 
+import android.app.Activity;
+import android.test.ActivityInstrumentationTestCase2;
+
+
+
+import com.example.ruok.activities.ResetPasswordActivity;
+import com.example.ruok.activities.MainActivity;
+
+import com.robotium.solo.Solo;
+
+import org.junit.Test;
+
 //public class ResetPasswordActivityTest extends ActivityInstrumentationTestCase2 {
 //    private Solo solo;
 //

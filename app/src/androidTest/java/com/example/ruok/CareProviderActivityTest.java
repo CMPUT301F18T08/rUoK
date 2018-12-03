@@ -12,6 +12,10 @@ import android.test.ActivityInstrumentationTestCase2;
 
 import org.junit.Test;
 
+import classes.CareProvider;
+
+import static android.support.test.InstrumentationRegistry.getInstrumentation;
+
 /* created by Yuhan Ye*/
 public class CareProviderActivityTest extends ActivityInstrumentationTestCase2 {
     private Solo solo;
