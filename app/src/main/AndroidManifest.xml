@@ -49,9 +49,6 @@
         <activity android:name=".activities.ShowPopupCommentActivity" />
         <activity android:name=".activities.AddPatientActivity" />
         <activity android:name=".activities.RecordDetailActivity" />
-        <activity android:name=".activities.ViewBodyLocationPhotosActivity" />
-
-
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -81,7 +78,9 @@
         </activity>
         <activity android:name=".ui.RecordListActivity" />
         <activity android:name=".ui.SearchAddPatientActivity" />
-        <activity android:name=".ui.DoctorViewPatientDetailActivity"></activity>
+        <activity android:name=".ui.DoctorViewPatientDetailActivity" />
+        <activity android:name=".ui.ProfileBodyPhotoActivity" />
+        <activity android:name=".ui.ImageTouchActivity"></activity>
     </application>
 
 </manifest>
