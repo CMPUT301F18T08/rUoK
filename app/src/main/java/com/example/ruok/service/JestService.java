@@ -39,13 +39,16 @@ public class JestService {
     }
 
     /**
-     * get JestClient
+     * 获取JestClient对象
      *
      * @return
      */
     private JestDroidClient getJestDroidClient() {
         DroidClientConfig.Builder builder = new DroidClientConfig.Builder(Constants.BASE_URL);
-        DroidClientConfig config = builder.build();
+        DroidClientConfig config = builder
+                .connTimeout(2000)
+                .readTimeout(2000)
+                .build();
 
         JestClientFactory factory = new JestClientFactory();
         factory.setDroidClientConfig(config);
@@ -60,7 +63,6 @@ public class JestService {
      * @return
      * @throws Exception
      */
-    
     public DocumentResult createIndex(String indexName, String typeName, Object source) throws Exception {
         String id = System.currentTimeMillis() + "";
         if (source instanceof User) {
@@ -73,14 +75,13 @@ public class JestService {
 
 
     /**
-     * Get
+     * Get映射
      *
      * @param indexName
      * @param typeName
      * @return
      * @throws Exception
      */
-
     public String getIndexMapping(String indexName, String typeName) throws Exception {
         GetMapping getMapping = new GetMapping.Builder().addIndex(indexName).addType(typeName).build();
         JestResult jr = client.execute(getMapping);
@@ -89,7 +90,7 @@ public class JestService {
 
 
     /**
-     * search file
+     * 搜索文档
      *
      * @param indexName
      * @param typeName
@@ -97,7 +98,6 @@ public class JestService {
      * @return
      * @throws Exception
      */
-
     public SearchResult search(String indexName, String typeName, String query) throws Exception {
 
         Search search = new Search.Builder(query)
@@ -109,7 +109,7 @@ public class JestService {
 
 
     /**
-     * Get file
+     * Get文档
      *
      * @param indexName
      * @param typeName
@@ -124,7 +124,7 @@ public class JestService {
     }
 
     /**
-     * Count file
+     * Count文档
      *
      * @param indexName
      * @param typeName
@@ -145,7 +145,7 @@ public class JestService {
 
 
     /**
-     * Delete
+     * Delete索引
      *
      * @param indexName
      * @return
@@ -158,7 +158,7 @@ public class JestService {
     }
 
     /**
-     * Delete file
+     * Delete文档
      *
      * @param indexName
      * @param typeName
@@ -166,7 +166,6 @@ public class JestService {
      * @return
      * @throws Exception
      */
-
     public boolean delete(String indexName, String typeName, String id) throws Exception {
 
         DocumentResult dr = client.execute(new Delete.Builder(id).index(indexName).type(typeName).build());
@@ -182,7 +181,6 @@ public class JestService {
      * @param id
      * @return
      */
-
     public JestResult updateDocument(String script, String index, String type, String id) {
         Update update = new Update.Builder(script).index(index).type(type).id(id).build();
         JestResult result = null;
@@ -195,11 +193,10 @@ public class JestService {
     }
 
     /**
-     * close JestClient
+     * 关闭JestClient客户端
      *
      * @throws Exception
      */
-
     public void closeJestClient() throws Exception {
 
         if (client != null) {

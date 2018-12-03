@@ -7,10 +7,6 @@ import android.text.TextUtils;
 
 import com.google.gson.Gson;
 
-import classes.CareProvider;
-import classes.Patient;
-import classes.User;
-
 
 /**
  * @time 2017-12-13 10:18
@@ -68,7 +64,7 @@ public class SpUtil {
         return null;
     }
 
-    public static void saveCurrentUser(User user) {
+    public static void saveCurrentUser(JsonUser user) {
         Gson gson = new Gson();
         String js = gson.toJson(user);
         SharedPreferences.Editor editor = prefs.edit();
@@ -76,18 +72,19 @@ public class SpUtil {
         editor.apply();
     }
 
-    public static User getCurrentUser() {
+    public static JsonUser getCurrentUser() {
         String currentUser = prefs.getString("currentUser", "");
         if (TextUtils.isEmpty(currentUser)) {
             return null;
         } else {
-            User u = new Gson().fromJson(currentUser, User.class);
-            if ("patient".equals(u.getUserType())) {
-                return new Gson().fromJson(currentUser, Patient.class);
-            } else {
-                return new Gson().fromJson(currentUser, CareProvider.class);
-            }
+            JsonUser u = new Gson().fromJson(currentUser, JsonUser.class);
+            return u;
         }
     }
 
+    public static void logout() {
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString("currentUser", "");
+        editor.apply();
+    }
 }

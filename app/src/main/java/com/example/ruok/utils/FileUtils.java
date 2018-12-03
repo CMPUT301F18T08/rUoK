@@ -17,8 +17,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import classes.User;
-
 /**
  * @Date 2018-11-26.
  */
@@ -45,43 +43,30 @@ public class FileUtils {
      *
      * @param user
      */
-    public void saveUser(User user) {
+    public void saveUser(JsonUser user) {
         try {
             //1.first read the user data from local file
             HashMap<String, Object> map = new HashMap<>();
-            List<User> list = readUsersFromLocal();
-            list.add(user);
-            map.put("users", list);
-            String json = new Gson().toJson(map);
+            List<JsonUser> list = readUsersFromLocal();
 
-            //2. write new data to local file
-            FileOutputStream fos = mContext.openFileOutput(FILENAME, Context.MODE_PRIVATE);
-            BufferedWriter out = new BufferedWriter(new OutputStreamWriter(fos));
-            out.write(json);
-            out.flush();
-            fos.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void updateUser(User user) {
-        try {
-            //1.first read the user data from local file
-            HashMap<String, Object> map = new HashMap<>();
-            List<User> list = readUsersFromLocal();
+            //查询是否已经存在，如果存在，移除user并保存，然后添加保存
+            int index = -1;
             for (int i = 0; i < list.size(); i++) {
-                User u = list.get(i);
-                if (u.getId() != null && u.getId().equals(user.getId())) {
-                    u = user;
+                JsonUser temp = list.get(i);
+                if (temp.getId().equals(user.getId())) {
+                    index = i;
                     break;
                 }
             }
+            if (index >= 0) {
+                list.remove(index);
+            }
+
+            list.add(user);
 
             map.put("users", list);
             String json = new Gson().toJson(map);
+
             //2. write new data to local file
             FileOutputStream fos = mContext.openFileOutput(FILENAME, Context.MODE_PRIVATE);
             BufferedWriter out = new BufferedWriter(new OutputStreamWriter(fos));
@@ -95,8 +80,9 @@ public class FileUtils {
         }
     }
 
-    public List<User> readUsersFromLocal() {
-        List<User> list = new ArrayList<>();
+
+    public List<JsonUser> readUsersFromLocal() {
+        List<JsonUser> list = new ArrayList<>();
         try {
             StringBuilder result = new StringBuilder();
             FileInputStream fis = mContext.openFileInput(FILENAME);
@@ -113,4 +99,70 @@ public class FileUtils {
         }
         return list;
     }
+
+    /**
+     * 根据id 读取本地用户信息
+     *
+     * @param id
+     * @return
+     */
+    public JsonUser getUserById(String id) {
+        JsonUser jsonUser = null;
+        try {
+            StringBuilder result = new StringBuilder();
+            FileInputStream fis = mContext.openFileInput(FILENAME);
+            BufferedReader br = new BufferedReader(new InputStreamReader(fis));
+            String s = null;
+            while ((s = br.readLine()) != null) {//使用readLine方法，一次读一行
+                result.append(s);
+            }
+            br.close();
+            UserData userData = new Gson().fromJson(result.toString(), UserData.class);
+            List<JsonUser> users = userData.users;
+            for (JsonUser user : users) {
+                if (user.getId().equals(id)) {
+                    jsonUser = user;
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return jsonUser;
+    }
+
+
+    /**
+     * 读取本地的Patient
+     *
+     * @return
+     */
+    public List<JsonUser> readPatientsFromLocal() {
+        List<JsonUser> list = new ArrayList<>();
+        try {
+            StringBuilder result = new StringBuilder();
+            FileInputStream fis = mContext.openFileInput(FILENAME);
+            BufferedReader br = new BufferedReader(new InputStreamReader(fis));
+            String s = null;
+            while ((s = br.readLine()) != null) {//使用readLine方法，一次读一行
+                result.append(s);
+            }
+            br.close();
+            UserData userData = new Gson().fromJson(result.toString(), UserData.class);
+            List<JsonUser> temp = userData.users;
+            if (temp != null) {
+                for (JsonUser user : temp) {
+                    if (user.getUserType().equals("patient")) {
+                        list.add(user);
+                    }
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return list;
+    }
+
+
 }
+

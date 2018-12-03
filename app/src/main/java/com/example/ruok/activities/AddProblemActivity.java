@@ -96,7 +96,7 @@ public class AddProblemActivity extends AppCompatActivity implements View.OnClic
         }
 
 
-        JsonUser user = (JsonUser) SpUtil.getCurrentUser();
+        JsonUser user = SpUtil.getCurrentUser();
 
         if (index >= 0) { //edit problem
             problem.setDate(new Date());

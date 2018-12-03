@@ -6,12 +6,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
+import io.searchbox.annotations.JestId;
 /**
  * Problem class
  * @author  Yuhan Ye
  * @version 1.1
  */
 public class Problem implements Serializable{
+    @JestId
+    private String id;
     private Date date;
     private String title;
     private String description;

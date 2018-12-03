@@ -84,8 +84,6 @@ public class HomeActivity extends AppCompatActivity {
         } else {
             fragments = new Fragment[]{new PatientListFragment(), new MeFragment()};
         }
-
-
         getSupportFragmentManager().beginTransaction().add(R.id.fl_main, fragments[0]).show(fragments[0]).commit();
 
     }

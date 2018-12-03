@@ -6,17 +6,17 @@ import com.example.ruok.MyApplication;
 import com.example.ruok.constant.Constants;
 import com.example.ruok.service.JestService;
 import com.example.ruok.utils.FileUtils;
+import com.example.ruok.utils.JsonUser;
 import com.example.ruok.utils.SpUtil;
 
-import classes.User;
 import io.searchbox.client.JestResult;
 import io.searchbox.core.DocumentResult;
 
 /**
  * @Date 2018-11-26.
  */
-public class AddProblemController extends AsyncTask<User, Void, JestResult> {
-    private User user;
+public class AddProblemController extends AsyncTask<JsonUser, Void, JestResult> {
+    private JsonUser user;
 
     private Response<String> response;
 
@@ -25,7 +25,7 @@ public class AddProblemController extends AsyncTask<User, Void, JestResult> {
     }
 
     @Override
-    protected JestResult doInBackground(User... users) {
+    protected JestResult doInBackground(JsonUser... users) {
         this.user = users[0];
         DocumentResult result = null;
         try {
@@ -41,7 +41,7 @@ public class AddProblemController extends AsyncTask<User, Void, JestResult> {
     protected void onPostExecute(JestResult jestResult) {
         super.onPostExecute(jestResult);
         //update local
-        FileUtils.getInstance(MyApplication.context).updateUser(user);
+        FileUtils.getInstance(MyApplication.context).saveUser(user);
         SpUtil.saveCurrentUser(user);
 
         if (jestResult == null) {
