@@ -9,7 +9,7 @@
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
-    tools:context=".activities.AddRecordActivity">
+    tools:context=".ui.SearchAddPatientActivity">
 
     <TextView
         android:id="@+id/addPatientText"
@@ -24,7 +24,7 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <EditText
+    <AutoCompleteTextView
         android:id="@+id/doctorAddPatientName"
         android:layout_width="264dp"
         android:layout_height="wrap_content"
@@ -32,12 +32,12 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="45dp"
         android:layout_marginTop="108dp"
-        android:ems="10"
-        android:hint="@string/user"
-        android:inputType="textPersonName" />
+        android:completionHint="@string/user"
+        android:completionThreshold="1"
+        android:hint="@string/user" />
 
     <Button
-        android:id="@+id/addProblemBack"
+        android:id="@+id/addPatientBack"
         android:layout_width="142dp"
         android:layout_height="54dp"
         android:layout_alignParentBottom="true"

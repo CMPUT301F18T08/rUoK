@@ -1,8 +1,8 @@
 package com.example.ruok.activities;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -51,31 +51,31 @@ public class MainActivity extends AppCompatActivity {
         //sign_in_button.setOnClickListener(new View.OnClickListener(){
 //            @Override
 //            public void onClick(View view) {
-                EditText userName_input = (EditText) findViewById(R.id.userName);
-                EditText password_input = (EditText) findViewById(R.id.password);
-                String userName = userName_input.getText().toString();
-                String password = password_input.getText().toString();
-                // TODO: 2018/10/29 validate username and password  and databaseissue
-                //loadFromFile();
-                //get the user type
-                Log.i("MainActivity","from username"+ userName);
-                display_username = userName;
+        EditText userName_input = (EditText) findViewById(R.id.userName);
+        EditText password_input = (EditText) findViewById(R.id.password);
+        String userName = userName_input.getText().toString();
+        String password = password_input.getText().toString();
+        // TODO: 2018/10/29 validate username and password  and databaseissue
+        //loadFromFile();
+        //get the user type
+        Log.i("MainActivity","from username"+ userName);
+        display_username = userName;
 
-                // if user is a care provider
-                if (userName.matches("joanne") && password.matches("111111")){
-                    Log.i("MainActivity","from conditional"+ userName);
-                    Intent intent_careprovider = new Intent(MainActivity.this, CareProviderActivity.class);
-                    intent_careprovider.putExtra("USERNAME", userName);
-                    startActivity(intent_careprovider);
-                }
+        // if user is a care provider
+        if (userName.matches("joanne") && password.matches("111111")){
+            Log.i("MainActivity","from conditional"+ userName);
+            Intent intent_careprovider = new Intent(MainActivity.this, CareProviderActivity.class);
+            intent_careprovider.putExtra("USERNAME", userName);
+            startActivity(intent_careprovider);
+        }
 
 
-                // if user is a patient
-                if (userName.matches("mingyue" )&& password.matches( "222222")) {
-                    Intent intent_patient = new Intent(MainActivity.this, ProblemListActivity.class);
-                    intent_patient.putExtra("USERNAME", userName);
-                    startActivity(intent_patient);
-                }
+        // if user is a patient
+        if (userName.matches("mingyue" )&& password.matches( "222222")) {
+            Intent intent_patient = new Intent(MainActivity.this, ProblemListActivity.class);
+            intent_patient.putExtra("USERNAME", userName);
+            startActivity(intent_patient);
+        }
 
 
 

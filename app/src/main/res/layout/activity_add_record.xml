@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/case1"
+    android:paddingBottom="0dp"
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
-    android:paddingBottom="0dp"
-    tools:context=".activities.AddRecordActivity"
-    android:background="@drawable/case1"
-    >
+    tools:context=".activities.AddRecordActivity">
 
     <TextView
         android:id="@+id/addRecordText"
@@ -34,8 +33,11 @@
         android:layout_marginStart="45dp"
         android:layout_marginTop="108dp"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:inputType="textPersonName"
-        android:text="@string/what_s_wrong_title" />
+        android:text="@string/what_s_wrong_title"
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/addRecordbodyLocation"
@@ -45,8 +47,11 @@
         android:layout_alignStart="@+id/doctorAddPatientName"
         android:layout_marginTop="176dp"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:inputType="textPersonName"
-        android:text="@string/body_location" />
+        android:text="@string/body_location"
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/addRecordMoreDetail"
@@ -55,8 +60,11 @@
         android:layout_alignStart="@+id/doctorAddPatientName"
         android:layout_below="@+id/addRecordLocation"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:inputType="textPersonName"
-        android:text="@string/more_detail" />
+        android:text="@string/more_detail"
+        android:textSize="14sp" />
 
     <Button
         android:id="@+id/addProblemBack"
@@ -66,7 +74,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="64dp"
         android:background="@drawable/frame2"
-        android:onClick="save_record"
         android:text="@string/save"
         android:textSize="24sp"
         android:textStyle="bold" />
@@ -80,7 +87,8 @@
         android:ems="10"
         android:hint="@string/max_300characters"
         android:inputType="textPersonName"
-        android:textColor="@android:color/darker_gray" />
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/editText"
@@ -92,7 +100,8 @@
         android:ems="10"
         android:hint="@string/hintforrecord"
         android:inputType="textPersonName"
-        android:textColor="@android:color/darker_gray" />
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp" />
 
     <EditText
         android:id="@+id/addRecordLocation"
@@ -101,8 +110,11 @@
         android:layout_alignStart="@+id/doctorAddPatientName"
         android:layout_centerVertical="true"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:inputType="textPersonName"
-        android:text="@string/Llocation" />
+        android:text="@string/Llocation"
+        android:textSize="14sp" />
 
     <ImageButton
         android:id="@+id/addRecordLocationImage"
