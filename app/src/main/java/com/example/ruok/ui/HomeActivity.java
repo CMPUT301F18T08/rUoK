@@ -32,7 +32,7 @@ public class HomeActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_problem:
                     index = 0;
-                    //设置底部标题，如果是patient，就设置为problem；如果是CareProvider就设置为Patient
+                    
                     String userType = SpUtil.getCurrentUser().getUserType();
                     if ("patient".equals(userType)) {
                         item.setTitle("Problem List");
@@ -51,7 +51,7 @@ public class HomeActivity extends AppCompatActivity {
     };
 
     /**
-     * 切换fragment
+     * show fragment
      *
      * @param index：0-2
      */
