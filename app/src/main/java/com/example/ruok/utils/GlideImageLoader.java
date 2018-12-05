@@ -9,10 +9,7 @@ import com.bumptech.glide.request.RequestOptions;
 
 import cn.finalteam.galleryfinal.widget.GFImageView;
 
-/**
- * Desction:
- * Author:pengjianbo
- */
+
 public class GlideImageLoader implements cn.finalteam.galleryfinal.ImageLoader {
 
     @Override

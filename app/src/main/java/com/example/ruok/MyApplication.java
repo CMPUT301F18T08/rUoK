@@ -30,7 +30,7 @@ public class MyApplication extends Application {
     }
 
     private void initGalleryFinal() {
-        //设置主题
+       //set theme
         ThemeConfig theme = new ThemeConfig.Builder()
                 .setTitleBarBgColor(getResources().getColor(R.color.colorPrimary))
                 .setTitleBarTextColor(Color.WHITE)
@@ -40,7 +40,7 @@ public class MyApplication extends Application {
                 .setCheckNornalColor(Color.WHITE)
                 .setCheckSelectedColor(getResources().getColor(R.color.colorPrimary))
                 .build();
-        //配置功能
+        //set function
         FunctionConfig functionConfig = new FunctionConfig.Builder()
                 .setEnableCamera(true)
                 .setEnableEdit(true)
