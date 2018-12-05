@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,7 +28,7 @@ import java.util.List;
 public class SearchAddPatientActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TextView addPatientText;
-    private AutoCompleteTextView doctorAddPatientName;
+    private Spinner spinner;
     private Button addPatientBack;
     private List<JsonUser> list = new ArrayList<>();
     private int selectIndex = -1;
@@ -54,8 +55,7 @@ public class SearchAddPatientActivity extends AppCompatActivity implements View.
                         names[i] = list.get(i).getUserName();
                     }
                     ArrayAdapter<String> adapter = new ArrayAdapter<String>(SearchAddPatientActivity.this, android.R.layout.simple_list_item_1, names);
-                    doctorAddPatientName.setAdapter(adapter);
-
+                    spinner.setAdapter(adapter);
                 }
             }
 
@@ -68,16 +68,19 @@ public class SearchAddPatientActivity extends AppCompatActivity implements View.
 
     private void initView() {
         addPatientText = (TextView) findViewById(R.id.addPatientText);
-        doctorAddPatientName = (AutoCompleteTextView) findViewById(R.id.doctorAddPatientName);
         addPatientBack = (Button) findViewById(R.id.addPatientBack);
+        spinner = findViewById(R.id.spinner);
 
         addPatientBack.setOnClickListener(this);
-
-        doctorAddPatientName.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 selectIndex = i;
-//                Toast.makeText(SearchAddPatientActivity.this, list.get(i).getUserName(), Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
             }
         });
 

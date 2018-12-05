@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/case1"
-    android:paddingBottom="0dp"
     android:paddingLeft="0dp"
-    android:paddingRight="0dp"
     android:paddingTop="0dp"
+    android:paddingRight="0dp"
+    android:paddingBottom="0dp"
     tools:context=".ui.SearchAddPatientActivity">
 
     <TextView
@@ -24,17 +24,17 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <AutoCompleteTextView
-        android:id="@+id/doctorAddPatientName"
-        android:layout_width="264dp"
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_marginStart="45dp"
-        android:layout_marginTop="108dp"
-        android:completionHint="@string/user"
-        android:completionThreshold="1"
-        android:hint="@string/user" />
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="45dp">
+
+    </Spinner>
 
     <Button
         android:id="@+id/addPatientBack"

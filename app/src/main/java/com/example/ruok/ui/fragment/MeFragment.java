@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.ruok.R;
+import com.example.ruok.activities.AddPhotoActivity;
 import com.example.ruok.activities.MainActivity;
 import com.example.ruok.activities.PatientProfileActivity;
 import com.example.ruok.activities.ResetPasswordActivity;
@@ -89,6 +90,7 @@ public class MeFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.ll_profile:
                 startActivity(new Intent(getContext(), ProfileBodyPhotoActivity.class));
+//                startActivity(new Intent(getContext(), AddPhotoActivity.class));
                 break;
         }
     }

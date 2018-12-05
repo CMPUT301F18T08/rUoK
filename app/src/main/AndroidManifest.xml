@@ -80,7 +80,8 @@
         <activity android:name=".ui.SearchAddPatientActivity" />
         <activity android:name=".ui.DoctorViewPatientDetailActivity" />
         <activity android:name=".ui.ProfileBodyPhotoActivity" />
-        <activity android:name=".ui.ImageTouchActivity"></activity>
+        <activity android:name=".ui.ImageTouchActivity" />
+        <activity android:name=".ui.SelectPhotosActivity"></activity>
     </application>
 
 </manifest>

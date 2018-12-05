@@ -124,7 +124,8 @@ public class ProfileBodyPhotoActivity extends AppCompatActivity implements View.
         }
 
 
-        showView(bodyImage);
+//        showView(bodyImage);
+        startActivityForResult(new Intent(this, SelectPhotosActivity.class), 11);
     }
 
 
@@ -158,4 +159,12 @@ public class ProfileBodyPhotoActivity extends AppCompatActivity implements View.
 
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 11 && resultCode == RESULT_OK) {
+            setResult(RESULT_OK, data);
+            finish();
+        }
+    }
 }

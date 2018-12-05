@@ -30,7 +30,8 @@ public class LoginController extends AsyncTask<String, Void, SearchResult> {
         userName = strings[0];
         password = strings[1];
         SearchResult result = null;
-        String query = "{\"query\":{\"bool\":{\"must\":{\"term\":{\"userName\":\"" + userName + "\"}},\"filter\":{\"term\":{\"password\":\"" + password + "\"}}}}}";
+        String query = "{\"query\":{\"bool\":{\"must\":{\"term\":{\"userName\":\"" + userName + "\"}}}}}";
+//        String query = "{\"query\":{\"bool\":{\"must\":{\"term\":{\"userName\":\"" + userName + "\"}},\"filter\":{\"term\":{\"password\":\"" + password + "\"}}}}}";
         try {
             JestService service = JestService.getInstance();
             result = service.search(Constants.INDEX_USER, Constants.TYPE_NAME, query);
@@ -53,7 +54,7 @@ public class LoginController extends AsyncTask<String, Void, SearchResult> {
             } else {
                 JsonUser isExistUser = null;
                 for (JsonUser user : list) {
-                    if (userName.equals(user.getUserName()) && password.equals(user.getPassword())) {
+                    if (userName.equals(user.getUserName())) {
                         isExistUser = user;
                         break;
                     }

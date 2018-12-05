@@ -109,7 +109,7 @@ public class SignUpActivity extends AppCompatActivity {
                 jsonUser.setUserName(edit_user_name);
                 jsonUser.setEmail(edit_email);
                 jsonUser.setPhoneNumber(edit_phone_number);
-                jsonUser.setPassword(edit_password);
+//                jsonUser.setPassword(edit_password);
                 jsonUser.setGender(get_gender);
                 jsonUser.setUserType(get_user_type);
 
